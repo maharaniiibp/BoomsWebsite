@@ -1,0 +1,264 @@
+@media (max-width: 1440px) {
+
+    /* SECTION 1 */
+    .hero1 {
+        padding: 70px;
+        
+    }
+    .hero1 img {
+        width: 100%;
+        z-index: 1;
+    }
+    .bungkus-text-1 {
+        padding-left: 80px;
+        width: 423px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+    }
+    .hero1 h1 {
+        background-color: #FFC52E;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        width: 423px;
+        height: 28px;
+        border-radius: 5px;
+        padding-top: 5px;
+        padding-bottom: 3px;
+        margin-top: -420px;
+        z-index: 5;
+        position: relative;
+        font-family: "GitLab Sans", sans-serif;
+        font-weight: 600;
+    }
+    .hero1 h2 {
+        width: 423px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .hero1 .atas {
+        font-size: 96px;
+        font-weight: 400;
+        font-family: 'Baloo 2', sans-serif;
+        color: white;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .hero1 .bungkus-text-1 p {
+        font-weight: 700;
+        margin-top: -20px;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 96px;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        width: 423px;
+        align-items: center;
+    }
+    .hero1 h3 {
+        font-size: 16px;
+        text-align: center;
+        width: 423px;
+        color: white;
+        margin-top: -20px;
+        font-family: "GitLab Sans", sans-serif;
+        font-weight: 600;
+    }
+    .bungkus-text-1 button {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        width: 172px;
+        height: 40px;
+        font-size: 14px;
+        background-color: #FFC52E;
+        color: #004A65;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        margin-left: 80px;
+        font-family: "GitLab Sans", sans-serif;
+        transition: background-color 0.3s; /* Efek transisi untuk perubahan warna latar belakang */
+      }
+      
+      .bungkus-text-1 button:hover {
+        background-color: white; /* Warna yang berbeda saat tombol dihover */
+      }
+      
+
+
+    /* SECTION 2 */
+    .hero2 {
+        background-color: #FFC52E;
+        width: 100%;
+        height: 700px;
+        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+    .hero2 h1 {
+        width: 596px;
+        height: 112px;
+        color: #434040;
+        font-weight: 600;
+        text-align: center;
+        font-size: 32px;
+        font-family: "GitLab Sans", sans-serif;
+        margin-top: 15px;
+    }
+    .hero2 h2{
+        margin-top: 40px;
+        width: auto;
+        display: flex;
+    }
+    .hero2 .img1{
+        width: 268px;
+        height: 452px;
+    }
+    .hero2 .img2{
+        width: 212px;
+        height: 452px;
+    }
+    .hero2 h2 .bungkus{
+        display: flex;        
+    }
+    .hero2 .icon{
+        width: 46.47px;
+        height: 60px;
+        margin-top: -5px;
+        margin-left: 10px;
+    }
+    .text{
+        margin-left: 20px;
+        width: 590px;
+    }
+    .text p{
+        font-size: 24px;
+        color: #434040;
+        font-weight: 700;
+        font-family: "GitLab Sans", sans-serif;
+        margin-bottom: -2px;
+    }
+    .text a{
+        font-size: 16px;
+        color: #434040;
+        font-weight: 500;
+        font-family: "GitLab Sans", sans-serif;
+    }
+    .bungkus{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+
+    /* SECTION 3 */
+    .hero3{
+        width: 100%;
+        align-items: center;
+        padding: 60px;
+    }
+    .hero3 h1{
+        color: #434040;
+        font-weight: 600;
+        font-size: 32px;
+        width: 596px;
+        text-align: center;
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap; /* Menggunakan wrap agar jika tidak muat ke samping, akan ke baris berikutnya */
+        /* justify-content: space-between; */
+        margin-top: 20px; /* Sesuaikan dengan margin yang diinginkan */
+        gap: 75px;
+      }
+    .card{
+        width: 325px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .card .black{
+        margin-top: 50px;
+    }
+    .card .like{
+        position: absolute;
+        top: 80px;
+        right: 10px;
+        z-index: 1; /* Menentukan urutan tumpukan agar di atas gambar "black" */
+        padding: 2px;
+    }
+    .card .cover{
+        margin-top: -165px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    .card h1{
+        font-size: 16px;
+        font-weight: 600;
+        color: #434040;
+        font-family: "GitLab Sans", sans-serif;
+        width: 325px;
+        text-align: start;
+    }
+    .hero3 .star1{
+        /* padding: 15px; */
+        /* margin-top: -25px; */
+    }
+    .bungkus-card{
+        display: flex;
+        justify-content: space-between;        
+    }
+    .bungkus-card img{
+        height: 16px;
+    }
+    .card h2{
+        padding: 15px;
+        margin-top: -30px;
+        display:flex;
+    }
+    .card h2 p{
+        font-size: 14px;
+        color: #434040;
+        font-weight: 400;
+        margin-left: auto;
+    }
+    .card h3{
+        padding: 15px;
+        margin-top: -30px;
+        display:flex;
+    }
+    .bungkus-price{
+        display: flex;
+    }
+    .price1{
+        font-size: 18px;
+        color: #00A4DF;
+    }
+    .price2{
+        color: #BDBDBD;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .card button{
+        font-family: "GitLab Sans", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        width: 69px;
+        height: 36px;
+        color: #F9FCFE;
+        background-color: #FFB800;
+        border-radius: 10px;
+        border: none;
+        margin-left: auto;
+    }
+    .card button:hover {
+        background-color: white; /* Warna yang berbeda saat tombol dihover */
+        color: black;
+      }
+    
+}

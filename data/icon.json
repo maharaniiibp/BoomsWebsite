@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Snug & Comfy Fit",
+        "desc": "Our one-of-a-kind 18-25 mmHg compression hugs you to boost circulation without feeling too tight.",
+        "img": "../../asset/sikil.png"
+    },
+    {
+        "title": "The Softest Pair",
+        "desc": "Our socks are incredibly soft, breathable, and moisture-wicking because they're made out of viscose from bamboo.",
+        "img": "../../asset/bambu.png"
+    },
+    {
+        "title": "Free Shipping & Returns",
+        "desc": "We’re convinced you’ll love these socks. If you don’t, return them for free. Simple as that.",
+        "img": "../../asset/truk.png"
+    }
+]

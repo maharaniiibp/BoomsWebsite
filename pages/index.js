@@ -1,14 +1,101 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState, useEffect } from "react";
+import Header from '../components/navbar.js';
+import Banner from '../components/sale-banner.js';
+import styles from '../styles/index.module.css';
+import dataIcon from '../data/icon.json';
+import dataHero from '../data/hero-card.json';
 import { Dropdown } from "react-bootstrap";
 import Product from "../components/product";
-import styles from "../styles/Home.module.css";
 
-const Index = () => {
+
+
+export default function Index() {
+  const [jsonIcon, setJsonIcon] = useState([]);
+  const [jsonHero, setJsonHero] = useState([]);
+
+  useEffect(() => {
+    setJsonIcon(dataIcon);
+    setJsonHero(dataHero);
+  }, []);
   return (
-    <div>
+    <>
+      <Banner />
+      <Header />
+
+
+      <section className={styles['hero1']}>
+        <img src='../../asset/hero-banner.png'></img>
+        <div className={styles['bungkus-text-1']}>
+          <h1>NEW STYLE JUST A LAUNCHED</h1>
+          <h2>
+            <div className={styles['atas']}>BOOMS</div>
+            <p>SHOCKS</p>
+          </h2>
+          <h3>Brings Your Feet & Legs Back to Life</h3>
+          <button>SHOP NOW</button>
+        </div>
+      </section>
+
+      <section className={styles['hero2']}>
+        <h1>Party like a sockstar with all of our Unisex Styles</h1>
+        <h2>
+          <img className={styles['img1']} src='../../asset/hero2-1.png'></img>
+          <img className={styles['img2']} src='../../asset/hero2-2.png'></img>
+          <div>
+            {jsonIcon.map((item, index) => (
+              <a key={index} className="group" style={{ textDecoration: 'none' }}>
+                <div className={styles['bungkus']}>
+                  <img className={styles['icon']} src={item.img} alt={`Icon ${index}`} />
+                  <div className={styles['text']}>
+                    <p>{item.title}</p>
+                    <a className="text-decoration-none">{item.desc}</a>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </h2>
+      </section>
+
+
+      <section className={styles['hero3']}>
+        <h1 className="mx-auto">Party like a sockstar with all of our Unisex Styles</h1>
+        <div className={styles['card-container']}>
+          {jsonHero.map((item, index) => (
+          <a key={index} className="group">
+            <div className={styles['card']}>
+              <img className={styles['black']} src={item.img} alt={`Image ${index}`} />
+              <img className={styles['like']} src='../../asset/icon.png' ></img>
+              <div className={styles['cover']}>
+                <h1 className='p-3'>
+                  Jetsetter Blacks : 16 - 20 mmHg
+                </h1>
+                <h2>
+                  <div className={styles['bungkus-card']}>
+                    <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} />
+                    <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
+                    <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
+                    <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
+                    <img className={styles['star1']} src='../../asset/star2.png' alt={`Star2 ${index}`} style={{ marginLeft: '5px' }} />
+                  </div>
+                  <p>1,2k sold out</p>
+                </h2>
+                <h3>
+                  <div className={styles['bungkus-price']}>
+                    <p className={styles['price1']}>$25.99</p>
+                    <p className={styles['price2']}>$25.99</p>
+                  </div>
+                  <button>SALE</button>
+                </h3>
+              </div>
+            </div>
+          </a>
+        ))}
+        </div>
+        
+      </section>
+
       {/* section 4 */}
       <p
         className="text-center"
@@ -115,12 +202,7 @@ const Index = () => {
       <div className="pb-lg-3"></div>
       <Product />
       <div style={{ paddingBottom: '150px' }}></div>
-      
-      {/* section 6 */}
-     
-     
-    </div>
+    </>
+
   );
 };
-
-export default Index;

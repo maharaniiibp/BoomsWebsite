@@ -1,0 +1,15 @@
+@media (max-width: 1440px){
+    .sale-banner {
+        justify-content: center;
+        background: linear-gradient(180deg, #00A4DF 0%, #0086B6 138.5%);
+        z-index: 1000;
+      }
+      
+      .text {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "GitLab Sans", sans-serif;
+      }
+}
