@@ -1,7 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from "react";
-import Header from '../components/navbar.js';
-import Banner from '../components/sale-banner.js';
 import styles from '../styles/index.module.css';
 import dataIcon from '../data/icon.json';
 import dataHero from '../data/hero-card.json';
@@ -20,10 +18,6 @@ export default function Index() {
   }, []);
   return (
     <>
-      <Banner />
-      <Header />
-
-
       <section className={styles['hero1']}>
         <img src='../../asset/hero-banner.png'></img>
         <div className={styles['bungkus-text-1']}>
