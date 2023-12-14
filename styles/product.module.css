@@ -134,6 +134,11 @@
         padding: 3px;
         width: 100px;
       }
+      .product-2 .buttons.active {
+        border-color: #00A4DF;
+        color: #00A4DF;
+        background: none;
+      }
       .product-2 .button-show{
         background: #00A4DF;
         color: #F9FCFE;

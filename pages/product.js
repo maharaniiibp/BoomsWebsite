@@ -6,8 +6,12 @@ import Form from 'react-bootstrap/Form';
 // import dataHero from '../data/hero-card.json';
 import dataProduct from '../data/product.json';
 import Overview from "./overview";
+import swal from 'sweetalert2';
+
 
 const Product = () => {
+
+  // dropdown
   const [menChecked, setMenChecked] = useState(false);
   const [womenChecked, setWomenChecked] = useState(false);
 
@@ -45,11 +49,35 @@ const Product = () => {
     setXXLChecked(!xxlChecked);
   };
 
+  // data json
   const [jsonProduct, setJsonProduct] = useState([]);
 
   useEffect(() => {
     setJsonProduct(dataProduct);
   }, []);
+
+  // button active price
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleButtonClick = (buttonNumber) => {
+    setActiveButton(buttonNumber === activeButton ? null : buttonNumber);
+  };
+
+
+  // allert
+  const handleClick = () => {
+    swal("Are you sure?", {
+        successMode: true,
+        buttons: true,
+    }).then((isConfirmed) => {
+        if (isConfirmed) {
+            return swal({
+                title: "Success",
+                icon: "success"
+            });
+        }
+    });
+};
 
   return (
     <>
@@ -156,27 +184,50 @@ const Product = () => {
 
           <Form>
             <Form.Group className="mb-3 mt-2" controlId="exampleForm.ControlInput1">
-              <Form.Label>Maximum</Form.Label>
-              <Form.Control type="email" placeholder="Label" style={{width: '220px'}} />
+              <Form.Label style={{fontSize: '14px', color: '#00A4DF', fontWeight: '600'}}>Maximum</Form.Label>
+              <Form.Control type="email"
+               placeholder="Label" style={{width: '220px'}} />
             </Form.Group>
           </Form>
 
 
           <Form>
             <Form.Group className="mb-3 mt-2" controlId="exampleForm.ControlInput1">
-              <Form.Label>Minimum</Form.Label>
+              <Form.Label style={{fontSize: '14px', color: '#00A4DF', fontWeight: '600'}}>Minimum</Form.Label>
               <Form.Control type="email" placeholder="Label" style={{width: '220px'}} />
             </Form.Group>
           </Form>
 
           <div className={styles['button']}>
-            <button className={styles['buttons']}>$5 - $10</button>
-            <button className={styles['buttons']} style={{marginLeft: '20px'}}>$5 - $10</button>
-            <button className={styles['buttons']}>$5 - $10</button>
-            <button className={styles['buttons']} style={{marginLeft: '20px', marginTop: '20px'}}>$5 - $10</button>
-          </div>
+      <button
+        className={`${styles['buttons']} ${activeButton === 1 ? styles['active'] : ''}`}
+        onClick={() => handleButtonClick(1)}
+      >
+        $5 - $10
+      </button>
+      <button
+        className={`${styles['buttons']} ${activeButton === 2 ? styles['active'] : ''}`}
+        style={{ marginLeft: '20px' }}
+        onClick={() => handleButtonClick(2)}
+      >
+        $5 - $10
+      </button>
+      <button
+        className={`${styles['buttons']} ${activeButton === 3 ? styles['active'] : ''}`}
+        onClick={() => handleButtonClick(3)}
+      >
+        $5 - $10
+      </button>
+      <button
+        className={`${styles['buttons']} ${activeButton === 4 ? styles['active'] : ''}`}
+        style={{ marginLeft: '20px', marginTop: '20px' }}
+        onClick={() => handleButtonClick(4)}
+      >
+        $5 - $10
+      </button>
+    </div>
           
-          <button className={styles['button-show']}>SHOW RESULT</button>
+          <button onClick={handleClick} className={styles['button-show']}>SHOW RESULT</button>
           <div>
              <button className={styles['button-clear']}>Clear Filter</button>
           </div>
