@@ -1,78 +1,187 @@
 .kakibiru {
-    margin-left: 68px;
-    margin-top: 70px;
-    gap: 24px;
-  }
-  .det1dan2 {
-    margin-top: 40px;
-    justify-content: space-between;
-  }
-  .section1 {
-      margin-left: 40px;
-  }
-  .pack {
-   
-    margin-top: 70px;
-    color: #0c152a;
-    font-family: "GitLab Sans", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 142.857% */
-    letter-spacing: 0.28px;
-    opacity: 0.6;
-  }
-  .blacks {
-    align-self: stretch;
-    color: var(--Neutral-100, #434040);
-    font-family: "GitLab Sans", sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 48px; /* 200% */
-    letter-spacing: 0.48px;
-  }
-  /* .cover{
-      margin-top: -165px;
-      position: absolute;
-      margin-left: 10px;
-  } */
-  .bungkus-card{
-      display: flex;
-    align-items: center;
-      padding: -2px;   
-   
-  }
-  
-  .p{
-      color: var(--Neutral-100, #434040);
-  
-  /* Label/L14/Reguler */
+  margin-left: 68px;
+  margin-top: 70px;
+  gap: 24px;
+}
+.det1dan2 {
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.section1 {
+  margin-left: 40px;
+}
+.pack {
+  margin-top: 70px;
+  color: #0c152a;
   font-family: "GitLab Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.28px;
-  align-self: flex-end;
-  }
-  .bungkus-card img{
-      height: 16px;
-  }
-  
-  
-  
-  .bungkus-price{
-      display: flex;
-      
-  }
-  .price1{
-      font-size: 18px;
-      color: #00A4DF;
-  }
-  .price2{
-      color: #BDBDBD;
-      font-size: 18px;
-      margin-left: 10px;
-  }
-  
+  opacity: 0.6;
+}
+.blacks {
+  align-self: stretch;
+  color: var(--Neutral-100, #434040);
+  font-family: "GitLab Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px; /* 200% */
+  letter-spacing: 0.48px;
+}
+.bungkus-card {
+  align-items: center;
+  padding: -2px;
+  flex-shrink: 0;
+}
+.p {
+  color: var(--Neutral-100, #434040);
+  font-family: "GitLab Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.28px;
+  flex-grow: 5;
+  margin-left: 210px;
+  margin-top: 5px;
+}
+.bungkus-card img {
+  height: 16px;
+}
+
+.bungkus-price {
+  display: flex;
+}
+.price1 {
+  color: var(--Primary-70, #00a4df);
+
+  /* Label/L18/Semibold */
+  font-family: "GitLab Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: 0.36px;
+}
+.price2 {
+  color: var(--Neutral-40, #bdbdbd);
+  font-family: "GitLab Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  margin-left: 28px;
+}
+.line {
+  border-top: 1px solid black; /* Garis horizontal dengan ketebalan 1px */
+  padding: 20px;
+}
+.color {
+  color: var(--Neutral-100, #434040);
+  font-family: "GitLab Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+}
+/* Bulat */
+.flex {
+  display: flex;
+  padding-left: -20px;
+  margin-top: 8px;
+}
+.bulat {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  border: 3px solid var(--Primary-70, #00a4df);
+  background: #f7dcb4;
+  transition: transform 0.4s ease, margin 0.4s ease; /* Menambahkan transisi */
+  margin-right: 14px; /* Tambahkan margin 10px di semua sisi */
+}
+
+.bulat:active {
+  transform: scale(2.2); /* Memperbesar elemen saat diklik */
+  margin: 5px; /* Ubah margin saat elemen aktif (diklik) */
+}
+
+/* White */
+.white {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  border: 1px solid var(--Neutral-50, #a9a9a9);
+  background: #fff;
+  transition: transform 0.4s ease, margin 0.4s ease; /* Menambahkan transisi */
+  margin-right: 14px; /* Tambahkan margin 10px di semua sisi */
+}
+
+.white:active {
+  transform: scale(2.2); /* Memperbesar elemen saat diklik */
+  margin: 5px; /* Ubah margin saat elemen aktif (diklik) */
+}
+
+/* Navy */
+.navy {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  border: 1px solid #eee;
+  background: #051c3b;
+  transition: transform 0.4s ease, margin 0.4s ease; /* Menambahkan transisi */
+  margin-right: 14px;
+}
+.navy:active {
+  transform: scale(2.2); /* Memperbesar elemen saat diklik */
+  margin: 5px; /* Ubah margin saat elemen aktif (diklik) */
+}
+
+/* Grey */
+.grey {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  border: 1px solid #eee;
+  background: #959c97;
+  transition: transform 0.4s ease, margin 0.4s ease; /* Menambahkan transisi */
+  margin-right: 14px;
+}
+
+.grey:active {
+  transform: scale(2.2); /* Memperbesar elemen saat diklik */
+  margin: 5px; /* Ubah margin saat elemen aktif (diklik) */
+}
+.s{
+display: flex;
+padding: 10px 16px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+color: var(--Neutral-10, #F9FCFE);
+border-radius: 8px;
+border: none;
+background: var(--Primary-70, #00A4DF);
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.28px;
+margin-right: 12px;
+}
+
+.m{
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+border: 1px solid var(--Primary-70, #00A4DF);
+background-color: white;
+margin-right: 12px;
+}
