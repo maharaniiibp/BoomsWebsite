@@ -78,6 +78,7 @@ export default function Index() {
           </div>
         </div>
       </div>
+      <div style={{ paddingBottom: "50px" }}></div>
 
       {/* section 1 */}
       <div className="align-self-start">
@@ -125,10 +126,9 @@ export default function Index() {
               <p className={styles["price2"]}>$25.99</p>
             </div>
             <div className={styles["line"]}></div>
-            
           </div>
           <span className={styles["color"]}>Color</span>
-         
+
           <div className={styles["flex"]}>
             <a href="#" className={styles["bulat"]}></a>
             <a href="#" className={styles["white"]}></a>
@@ -137,19 +137,202 @@ export default function Index() {
           </div>
           <div style={{ paddingBottom: "16px" }}></div>
           <span className={styles["color"]}>Size</span>
-          <div className="d-flex" style={{ fontFamily: "GitLab Sans, sans-serif" }}>
-          <button className= {styles["s"]}>S</button>
-          <button className= {styles["m"]}>M</button>
-          <button className= {styles["m"]}>L</button>
-          <button className= {styles["m"]}>XL</button>
-          <button className= {styles["m"]}>XXL</button>
-        </div>
-        <div style={{ paddingBottom: "16px" }}></div>
-        <div className={styles["line"]}></div>
+          <div
+            className="d-flex"
+            style={{ fontFamily: "GitLab Sans, sans-serif" }}
+          >
+            <button className={styles["s"]}>S</button>
+            <button className={styles["m"]}>M</button>
+            <button className={styles["m"]}>L</button>
+            <button className={styles["m"]}>XL</button>
+            <button className={styles["m"]}>XXL</button>
+          </div>
+          <div style={{ paddingBottom: "16px" }}></div>
+          <div className={styles["line"]}></div>
 
+          {/* tabel */}
+          <img
+            style={{ width: "415px", height: "246px" }}
+            src="/asset/detail/tabel.svg"
+            className="img-fluid"
+            alt="Product Image"
+          />
+
+          {/* artikel */}
+          <div className="artikel">
+            <button className={styles["deskripsi"]}>
+              Description
+              <img
+                style={{ width: "18px", height: "18px", marginLeft: "290px" }}
+                src="/asset/detail/arrow-down.svg"
+                className="img-fluid"
+                alt="Product Image"
+              />
+            </button>
+            <p className={styles["fancy"]}>
+              Fancy feet can be happy feet, too. Try our dot <br />
+              collection for something a little more formal, but just as
+              effective.
+              <div style={{ paddingBottom: "16px" }}></div>
+              Make every moment sparkle with Wellow's Midnight Confetti
+              collection.
+              <div style={{ paddingBottom: "16px" }}></div>
+              At 18-25 mmHg, our socks gently wrap around feet, ankles, and legs
+              to provide the support that stimulates circulation without feeling
+              tight. We call that the BoomsFit. 
+            </p>
+            <div style={{ marginTop: "-10px" }}>
+              <button className={styles["fabric"]}>
+                Fabric & Care
+                <img
+                  style={{ width: "18px", height: "18px", marginLeft: "290px" }}
+                  src="/asset/detail/arrow-down.svg"
+                  className="img-fluid"
+                  alt="Product Image"
+                />
+              </button>
+            </div>
+            <div style={{ paddingBottom: "50px" }}></div>
+            <button className={styles["fabric"]}>
+              Our Guarantee
+              <img
+                style={{ width: "18px", height: "18px", marginLeft: "290px" }}
+                src="/asset/detail/arrow-down.svg"
+                className="img-fluid"
+                alt="Product Image"
+              />
+            </button>
+          </div>
         </div>
       </div>
 
-    </div>
+{/* set quantity nanti disini*/}
+<div className="align-self-start">
+        <div className={styles["section1"]}>
+          <h2 className={styles["pack"]}>3-pack midnight-confetti</h2>
+          <h4 className={styles["blacks"]}>Jetsetter Blacks : 16 - 20 mmHg</h4>
+          <div className={styles["cover"]}>
+            <div class="d-flex">
+              <div className={styles["bungkus-card"]}>
+                <img
+                  className={styles["star1"]}
+                  src="../../asset/star1.png"
+                  alt={`Star1 ${stars}`}
+                />
+                <img
+                  className={styles["star1"]}
+                  src="../../asset/star1.png"
+                  alt={`Star1 ${stars}`}
+                  style={{ marginLeft: "5px" }}
+                />
+                <img
+                  className={styles["star1"]}
+                  src="../../asset/star1.png"
+                  alt={`Star1 ${stars}`}
+                  style={{ marginLeft: "5px" }}
+                />
+                <img
+                  className={styles["star1"]}
+                  src="../../asset/star1.png"
+                  alt={`Star1 ${stars}`}
+                  style={{ marginLeft: "5px" }}
+                />
+                <img
+                  className={styles["star1"]}
+                  src="../../asset/star2.png"
+                  alt={`Star2 ${stars}`}
+                  style={{ marginLeft: "5px" }}
+                />
+              </div>
+              <p className={styles["p"]}>1,2k sold out</p>
+            </div>
+
+            <div className={styles["bungkus-price"]}>
+              <p className={styles["price1"]}>$25.99</p>
+              <p className={styles["price2"]}>$25.99</p>
+            </div>
+            <div className={styles["line"]}></div>
+          </div>
+          <span className={styles["color"]}>Color</span>
+
+          <div className={styles["flex"]}>
+            <a href="#" className={styles["bulat"]}></a>
+            <a href="#" className={styles["white"]}></a>
+            <a href="#" className={styles["navy"]}></a>
+            <a href="#" className={styles["grey"]}></a>
+          </div>
+          <div style={{ paddingBottom: "16px" }}></div>
+          <span className={styles["color"]}>Size</span>
+          <div
+            className="d-flex"
+            style={{ fontFamily: "GitLab Sans, sans-serif" }}
+          >
+            <button className={styles["s"]}>S</button>
+            <button className={styles["m"]}>M</button>
+            <button className={styles["m"]}>L</button>
+            <button className={styles["m"]}>XL</button>
+            <button className={styles["m"]}>XXL</button>
+          </div>
+          <div style={{ paddingBottom: "16px" }}></div>
+          <div className={styles["line"]}></div>
+
+          {/* tabel */}
+          <img
+            style={{ width: "415px", height: "246px" }}
+            src="/asset/detail/tabel.svg"
+            className="img-fluid"
+            alt="Product Image"
+          />
+
+          {/* artikel */}
+          <div className="artikel">
+            <button className={styles["deskripsi"]}>
+              Description
+              <img
+                style={{ width: "18px", height: "18px", marginLeft: "290px" }}
+                src="/asset/detail/arrow-down.svg"
+                className="img-fluid"
+                alt="Product Image"
+              />
+            </button>
+            <p className={styles["fancy"]}>
+              Fancy feet can be happy feet, too. Try our dot <br />
+              collection for something a little more formal, but just as
+              effective.
+              <div style={{ paddingBottom: "16px" }}></div>
+              Make every moment sparkle with Wellow's Midnight Confetti
+              collection.
+              <div style={{ paddingBottom: "16px" }}></div>
+              At 18-25 mmHg, our socks gently wrap around feet, ankles, and legs
+              to provide the support that stimulates circulation without feeling
+              tight. We call that the BoomsFit. 
+            </p>
+            <div style={{ marginTop: "-10px" }}>
+              <button className={styles["fabric"]}>
+                Fabric & Care
+                <img
+                  style={{ width: "18px", height: "18px", marginLeft: "290px" }}
+                  src="/asset/detail/arrow-down.svg"
+                  className="img-fluid"
+                  alt="Product Image"
+                />
+              </button>
+            </div>
+            <div style={{ paddingBottom: "50px" }}></div>
+            <button className={styles["fabric"]}>
+              Our Guarantee
+              <img
+                style={{ width: "18px", height: "18px", marginLeft: "290px" }}
+                src="/asset/detail/arrow-down.svg"
+                className="img-fluid"
+                alt="Product Image"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> //div flex terakhir
+
+    // easy tostrech disini
   );
 }

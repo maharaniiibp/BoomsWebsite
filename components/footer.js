@@ -11,7 +11,8 @@ const Footer = () => {
               className="h5 mb-4 fs-5"
               style={{
                 fontWeight: 600,
-                fontFamily: "GitLab Sans",
+                fontFamily: "GitLab Sans, sans-serif",
+
                 fontStyle: "normal",
               }}
             >
@@ -21,13 +22,16 @@ const Footer = () => {
               className="d-flex flex-column fs-8"
               style={{ cursor: "pointer", padding: 0 }}
             >
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 Email Us: support@wearbooms.com
               </a>
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 Call: 1-800-730-1089
               </a>
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 USA - California
               </a>
             </div>
@@ -37,7 +41,8 @@ const Footer = () => {
               className="h5 mb-4 fs-5"
               style={{
                 fontWeight: 600,
-                fontFamily: "GitLab Sans",
+                fontFamily: "GitLab Sans, sans-serif",
+
                 fontStyle: "normal",
               }}
             >
@@ -47,22 +52,28 @@ const Footer = () => {
               className="d-flex flex-column fs-8"
               style={{ cursor: "pointer", padding: 0 }}
             >
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 Sizing Chart
               </a>
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 Blog
               </a>
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 Shipping
               </a>
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 Refund Policy
               </a>
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 Privacy Policy
               </a>
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 Terms Of Servicey
               </a>
             </div>
@@ -72,7 +83,8 @@ const Footer = () => {
               className="h5 mb-4 fs-5"
               style={{
                 fontWeight: 600,
-                fontFamily: "GitLab Sans",
+                fontFamily: "GitLab Sans, sans-serif",
+
                 fontStyle: "normal",
               }}
             >
@@ -82,16 +94,20 @@ const Footer = () => {
               className="d-flex flex-column fs-8 "
               style={{ cursor: "pointer", padding: 0 }}
             >
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans"}}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+}}>
                 Shop
               </a>
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 Log In
               </a>
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 Create Account
               </a>
-              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}>
                 About Us
               </a>
             </div>
@@ -103,7 +119,8 @@ const Footer = () => {
                 className="h5 mb-4 fs-5"
                 style={{
                   fontWeight: 600,
-                  fontFamily: "GitLab Sans",
+                  fontFamily: "GitLab Sans, sans-serif",
+
                   fontStyle: "normal",
                 }}
               >
@@ -111,7 +128,8 @@ const Footer = () => {
               </p>
               <p
                 class="d-flex flex-row align-items-center fs-8"
-                style={{ color: "#333232", fontFamily: "GitLab Sans" }}
+                style={{ color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}
               >
                 {" "}
                 <img src="asset/fb.png" alt="Small Image" class="me-2" />
@@ -119,7 +137,8 @@ const Footer = () => {
               </p>
               <p
                 class="d-flex flex-row align-items-cente fs-8"
-                style={{ color: "#333232", fontFamily: "GitLab Sans" }}
+                style={{ color: "#333232", fontFamily: "GitLab Sans, sans-serif",
+ }}
               >
                 {" "}
                 <img src="asset/ig.png" alt="Small Image" class="me-2" />
@@ -129,7 +148,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="d-flex mt-4 mx-auto" style={{ width: "100%" }}>
-          <p className="mr-auto p-5" style={{ width: "50%", fontFamily: "GitLab Sans" }}>
+          <p className="mr-auto p-5" style={{ width: "50%", fontFamily: "GitLab Sans, sans-serif",
+ }}>
             &copy; Devwares, 2023. All rights reserved.
           </p>
 
