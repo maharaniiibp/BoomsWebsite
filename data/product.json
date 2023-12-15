@@ -1,29 +1,74 @@
 [
     {
+        "id": 1,
+        "name": "Produk 1",
+        "gender": "Men",
+        "size": "S",
+        "price": 7.44,
         "img": "../../asset/black.png"
-    },
+      },
     {
+        "id" : 2,
+        "name":"Produk 2",
+        "gender": "Woman",
+        "size": "M",
+        "price": 20.15,
         "img": "../../asset/skin.png"
     },
     {
+        "id" : 3,
+        "name":"Produk 3",
+        "gender": "Men",
+        "size": "L",
+        "price": 30.35,
         "img": "../../asset/black.png"
     },
     {
+        "id" : 4,
+        "name":"Produk 4",
+        "gender": "Woman",
+        "size": "XL",
+        "price": 40.60,
         "img": "../../asset/skin.png"
     },
     {
+        "id" : 5,
+        "name":"Produk 5",
+        "gender": "Men",
+        "size": "XXL",
+        "price": 60.99,
         "img": "../../asset/black.png"
     },
     {
+        "id" : 6,
+        "name":"Produk 6",
+        "gender": "Woman",
+        "size": "S",
+        "price": 7.44,
         "img": "../../asset/skin.png"
     },
     {
+        "id" : 7,
+        "name":"Produk 7",
+        "gender": "Men",
+        "size": "M",
+        "price": 20.15,
         "img": "../../asset/black.png"
     },
     {
+        "id" : 8,
+        "name":"Produk 8",
+        "gender": "Woman",
+        "size": "L",
+        "price": 30.35,
         "img": "../../asset/skin.png"
     },
     {
+        "id" : 9,
+        "name":"Produk 9",
+        "gender": "Men",
+        "size": "XL",
+        "price": 40.60,
         "img": "../../asset/black.png"
     }
 ]

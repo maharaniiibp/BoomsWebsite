@@ -22,7 +22,7 @@ export default function Index() {
         <img src='../../asset/hero-banner.png'></img>
         <div className={styles['bungkus-text-1']}>
           <h1>NEW STYLE JUST A LAUNCHED</h1>
-          <h2>
+          <h2 className={styles['animated-text']}>
             <div className={styles['atas']}>BOOMS</div>
             <p>SHOCKS</p>
           </h2>
@@ -57,37 +57,37 @@ export default function Index() {
         <h1 className="mx-auto">Party like a sockstar with all of our Unisex Styles</h1>
         <div className={styles['card-container']}>
           {jsonHero.map((item, index) => (
-          <a key={index} className="group">
-            <div className={styles['card']}>
-              <img className={styles['black']} src={item.img} alt={`Image ${index}`} />
-              <img className={styles['like']} src='../../asset/icon.png' ></img>
-              <div className={styles['cover']}>
-                <h1 className='p-3'>
-                  Jetsetter Blacks : 16 - 20 mmHg
-                </h1>
-                <h2>
-                  <div className={styles['bungkus-card']}>
-                    <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} />
-                    <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
-                    <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
-                    <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
-                    <img className={styles['star1']} src='../../asset/star2.png' alt={`Star2 ${index}`} style={{ marginLeft: '5px' }} />
-                  </div>
-                  <p>1,2k sold out</p>
-                </h2>
-                <h3>
-                  <div className={styles['bungkus-price']}>
-                    <p className={styles['price1']}>$25.99</p>
-                    <p className={styles['price2']}>$25.99</p>
-                  </div>
-                  <button>SALE</button>
-                </h3>
+            <a key={index} className="group">
+              <div className={styles['card']}>
+                <img className={styles['black']} src={item.img} alt={`Image ${index}`} />
+                <img className={styles['like']} src='../../asset/icon.png' ></img>
+                <div className={styles['cover']}>
+                  <h1 className='p-3'>
+                    Jetsetter Blacks : 16 - 20 mmHg
+                  </h1>
+                  <h2>
+                    <div className={styles['bungkus-card']}>
+                      <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} />
+                      <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
+                      <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
+                      <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
+                      <img className={styles['star1']} src='../../asset/star2.png' alt={`Star2 ${index}`} style={{ marginLeft: '5px' }} />
+                    </div>
+                    <p>1,2k sold out</p>
+                  </h2>
+                  <h3>
+                    <div className={styles['bungkus-price']}>
+                      <p className={styles['price1']}>$25.99</p>
+                      <p className={styles['price2']}>$25.99</p>
+                    </div>
+                    <button>SALE</button>
+                  </h3>
+                </div>
               </div>
-            </div>
-          </a>
-        ))}
+            </a>
+          ))}
         </div>
-        
+
       </section>
 
       {/* section 4 */}

@@ -56,6 +56,18 @@
         width: 423px;
         align-items: center;
     }
+    .animated-text {
+      animation: scaleText 1s infinite alternate;
+    }
+    
+    @keyframes scaleText {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
     .product-1 h3 {
         font-size: 16px;
         text-align: center;
@@ -77,7 +89,7 @@
         color: #004A65;
         font-weight: 600;
         border: none;
-        border-radius: 5px;
+        border-radius: 8px;
         font-family: "GitLab Sans", sans-serif;
         transition: background-color 0.3s; 
       }
@@ -109,7 +121,7 @@
         border: 2px solid #00A4DF;
         text-align: center;
         justify-content: center;
-        border-radius: 10px;
+        border-radius: 8px;
         width: 220px;
         color: #00688D;
       }
@@ -117,7 +129,7 @@
         border: 2px solid #00A4DF;
         text-align: center;
         justify-content: center;
-        border-radius: 10px;
+        border-radius: 8px;
         width: 220px;
         color: #00688D;
         margin-top: 20px;
@@ -128,11 +140,17 @@
         margin-right: auto; 
       }
       .product-2 .buttons {
-        border-radius: 10px;
+        border-radius: 8px;
         border: 2px solid #ACB5BA;
         color: #808080;
         padding: 3px;
         width: 100px;
+        background: none;
+        font-size: 14px;
+      }
+      .line {
+        border-bottom: 1px solid #000; /* Ubah warna dan properti sesuai kebutuhan Anda */
+        margin-top: 20px; /* Sesuaikan margin sesuai kebutuhan */
       }
       .product-2 .buttons.active {
         border-color: #00A4DF;
@@ -144,7 +162,7 @@
         color: #F9FCFE;
         width: 220px;
         height: 40px;
-        border-radius: 10px;
+        border-radius: 8px;
         border: none;
         margin-top: 20px;
         font-size: 14px;
@@ -171,7 +189,7 @@
         justify-content: space-between;
       }
       .menu h1 {
-        color: #FFB800;
+        color: #856000;
         font-size: 16px;
         font-weight: 600;
         margin-top: auto;
@@ -187,7 +205,6 @@
       }      
       .menu h2 {
         font-size: 16px;
-        /* width: 80px; */
         color: #00688D;
       }
       .card-container {
@@ -203,7 +220,10 @@
         margin-bottom: 20px;
         position: relative;
         justify-content: space-between;
-        
+        transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: scale(1.05);
     }
     .card .black{
         width: 270px;
@@ -268,6 +288,9 @@
         color: #BDBDBD;
         font-size: 15.07px;
         margin-left: 10px;
+    }
+    .strikethrough {
+      text-decoration: line-through;
     }
     .card button{
         font-family: "GitLab Sans", sans-serif;
