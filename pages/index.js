@@ -7,8 +7,7 @@ import { Dropdown } from "react-bootstrap";
 import Product from "../components/productcard";
 import Bundaran from "@/components/bundaran";
 import Image from "next/image";
-import { Row, Col } from 'react-bootstrap';
-
+import { Row, Col } from "react-bootstrap";
 
 export default function Index() {
   const [jsonIcon, setJsonIcon] = useState([]);
@@ -206,7 +205,6 @@ export default function Index() {
           width={1920}
           height={1080}
         />
-
         <div
           className="bg-white mb-3 p-3"
           style={{
@@ -219,68 +217,71 @@ export default function Index() {
         >
           <Row className="">
             <Col className="col-3">
-          <img
-            className="p-2 w-100"
-            src="/asset/home/fathu.png"
-            alt=""
-            style={{
-              borderRadius: "100%",
-            }}
-            />
+              <img
+                className="p-2 w-100"
+                src="/asset/home/fathu.png"
+                alt=""
+                style={{
+                  borderRadius: "100%",
+                }}
+              />
             </Col>
             <Col className="mt-3">
-          <h3
-            className="text-start"
-            style={{
-              color: "#383746",
-              fontFamily:  "GitLab Sans, sans-serif",
-              fontSize: "16px",
-              fontStyle: "normal",
-              fontWeight: 600,
-              lineHeight: "24px", 
-              letterSpacing: "0.32px",
-              // marginBottom: "70px",
-            }}
-          >
-            Fathu Bagus Septihan
+              <h3
+                className="text-start"
+                style={{
+                  color: "#383746",
+                  fontFamily: "GitLab Sans, sans-serif",
+                  fontSize: "16px",
+                  fontStyle: "normal",
+                  fontWeight: 600,
+                  lineHeight: "24px",
+                  letterSpacing: "0.32px",
+                  // marginBottom: "70px",
+                }}
+              >
+                Fathu Bagus Septihan
               </h3>
-            <h4 className="text-start"
-            style={{
-              color: "#999", 
-              fontFamily:  "GitLab Sans, sans-serif",
-              fontSize: "14px",
-              fontStyle: "normal",
-              fontWeight: 400,
-              lineHeight: "20px", 
-              letterSpacing: "0.28px",
-            }}
-          >
-            Customer <br />
-            Depok, Sleman, Yogyakarta
-          </h4>
+              <h4
+                className="text-start"
+                style={{
+                  color: "#999",
+                  fontFamily: "GitLab Sans, sans-serif",
+                  fontSize: "14px",
+                  fontStyle: "normal",
+                  fontWeight: 400,
+                  lineHeight: "20px",
+                  letterSpacing: "0.28px",
+                }}
+              >
+                Customer <br />
+                Depok, Sleman, Yogyakarta
+              </h4>
             </Col>
           </Row>
           <Row className="mt-2">
-          <div className="text-start"
-            style={{
-              alignSelf: "stretch",
-              color: "var(--primary-100, #004A65)", 
-              fontFamily:  "GitLab Sans, sans-serif",
-              fontSize: "14px",
-              fontStyle: "normal",
-              fontWeight: 400,
-              lineHeight: "32px", 
-              letterSpacing: "0.28px", 
-            }}
-          >
-            Lorem ipsum dolor sit amet consectetur. In velit sed nullam quis.
-            Augue tristique feugiat ultricies sit molestie volutpat pretium.
-            Lorem ipsum dolor sit amet consectetur. In velit sed nullam quis.
-            Augue tristique feugiat ultricies sit molestie volutpat pretium.
-          </div>
+            <div
+              className="text-start"
+              style={{
+                alignSelf: "stretch",
+                color: "var(--primary-100, #004A65)",
+                fontFamily: "GitLab Sans, sans-serif",
+                fontSize: "14px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "32px",
+                letterSpacing: "0.28px",
+              }}
+            >
+              Lorem ipsum dolor sit amet consectetur. In velit sed nullam quis.
+              Augue tristique feugiat ultricies sit molestie volutpat pretium.
+              Lorem ipsum dolor sit amet consectetur. In velit sed nullam quis.
+              Augue tristique feugiat ultricies sit molestie volutpat pretium.
+            </div>
           </Row>
         </div>
-      </div>
+              
+      </div>
       <div style={{ paddingBottom: "150px" }}></div>
 
       {/* section 7 */}
