@@ -41,21 +41,127 @@ const QuantitySelector = () => {
       <div className={styles["lineq"]}></div>
       <span className={styles["set"]}>Payment method</span>
       <div class="d-flex flex-column mb-3">
-        <button class="p-2">Bank BCA</button>
-        <button class="p-2">OVO</button>
+        <button className={styles["buttonq"]}>
+          <img
+            src="/asset/detail/bca.svg"
+            alt="Bank BCA"
+            style={{ width: "32px", height: "32px", marginRight: "8px" }}
+          />
+          Bank BCA
+        </button>
 
-        <button class="p-2">GOPAY</button>
+        <button
+          className="p-2"
+          style={{
+            display: "flex",
+            width: "220px",
+            justifyContent: "left",
+            alignItems: "center",
+            background: "white",
+            borderRadius: "8px",
+            border: "1px solid var(--Neutral-40, #BDBDBD)",
+            color: "var(--Primary-90, #00688D)",
+            fontFamily: "GitLab Sans, sans-serif",
+            fontSize: "14px",
+            letterSpacing: "0.28px",
+            fontWeight: "700",
+            marginLeft: "8px",
+            marginTop: "12px",
+          }}
+        >
+          <img
+            src="/asset/detail/ovo.svg"
+            alt="Bank ovo"
+            style={{
+              width: "20px",
+              height: "20px",
+              marginRight: "8px",
+            }}
+          />
+          OVO
+        </button>
+
+        <button
+          className="p-2"
+          style={{
+            display: "flex",
+            width: "220px",
+            justifyContent: "left",
+            alignItems: "center",
+            background: "white",
+            borderRadius: "8px",
+            border: "1px solid var(--Neutral-40, #BDBDBD)",
+            fontFamily: "GitLab Sans, sans-serif",
+            fontSize: "14px",
+            letterSpacing: "0.28px",
+            fontWeight: "700",
+            marginLeft: "8px",
+            marginTop: "12px",
+          }}
+        >
+          <img
+            src="/asset/detail/gopay.svg"
+            alt="Bank gopay"
+            style={{
+              width: "20px",
+              height: "20px",
+              marginRight: "10px",
+            }}
+          />
+          Gopay
+        </button>
       </div>
       <div className={styles["lineq"]}></div>
 
       <div className="d-flex justify-content-around">
-        <span>Sub Total</span>
-        <span> $25.99</span>
+        <span className={styles["set"]}>Sub Total</span>
+        <span className={styles["priceq"]}> $25.99</span>
       </div>
 
       <div class="d-flex flex-column mb-3">
-        <button class="p-2">Buy now</button>
-        <button class="p-2">Add to Cart</button>
+        <button
+          class="p-2"
+          style={{
+            width: "220px",
+            padding: "10px 16px",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "8px",
+            borderRadius: "8px",
+            background: "var(--Primary-70, #00A4DF)",
+            border: "none",
+            color: "white",
+            marginLeft: "8px",
+            fontFamily: "GitLab Sans, sans-serif",
+            fontSize: "14px",
+            fontWeight: 600,
+            marginTop: "12px",
+          }}
+        >
+          Buy now
+        </button>
+        <button
+          class="p-2"
+          style={{
+            width: "220px",
+            padding: "10px 16px",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "8px",
+            borderRadius: "8px",
+            border: "1px solid var(--Primary-70, #00A4DF)",
+            marginLeft: "8px",
+            marginTop: "12px",
+            background: "white",
+            color: "var(--Primary-90, #00688D)",
+            fontFamily: "GitLab Sans, sans-serif",
+            fontSize: "14px",
+            fontStyle: "normal",
+            fontWeight: 600,
+          }}
+        >
+          Add to Cart
+        </button>
       </div>
 
       <div class="d-flex justify-content-around">

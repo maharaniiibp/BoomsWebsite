@@ -101,13 +101,10 @@
   transition: transform 0.4s ease, margin 0.4s ease;
   margin-right: 14px;
 }
-
 .bulat:active {
   transform: scale(2.2);
   margin: 5px;
 }
-
-/* White */
 .white {
   width: 35px;
   height: 35px;
@@ -117,13 +114,10 @@
   transition: transform 0.4s ease, margin 0.4s ease;
   margin-right: 14px;
 }
-
 .white:active {
   transform: scale(2.2);
   margin: 5px;
 }
-
-/* Navy */
 .navy {
   width: 35px;
   height: 35px;
@@ -137,8 +131,6 @@
   transform: scale(2.2);
   margin: 5px;
 }
-
-/* Grey */
 .grey {
   width: 35px;
   height: 35px;
@@ -148,7 +140,6 @@
   transition: transform 0.4s ease, margin 0.4s ease;
   margin-right: 14px;
 }
-
 .grey:active {
   transform: scale(2.2);
   margin: 5px;
@@ -220,7 +211,6 @@
   font-weight: 600;
   border-bottom: 2px solid #004a65; /* Misalnya, membuat garis bawah hitam sebesar 2px */
 }
-
 .kotak {
   border-radius: 8px;
   border: 1px solid var(--Neutral-40, #bdbdbd);
@@ -285,4 +275,36 @@
   font-family: "GitLab Sans", sans-serif;
   font-size: 12px;
   letter-spacing: 0.24px;
+}
+.priceq {
+  color: var(--Primary-70, #00A4DF);
+font-family: "GitLab Sans", sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+letter-spacing: 0.36px;
+margin-top: 10px;
+margin-right: 8px;
+}
+.buttonq {
+  display: flex;
+  width: 220px;
+  justify-content: left;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  border:  1px solid var(--Primary-70, #00A4DF);  
+  color: var(--Primary-90, #00688D);
+  font-family: "GitLab Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  font-weight: 700;
+  margin-left: 8px;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonq:hover {
+  background-color: var(--Primary-20, #E6F4F1);
+  cursor: pointer;
 }

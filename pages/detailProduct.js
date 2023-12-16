@@ -2,6 +2,7 @@ import styles from "../styles/detailProduct.module.css";
 import React, { useState, useEffect } from "react";
 import QuantitySelector from "@/components/quantity";
 import Product from "../components/productcard";
+import Overview from "./overview";
 
 export default function Index() {
   const stars = [1, 2, 3, 4, 5]; // Misalnya, array dengan nilai dari 1 sampai 5
@@ -270,7 +271,7 @@ export default function Index() {
         </a>
       </div>
       <div style={{ marginTop: "100px", marginBottom: "80px" }}>
-        <Product />
+      <Overview/>
       </div>
     </div>
   );
