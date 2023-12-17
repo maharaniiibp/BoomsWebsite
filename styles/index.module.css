@@ -8,6 +8,7 @@
     .hero1 img {
         width: 100%;
         z-index: 1;
+        margin-top: 120px;
     }
     .bungkus-text-1 {
         padding-left: 80px;
@@ -58,6 +59,18 @@
         width: 423px;
         align-items: center;
     }
+    .animated-text {
+        animation: scaleText 1s infinite alternate;
+      }
+      
+      @keyframes scaleText {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.1);
+        }
+      }
     .hero1 h3 {
         font-size: 16px;
         text-align: center;
@@ -181,7 +194,11 @@
         width: 325px;
         margin-bottom: 20px;
         position: relative;
+        transition: transform 0.2s ease-in-out;
     }
+    .card:hover {
+        transform: scale(1.05);
+      }
     .card .black{
         margin-top: 50px;
     }

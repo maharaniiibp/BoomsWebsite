@@ -3,26 +3,16 @@
     }
     
   .navbar-logo{
-      /* z-index: 9999; */
+      z-index: 1000;
       margin-left: -4px;
-      margin-top: 10px;
   }
   .navbar-menu{
-    margin-top: 10px;
       font-size: 14px;
       font-weight: 600;
   }
   .icon-navbar{
       margin-right: -15px;
-      margin-top: 10px;
   }
-  .fixed-navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 8888; /* Sesuaikan dengan kebutuhan jika ada elemen lain dengan posisi yang sama */
-  }
-  
   
 }
 

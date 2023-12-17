@@ -2,20 +2,31 @@
   .sale-banner {
       justify-content: center;
       background: linear-gradient(180deg, #00A4DF 0%, #0086B6 138.5%);
-    
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #f9c;
-        z-index: 9999;
-
+      z-index: 1000;
+      overflow: hidden;
+      display: flex;
     }
-    
+    .fixed-banner {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000; /* Adjust the z-index as needed */
+    }
     .text {
       text-align: center;
-      color: white;
+      color: #FAFAFA;
       font-size: 18px;
       font-weight: 600;
       font-family: "GitLab Sans", sans-serif;
+      animation: moveText 10s linear infinite;
+    }
+
+    @keyframes moveText {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
     }
 }

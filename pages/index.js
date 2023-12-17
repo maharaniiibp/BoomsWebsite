@@ -8,6 +8,7 @@ import Product from "../components/productcard";
 import Bundaran from "@/components/bundaran";
 import Image from "next/image";
 import { Row, Col } from "react-bootstrap";
+import Overview from "./overview";
 
 export default function Index() {
   const [jsonIcon, setJsonIcon] = useState([]);
@@ -20,12 +21,12 @@ export default function Index() {
   return (
     <>
       {/* section 1 */}
-      <section className={styles["hero1"]}>
-        <img src="../../asset/hero-banner.png"></img>
-        <div className={styles["bungkus-text-1"]}>
+      <section className={styles['hero1']}>
+        <img src='../../asset/hero-banner.png'></img>
+        <div className={styles['bungkus-text-1']}>
           <h1>NEW STYLE JUST A LAUNCHED</h1>
-          <h2>
-            <div className={styles["atas"]}>BOOMS</div>
+          <h2 className={styles['animated-text']}>
+            <div className={styles['atas']}>BOOMS</div>
             <p>SHOCKS</p>
           </h2>
           <h3>Brings Your Feet & Legs Back to Life</h3>
@@ -64,63 +65,32 @@ export default function Index() {
       </section>
 
       {/* section 3 */}
-      <section className={styles["hero3"]}>
-        <h1 className="mx-auto">
-          Party like a sockstar with all of our Unisex Styles
-        </h1>
-        <div className={styles["card-container"]}>
+      <section className={styles['hero3']}>
+        <h1 className="mx-auto">Party like a sockstar with all of our Unisex Styles</h1>
+        <div className={styles['card-container']}>
           {jsonHero.map((item, index) => (
             <a key={index} className="group">
-              <div className={styles["card"]}>
-                <img
-                  className={styles["black"]}
-                  src={item.img}
-                  alt={`Image ${index}`}
-                />
-                <img
-                  className={styles["like"]}
-                  src="../../asset/icon.png"
-                ></img>
-                <div className={styles["cover"]}>
-                  <h1 className="p-3">Jetsetter Blacks : 16 - 20 mmHg</h1>
+              <div className={styles['card']}>
+                <img className={styles['black']} src={item.img} alt={`Image ${index}`} />
+                <img className={styles['like']} src='../../asset/icon.png' ></img>
+                <div className={styles['cover']}>
+                  <h1 className='p-3'>
+                    Jetsetter Blacks : 16 - 20 mmHg
+                  </h1>
                   <h2>
-                    <div className={styles["bungkus-card"]}>
-                      <img
-                        className={styles["star1"]}
-                        src="../../asset/star1.png"
-                        alt={`Star1 ${index}`}
-                      />
-                      <img
-                        className={styles["star1"]}
-                        src="../../asset/star1.png"
-                        alt={`Star1 ${index}`}
-                        style={{ marginLeft: "5px" }}
-                      />
-                      <img
-                        className={styles["star1"]}
-                        src="../../asset/star1.png"
-                        alt={`Star1 ${index}`}
-                        style={{ marginLeft: "5px" }}
-                      />
-                      <img
-                        className={styles["star1"]}
-                        src="../../asset/star1.png"
-                        alt={`Star1 ${index}`}
-                        style={{ marginLeft: "5px" }}
-                      />
-                      <img
-                        className={styles["star1"]}
-                        src="../../asset/star2.png"
-                        alt={`Star2 ${index}`}
-                        style={{ marginLeft: "5px" }}
-                      />
+                    <div className={styles['bungkus-card']}>
+                      <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} />
+                      <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
+                      <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
+                      <img className={styles['star1']} src='../../asset/star1.png' alt={`Star1 ${index}`} style={{ marginLeft: '5px' }} />
+                      <img className={styles['star1']} src='../../asset/star2.png' alt={`Star2 ${index}`} style={{ marginLeft: '5px' }} />
                     </div>
                     <p>1,2k sold out</p>
                   </h2>
                   <h3>
-                    <div className={styles["bungkus-price"]}>
-                      <p className={styles["price1"]}>$25.99</p>
-                      <p className={styles["price2"]}>$25.99</p>
+                    <div className={styles['bungkus-price']}>
+                      <p className={styles['price1']}>$25.99</p>
+                      <p className={styles['price2']}>$25.99</p>
                     </div>
                     <button>SALE</button>
                   </h3>
@@ -129,6 +99,7 @@ export default function Index() {
             </a>
           ))}
         </div>
+
       </section>
 
       {/* section 4 */}
@@ -136,68 +107,10 @@ export default function Index() {
       <div style={{ paddingBottom: "100px" }}></div>
 
       {/* section 5 */}
-      <div className="d-flex mb-3">
-        <h3
-          className="p-2"
-          style={{
-            color: "var(--neutral-100, #434040)",
-            fontFamily: "GitLab Sans, sans-serif",
-            fontSize: "32px",
-            fontStyle: "normal",
-            fontWeight: 600,
-            lineHeight: "56px",
-            letterSpacing: "0.64px",
-            marginLeft: "105px",
-          }}
-        >
-          Overview our product
-        </h3>
-
-        <div
-          className="p-2"
-          style={{ fontFamily: "GitLab Sans, sans-serif", marginTop: "12px" }}
-        >
-          <Dropdown>
-            <Dropdown.Toggle variant="primary" id="dropdown-basic">
-              SHOP WOMAN
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item href="#">Jetsetter Blacks</Dropdown.Item>
-              <Dropdown.Item href="#">Jetsetter Blacks</Dropdown.Item>
-              <Dropdown.Item href="#">Jetsetter Blacks</Dropdown.Item>
-              <Dropdown.Item href="#">Jetsetter Blacks</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </div>
-        <button
-          className="ms-auto p-2"
-          style={{
-            marginRight: "113px",
-            height: "40px",
-            width: "130px",
-            marginTop: "25px",
-            alignItems: "center",
-            borderRadius: "8px",
-            border: "1px solid var(--primary-70, #00A4DF)",
-            backgroundColor: "white",
-            color: "var(--primary-90, #00688D)",
-            fontFamily: "GitLab Sans, sans-serif",
-            fontSize: "14px",
-            fontStyle: "normal",
-            fontWeight: 600,
-            lineHeight: "20px",
-          }}
-        >
-          See all
-        </button>
-      </div>
-
-      <div className="pb-lg-3"></div>
-      <Product />
-      <div style={{ paddingBottom: "150px" }}></div>
+      <Overview />
 
       {/* section 6 */}
-      <div className="bg-cover h-auto bg-center">
+      <div className="bg-cover h-auto bg-center" style={{marginTop: '100px'}}>
         <Image
           src="/asset/testimoni.png"
           alt="bg"
@@ -209,7 +122,7 @@ export default function Index() {
           className="bg-white mb-3 p-3"
           style={{
             position: "absolute",
-            top: "690%",
+            top: "678%",
             transform: "translate(62%, -153%)",
             width: "568px",
             borderRadius: "8px",
@@ -285,7 +198,7 @@ export default function Index() {
       <div style={{ paddingBottom: "150px" }}></div>
 
       {/* section 7 */}
-      <div className="d-flex">
+      <div className="d-flex" style={{marginTop: '-90px'}}>
         <div>
           <h3 className={styles["shop"]}>SHOP ALL DESIGN</h3>
           <h2 className={styles["guarante"]}>Satisfaction Guarantee</h2>
@@ -311,7 +224,7 @@ export default function Index() {
           }}
         />
       </div>
-      <div style={{ paddingBottom: "150px" }}></div>
+      <div style={{ paddingBottom: "70px" }}></div>
     </>
   );
 }

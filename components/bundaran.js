@@ -14,6 +14,7 @@ const Bundaran = () => {
           fontWeight: 600,
           lineHeight: "56px",
           letterSpacing: "0.64px",
+          marginTop: "-20px"
         }}
       >
         Deal Alert! Get free shipping and bulk <br />

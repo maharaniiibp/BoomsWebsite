@@ -9,7 +9,7 @@ export default function Index() {
 
   useEffect(() => {}, []);
   return (
-    <div>
+    <div style={{marginTop: '100px'}}>
       <div className="d-flex justify-content-start ">
         {/* section gambar */}
         <div className={styles["kakibiru"]}>
