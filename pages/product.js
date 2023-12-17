@@ -125,7 +125,7 @@ const Product = () => {
     });
   };
 
-// Dropdown PRICE
+  // Dropdown PRICE
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle dropdown function
@@ -152,7 +152,7 @@ const Product = () => {
       <section className={styles['product-2']}>
         <h1>Our selling products show here</h1>
         <div className={styles['cover-product']}>
-          <div className={styles['dropdown']} style={{marginTop: '10px'}}>
+          <div className={styles['dropdown']}>
 
             {/* GENDER */}
             <div className={styles['wrapper']}>
@@ -257,7 +257,7 @@ const Product = () => {
             {/* PRICE */}
             <div className={styles.collapsibleDropdown}>
               <div className={styles.dropdownHeader} onClick={toggleDropdown}>
-                <span style={{fontWeight: '600'}}>Price</span>
+                <span style={{ fontWeight: '600' }}>Price</span>
                 <img
                   src="../../asset/arrowmudun.png"
                   style={{ height: '18px', marginTop: '5px' }}
@@ -266,7 +266,7 @@ const Product = () => {
                 />
               </div>
               {isOpen && (
-                <div className={styles.dropdownContent} style={{marginTop: '20px'}}>
+                <div className={styles.dropdownContent} style={{ marginTop: '20px' }}>
                   {/* Isi dropdown ditempatkan di sini */}
                   {/* <p>Contoh isi dropdown</p>
           <button>hai semua</button> */}
@@ -339,7 +339,7 @@ const Product = () => {
                     >
                       $50 ++
                     </button>
-                    <div className={styles['line']} style={{marginTop: '30px', marginBottom: '8px'}}></div>
+                    <div className={styles['line']} style={{ marginTop: '30px', marginBottom: '8px' }}></div>
                   </div>
                 </div>
               )}
@@ -387,9 +387,9 @@ const Product = () => {
                           <p className={styles['price1']}>${item.price}</p>
                           <p className={`${styles['price2']} ${styles['strikethrough']}`}>$25.99</p>
                         </div>
-                        <button onClick={() => window.location.href="/detailProduct"}>
-  SALE
-</button>
+                        <button onClick={() => window.location.href = "/detailProduct"}>
+                          SALE
+                        </button>
 
                       </h3>
                     </div>
@@ -417,7 +417,7 @@ const Product = () => {
         </div>
       </section>
 
-      <section style={{marginBottom: '90px'}}>
+      <section style={{ marginBottom: '100px' }}>
         <Overview />
       </section>
 

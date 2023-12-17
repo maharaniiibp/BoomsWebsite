@@ -92,7 +92,9 @@ export default function Index() {
                       <p className={styles['price1']}>$25.99</p>
                       <p className={styles['price2']}>$25.99</p>
                     </div>
-                    <button>SALE</button>
+                    <button onClick={() => window.location.href = "/detailProduct"}>
+                      SALE
+                    </button>
                   </h3>
                 </div>
               </div>
@@ -110,7 +112,7 @@ export default function Index() {
       <Overview />
 
       {/* section 6 */}
-      <div className="bg-cover h-auto bg-center" style={{marginTop: '100px'}}>
+      <div className="bg-cover h-auto bg-center" style={{ marginTop: '100px' }}>
         <Image
           src="/asset/testimoni.png"
           alt="bg"
@@ -193,12 +195,12 @@ export default function Index() {
             </div>
           </Row>
         </div>
-              
+
       </div>
       <div style={{ paddingBottom: "150px" }}></div>
 
       {/* section 7 */}
-      <div className="d-flex" style={{marginTop: '-90px'}}>
+      <div className="d-flex" style={{ marginTop: '-90px' }}>
         <div>
           <h3 className={styles["shop"]}>SHOP ALL DESIGN</h3>
           <h2 className={styles["guarante"]}>Satisfaction Guarantee</h2>

@@ -2,8 +2,7 @@
 
     /* SECTION 1 */
     .hero1 {
-        padding: 70px;
-        
+        padding: 70px;        
     }
     .hero1 img {
         width: 100%;
@@ -20,7 +19,7 @@
     }
     .hero1 h1 {
         background-color: #FFC52E;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
         font-size: 16px;
         width: 423px;
@@ -44,7 +43,7 @@
         font-size: 96px;
         font-weight: 400;
         font-family: 'Baloo 2', sans-serif;
-        color: white;
+        color: #FFFFFF;
         text-align: center;
         margin-top: 15px;
     }
@@ -53,7 +52,7 @@
         margin-top: -20px;
         font-family: 'Baloo 2', sans-serif;
         font-size: 96px;
-        color: white;
+        color: #FFFFFF;
         justify-content: center;
         text-align: center;
         width: 423px;
@@ -75,7 +74,7 @@
         font-size: 16px;
         text-align: center;
         width: 423px;
-        color: white;
+        color: #FFFFFF;
         margin-top: -20px;
         font-family: "GitLab Sans", sans-serif;
         font-weight: 600;
@@ -92,7 +91,7 @@
         color: #004A65;
         font-weight: 600;
         border: none;
-        border-radius: 5px;
+        border-radius: 8px;
         margin-left: 80px;
         font-family: "GitLab Sans", sans-serif;
         transition: background-color 0.3s; /* Efek transisi untuk perubahan warna latar belakang */
