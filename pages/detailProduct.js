@@ -1,7 +1,7 @@
 import styles from "../styles/detailProduct.module.css";
 import React, { useState, useEffect } from "react";
 import QuantitySelector from "@/components/quantity";
-import Product from "../components/productcard";
+// import Product from "../components/productcard";
 import Overview from "./overview";
 
 export default function Index() {

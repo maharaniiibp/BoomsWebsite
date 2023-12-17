@@ -245,6 +245,8 @@
   margin-top: 8px;
 }
 .click {
+  margin-right: 70px;
+  margin-left: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,14 +279,14 @@
   letter-spacing: 0.24px;
 }
 .priceq {
-  color: var(--Primary-70, #00A4DF);
-font-family: "GitLab Sans", sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-letter-spacing: 0.36px;
-margin-top: 10px;
-margin-right: 8px;
+  color: var(--Primary-70, #00a4df);
+  font-family: "GitLab Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.36px;
+  margin-top: 10px;
+  margin-right: 8px;
 }
 .buttonq {
   display: flex;
@@ -293,8 +295,8 @@ margin-right: 8px;
   align-items: center;
   background: white;
   border-radius: 8px;
-  border:  1px solid var(--Primary-70, #00A4DF);  
-  color: var(--Primary-90, #00688D);
+  border: 1px solid var(--Primary-70, #00a4df);
+  color: var(--Primary-90, #00688d);
   font-family: "GitLab Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 0.28px;
@@ -305,6 +307,6 @@ margin-right: 8px;
 }
 
 .buttonq:hover {
-  background-color: var(--Primary-20, #E6F4F1);
+  background-color: var(--Primary-20, #e6f4f1);
   cursor: pointer;
 }
