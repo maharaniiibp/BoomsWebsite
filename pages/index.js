@@ -200,7 +200,7 @@ export default function Index() {
         </div>
 
       </div>
-      <div style={{ paddingBottom: "150px" }}></div> */}
+      <div style={{ paddingBottom: "150px" }}></div> 
 
       {/* section 7 */}
       <div className="d-flex" style={{marginTop: '-90px'}}>
@@ -229,7 +229,7 @@ export default function Index() {
           }}
         />
       </div>
-      <div style={{ paddingBottom: "70px" }}></div> */}
+      <div style={{ paddingBottom: "70px" }}></div> 
     </>
   );
 }
