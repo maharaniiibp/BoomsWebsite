@@ -116,8 +116,7 @@
         /* display: flex; */
         align-items: center;
         justify-content: space-between;
-        margin-top: 10px;
-
+        margin-top: 50px;
       }     
       .product-2 .dropdown1{
         border: 2px solid #00A4DF;
