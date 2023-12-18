@@ -136,7 +136,7 @@ const Product = () => {
 
   return (
     <>
-      <section className={styles['product-1']}>
+      {/* <section className={styles['product-1']}>
         <img src='../../asset/banner-product.png' alt='Product Banner'></img>
         <div className={styles['bungkus-text-1']}>
           <h1>NEW STYLE JUST LAUNCHED</h1>
@@ -147,7 +147,7 @@ const Product = () => {
           <h3>Brings Your Feet & Legs Back to Life</h3>
           <button>SHOP NOW</button>
         </div>
-      </section>
+      </section> */}
 
       <section className={styles['product-2']}>
         <h1>Our selling products show here</h1>
@@ -164,7 +164,7 @@ const Product = () => {
                     src="../../asset/arrowmudun.png"
                     alt="Arrow Icon"
                     className={styles['arrow-icon']}
-                    style={{ marginLeft: '130px', width: '18px' }}
+                    style={{ marginLeft: '160px', width: '18px' }}
                   />
                 </label>
                 <div className={styles['collabsible-text']}>
@@ -200,7 +200,7 @@ const Product = () => {
                     src="../../asset/arrowmudun.png"
                     alt="Arrow Icon"
                     className={styles['arrow-icon']}
-                    style={{ marginLeft: '155px', width: '18px' }}
+                    style={{ marginLeft: '185px', width: '18px' }}
                   />
                 </label>
                 <div className={styles['collabsible-text']}>
@@ -369,7 +369,7 @@ const Product = () => {
                     <img className={styles['black']} src={item.img} />
                     <img className={styles['like']} style={{ height: '32px' }} src='../../asset/icon.png' alt="like icon" />
                     <div className={styles['cover']}>
-                      <h1 className='p-3'>
+                      <h1 className=''>
                         Jetsetter Blacks : 16 - 20 mmHg
                       </h1>
                       <h2>
@@ -402,7 +402,7 @@ const Product = () => {
 
       </section>
 
-      <section className={styles['product-3']}>
+      {/* <section className={styles['product-3']}>
         <div className={styles['bungkus-judul']}>
           <div className={styles['kanan']}>
             <h1>Overview Our Product</h1>
@@ -419,7 +419,7 @@ const Product = () => {
 
       <section style={{ marginBottom: '100px' }}>
         <Overview />
-      </section>
+      </section> */}
 
 
     </>
