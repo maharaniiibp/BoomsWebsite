@@ -150,3 +150,173 @@
     }
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  @media (max-width: 768px) {
+    .bungkus-overview{
+        display: flex;
+    }
+    .bungkus-overview .button-new{
+        margin-left: -258px;
+        background: #FFC52E;
+        color: white;
+        width: 196px;
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+        font-family: "GitLab Sans", sans-serif;
+        margin-top: 30px;
+    }
+    .booms{
+        font-size: 48px;
+        font-weight: 400;
+        font-family: 'Baloo 2', sans-serif;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: -370px;
+        color: white;
+    }
+    .shocks{
+        font-weight: 700;
+        margin-top: -20px;
+        font-family: 'Baloo 2', sans-serif;
+        font-size: 48px;
+        justify-content: center;
+        text-align: center;
+        width: 423px;
+        align-items: center;
+        margin-left: -370px;
+        color: white;
+    }
+    .bungkus-overview .bring{
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "GitLab Sans", sans-serif;
+        width: 210px;
+        margin-left: -270px;
+        text-align: center;
+        margin-top: 85px;
+    }
+    .card {
+      width: 236px;
+      margin-bottom: 20px;
+      position: relative;
+      margin-left: 32px;
+      margin-top: -6px;
+    }
+  
+    .card .black {
+      /* Tambahkan style sesuai kebutuhan */
+    }
+  
+    .card .like {
+      position: absolute;
+      top: 20px;
+      z-index: 1;
+      padding: 2px;
+      margin-left: -65px;
+    }
+  
+    .card .cover {
+      margin-top: -120px;
+      position: absolute;
+      width: 200px;
+      margin-left: -30px;
+    }
+  
+    .card h1 {
+      font-size: 12px;
+      font-weight: 600;
+      color: #434040;
+      font-family: "GitLab Sans", sans-serif;
+      width: 300px;
+      text-align: start;
+      margin-top: 50px;
+    }
+  
+    .hero3 .star1 {
+      width: 12px;
+    }
+  
+    .bungkus-card {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .bungkus-card img {
+      height: 16px;
+    }
+  
+    .card h2 {
+      /* padding: 15px; */
+      margin-top: -20px;
+      margin-left: 15px;
+      display: flex;
+    
+    }
+  
+    .card h2 p {
+      font-size: 12px;
+      color: #434040;
+      font-weight: 400;
+      margin-left: 30px;
+    }
+  
+    .card h3 {
+      padding: 15px;
+      margin-top: -30px;
+      display: flex;
+    }
+  
+    .bungkus-price {
+      display: flex;
+    }
+  
+    .price1 {
+      font-size: 13.07px;
+      color: #00A4DF;
+    }
+  
+    .price2 {
+      color: #BDBDBD;
+      font-size: 13.07px;
+      margin-left: 10px;
+    }
+  
+    .card button {
+      font-family: "GitLab Sans", sans-serif;
+      font-weight: 600;
+      font-size: 8px;
+      width: 44.24px;
+      height: 23.62px;
+      color: #F9FCFE;
+      background-color: #FFB800;
+      border-radius: 5px;
+      border: none;
+      margin-left: auto;
+      margin-right: -12px;
+    }
+  
+    .card button:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+  

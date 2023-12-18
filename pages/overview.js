@@ -32,7 +32,7 @@ export default function Overview() {
   return (
     <div className={styles['bungkus-overview']}>
       <img src='../../asset/home/product.png' alt="Product overview" />
-      <div>        
+      <div>
         <button className={styles['button-new']}>NEW STYLE JUST LAUNCHED</button>
         <h1 className={styles['booms']}>BOOMS</h1>
         <h2 className={styles['shocks']}>SHOCKS</h2>
@@ -49,7 +49,7 @@ export default function Overview() {
                   <Carousel.Caption>
                     <div className={styles['cover']}>
                       <h1 className='p-3'>
-                      Jetsetter Blacks : 16 - 20 mmHg
+                        Jetsetter Blacks : 16 - 20 mmHg
                       </h1>
                       <h2>
                         <div className={styles['bungkus-card']}>
@@ -66,7 +66,9 @@ export default function Overview() {
                           <p className={styles['price1']}>$25.99</p>
                           <p className={styles['price2']}>$25.99</p>
                         </div>
-                        <button>SALE</button>
+                        <button onClick={() => window.location.href = "/detailProduct"}>
+                          SALE
+                        </button>
                       </h3>
                     </div>
                   </Carousel.Caption>

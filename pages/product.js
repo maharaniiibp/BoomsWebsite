@@ -125,7 +125,7 @@ const Product = () => {
     });
   };
 
-// Dropdown PRICE
+  // Dropdown PRICE
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle dropdown function
@@ -136,7 +136,7 @@ const Product = () => {
 
   return (
     <>
-      <section className={styles['product-1']}>
+      {/* <section className={styles['product-1']}>
         <img src='../../asset/banner-product.png' alt='Product Banner'></img>
         <div className={styles['bungkus-text-1']}>
           <h1>NEW STYLE JUST LAUNCHED</h1>
@@ -147,12 +147,12 @@ const Product = () => {
           <h3>Brings Your Feet & Legs Back to Life</h3>
           <button>SHOP NOW</button>
         </div>
-      </section>
+      </section> */}
 
       <section className={styles['product-2']}>
         <h1>Our selling products show here</h1>
         <div className={styles['cover-product']}>
-          <div className={styles['dropdown']} style={{marginTop: '10px'}}>
+          <div className={styles['dropdown']}>
 
             {/* GENDER */}
             <div className={styles['wrapper']}>
@@ -164,7 +164,7 @@ const Product = () => {
                     src="../../asset/arrowmudun.png"
                     alt="Arrow Icon"
                     className={styles['arrow-icon']}
-                    style={{ marginLeft: '130px', width: '18px' }}
+                    style={{ marginLeft: '160px', width: '18px' }}
                   />
                 </label>
                 <div className={styles['collabsible-text']}>
@@ -200,7 +200,7 @@ const Product = () => {
                     src="../../asset/arrowmudun.png"
                     alt="Arrow Icon"
                     className={styles['arrow-icon']}
-                    style={{ marginLeft: '155px', width: '18px' }}
+                    style={{ marginLeft: '185px', width: '18px' }}
                   />
                 </label>
                 <div className={styles['collabsible-text']}>
@@ -257,7 +257,7 @@ const Product = () => {
             {/* PRICE */}
             <div className={styles.collapsibleDropdown}>
               <div className={styles.dropdownHeader} onClick={toggleDropdown}>
-                <span style={{fontWeight: '600'}}>Price</span>
+                <span style={{ fontWeight: '600' }}>Price</span>
                 <img
                   src="../../asset/arrowmudun.png"
                   style={{ height: '18px', marginTop: '5px' }}
@@ -266,7 +266,7 @@ const Product = () => {
                 />
               </div>
               {isOpen && (
-                <div className={styles.dropdownContent} style={{marginTop: '20px'}}>
+                <div className={styles.dropdownContent} style={{ marginTop: '20px' }}>
                   {/* Isi dropdown ditempatkan di sini */}
                   {/* <p>Contoh isi dropdown</p>
           <button>hai semua</button> */}
@@ -339,7 +339,7 @@ const Product = () => {
                     >
                       $50 ++
                     </button>
-                    <div className={styles['line']} style={{marginTop: '30px', marginBottom: '8px'}}></div>
+                    <div className={styles['line']} style={{ marginTop: '30px', marginBottom: '8px' }}></div>
                   </div>
                 </div>
               )}
@@ -369,7 +369,7 @@ const Product = () => {
                     <img className={styles['black']} src={item.img} />
                     <img className={styles['like']} style={{ height: '32px' }} src='../../asset/icon.png' alt="like icon" />
                     <div className={styles['cover']}>
-                      <h1 className='p-3'>
+                      <h1 className=''>
                         Jetsetter Blacks : 16 - 20 mmHg
                       </h1>
                       <h2>
@@ -387,9 +387,9 @@ const Product = () => {
                           <p className={styles['price1']}>${item.price}</p>
                           <p className={`${styles['price2']} ${styles['strikethrough']}`}>$25.99</p>
                         </div>
-                        <button onClick={() => window.location.href="/detailProduct"}>
-  SALE
-</button>
+                        <button onClick={() => window.location.href = "/detailProduct"}>
+                          SALE
+                        </button>
 
                       </h3>
                     </div>
@@ -402,7 +402,7 @@ const Product = () => {
 
       </section>
 
-      <section className={styles['product-3']}>
+      {/* <section className={styles['product-3']}>
         <div className={styles['bungkus-judul']}>
           <div className={styles['kanan']}>
             <h1>Overview Our Product</h1>
@@ -417,9 +417,9 @@ const Product = () => {
         </div>
       </section>
 
-      <section style={{marginBottom: '90px'}}>
+      <section style={{ marginBottom: '100px' }}>
         <Overview />
-      </section>
+      </section> */}
 
 
     </>
