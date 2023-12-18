@@ -3,86 +3,88 @@ import React, { useState, useEffect } from "react";
 import QuantitySelector from "@/components/quantity";
 // import Product from "../components/productcard";
 import Overview from "./overview";
+import ProductDescription from "@/components/description";
 
 export default function Index() {
   const stars = [1, 2, 3, 4, 5]; // Misalnya, array dengan nilai dari 1 sampai 5
 
   useEffect(() => {}, []);
   return (
-    <div style={{marginTop: '100px'}}>
+    <div className={styles.container}>
+    <div style={{ marginTop: "100px", display: "flex", flexDirection: "column", alignItems: "center" }}>
       <div className="d-flex justify-content-start ">
         {/* section gambar */}
-        <div className={styles["kakibiru"]}>
+        <div className={styles.kakibiru} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           <img
-            style={{ width: "331px", height: "384px" }}
+            // style={{ width: "331px", height: "384px" }}
             src="/asset/detail/kakibiru.png"
             className="img-fluid"
             alt="Product Image"
           />
           <div>
-            <div className={styles["det1dan2"]}>
+          <div className={styles["det1dan2"]} style={{ display: "flex", justifyContent: "center" }}>
               <img
-                style={{ width: "148px", height: "148px", marginRight: "38px" }}
+                style={{ marginRight: "38px" }}
                 src="/asset/detail/1.png"
                 className="img-fluid"
                 alt="Product Image"
               />
               <img
-                style={{ width: "148px", height: "148px" }}
+                // style={{ width: "148px", height: "148px" }}
                 src="/asset/detail/2.png"
                 className="img-fluid"
                 alt="Product Image"
               />
             </div>
-
+           
             {/* gambar ke bawah */}
-            <div className={styles["det1dan2"]}>
+            <div className={styles["det1dan2"]} style={{ display: "flex", justifyContent: "center" }}>
               <img
-                style={{ width: "148px", height: "148px", marginRight: "38px" }}
+                style={{ marginRight: "38px" }}
                 src="/asset/detail/3.png"
                 className="img-fluid"
                 alt="Product Image"
               />
               <img
-                style={{ width: "148px", height: "148px" }}
-                src="/asset/detail/1.png"
+                // style={{ width: "148px", height: "148px" }}
+                src="/asset/detail/gambar23.png"
                 className="img-fluid"
                 alt="Product Image"
               />
             </div>
-
-            <div className={styles["det1dan2"]}>
+            
+            <div className={styles["det1dan2"]} style={{ display: "flex", justifyContent: "center" }}>
               <img
-                style={{ width: "148px", height: "148px", marginRight: "38px" }}
+                style={{ marginRight: "38px" }}
                 src="/asset/detail/2.png"
                 className="img-fluid"
                 alt="Product Image"
               />
               <img
-                style={{ width: "148px", height: "148px" }}
+                // style={{ width: "148px", height: "148px" }}
                 src="/asset/detail/3.png"
                 className="img-fluid"
                 alt="Product Image"
               />
             </div>
 
-            <div className={styles["det1dan2"]}>
+            <div className={styles["det1dan2"]} style={{ display: "flex", justifyContent: "center" }}>
               <img
-                style={{ width: "148px", height: "148px", marginRight: "38px" }}
+                style={{ marginRight: "38px" }}
                 src="/asset/detail/3.png"
                 className="img-fluid"
                 alt="Product Image"
               />
               <img
-                style={{ width: "148px", height: "148px" }}
-                src="/asset/detail/1.png"
+                // style={{ width: "148px", height: "148px" }}
+                src="/asset/detail/gambar23.png"
                 className="img-fluid"
                 alt="Product Image"
               />
             </div>
           </div>
         </div>
-        <div style={{ paddingBottom: "50px" }}></div>
+        {/* <div style={{ paddingBottom: "50px" }}></div> */}
 
         {/* section 1 */}
         <div className="d-flex justify-content-start">
@@ -166,29 +168,10 @@ export default function Index() {
 
             {/* artikel */}
             <div className="artikel">
-              <button className={styles["deskripsi"]}>
-                Description
-                <img
-                  style={{ width: "18px", height: "18px", marginLeft: "290px" }}
-                  src="/asset/detail/arrow-down.svg"
-                  className="img-fluid"
-                  alt="Product Image"
-                />
-              </button>
-              <p className={styles["fancy"]}>
-                Fancy feet can be happy feet, too. Try our dot <br />
-                collection for something a little more formal, but just as
-                effective.
-                <br />
-                <br />
-                Make every moment sparkle with Wellow's Midnight Confetti
-                collection.
-                <br />
-                <br />
-                At 18-25 mmHg, our socks gently wrap around feet, ankles, and
-                legs to provide the support that stimulates circulation without
-                feeling tight. We call that the BoomsFit. 
-              </p>
+              <div style={{ marginBottom: "50px" }}>
+                <ProductDescription />
+              </div>
+
               <div style={{ marginTop: "-10px" }}>
                 <button className={styles["fabric"]}>
                   Fabric & Care
@@ -196,7 +179,7 @@ export default function Index() {
                     style={{
                       width: "18px",
                       height: "18px",
-                      marginLeft: "290px",
+                      marginLeft: "300px",
                     }}
                     src="/asset/detail/arrow-down.svg"
                     className="img-fluid"
@@ -208,7 +191,7 @@ export default function Index() {
               <button className={styles["fabric"]}>
                 Our Guarantee
                 <img
-                  style={{ width: "18px", height: "18px", marginLeft: "290px" }}
+                  style={{ width: "18px", height: "18px", marginLeft: "300px" }}
                   src="/asset/detail/arrow-down.svg"
                   className="img-fluid"
                   alt="Product Image"
@@ -224,55 +207,33 @@ export default function Index() {
         </div>
       </div>
       {/* section 4*/}
-      <div
-        class="d-flex flex-column mb-3"
-        style={{
-          position: "relative",
-          alignItems: "center",
-          marginTop: "150px",
-        }}
-      >
-        <h3
-          style={{
-            color: "#434040",
-            fontFamily: "GitLab Sans, sans-serif",
-            fontSize: "32px",
-            fontWeight: 600,
-            letterSpacing: "0.64px",
-          }}
-        >
-          Easy To Stretch
-        </h3>
+      <div className="dflex" style={{ position: "relative", alignItems: "center", marginTop: "300px" }}>
+  <h3 style={{ textAlign:"center", color: "#434040", fontFamily: "GitLab Sans, sans-serif", fontSize: "32px", fontWeight: 600, letterSpacing: "0.64px" }}>
+    Easy To Stretch
+  </h3>
 
-        <img
-          style={{ width: "1040px", height: "544px", marginTop: "40px" }}
-          src="/asset/detail/playkaki.svg"
-          className="img-fluid"
-          alt="play"
-        />
-        <a
-          href="https://www.youtube.com/watch?v=4DhRokM7b3M&pp=ygUSa2FvcyBrYWtpIG11c2xpbWFo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            style={{
-              width: "48px",
-              height: "48px",
-              position: "absolute",
-              bottom: "272px",
-              left: "50%",
-              transform: "translateX(-50%)",
-            }}
-            src="/asset/detail/play.svg"
-            className="img-fluid"
-            alt="play"
-          />
-        </a>
-      </div>
-      <div style={{ marginTop: "100px", marginBottom: "80px" }}>
-      <Overview/>
-      </div>
+  <img
+    style={{ width: "100%", maxWidth: "1040px", height: "auto", marginTop: "40px" }}
+    src="/asset/detail/playkaki.svg"
+    className={styles["imgfluid"]}
+    alt="gambar"
+  />
+
+  <a href="https://www.youtube.com/watch?v=4DhRokM7b3M&pp=ygUSa2FvcyBrYWtpIG11c2xpbWFo" target="_blank" rel="noopener noreferrer">
+    <img
+      style={{ width: "48px", height: "48px", position: "absolute", bottom: "250px", left: "50%", transform: "translateX(-50%)" }}
+      src="/asset/detail/play.svg"
+      className={styles["playicon"]}
+      alt="play"
+    />
+  </a>
+</div>
+<div style={{ paddingBottom: "50px" }}></div>
+
+      {/* <div style={{ marginTop: "100px", marginBottom: "80px" }}>
+        <Overview />
+      </div> */}
+    </div>
     </div>
   );
 }
