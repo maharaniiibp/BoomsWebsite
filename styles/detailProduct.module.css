@@ -1,13 +1,60 @@
+/* Style tetap untuk konten */
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 .kakibiru {
-  margin-left: 68px;
+  margin-left: 5px;
   margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 331px;
+  height: 384px;
 }
+
 .det1dan2 {
   margin-top: 40px;
   justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  width: 148px;
+    height: 148px;
 }
+/* Tambahkan aturan media query di sini */
+@media (max-width: 768px) {
+  .kakibiru {
+    display: flex;
+    width: 320px;
+    height: 375px;
+    margin-left: 20%;
+  }
+  .det1dan2 {
+    width: 80px;
+    height: 80px;
+    
+    
+  }
+}
+@media (max-width: 425px) {
+  .det1dan2 {
+    flex-direction: column;
+    margin-left: 200px;
+  }
+  
+  .det1dan2 img {
+    margin-top: 380px; /* Berikan margin antara gambar */
+    width: 80px; /* Atur lebar gambar */
+    height: 80px; /* Atur tinggi gambar */
+  }
+}
+
 .section1 {
   margin-left: 80px;
+  order: 2; 
 }
 .pack {
   margin-top: 70px;
@@ -184,7 +231,6 @@
   font-family: "GitLab Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  border-bottom: 2px solid #004a65;
 }
 .fancy {
   color: var(--Neutral-100, #434040);
@@ -309,4 +355,24 @@
 .buttonq:hover {
   background-color: var(--Primary-20, #e6f4f1);
   cursor: pointer;
+}
+@media (max-width: 425px) {
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .imgfluid {
+    width: 100%; /* Gambar akan mengisi lebar parent */
+    height: auto; /* Ketinggian gambar menyesuaikan proporsi */
+    max-width: 300px; /* Maksimum lebar gambar */
+    margin-top: 20px; /* Atur jarak atas gambar */
+  }
+  .playicon {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 10px; /* Atur jarak atas ikon play */
+  }
 }
