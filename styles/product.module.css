@@ -1,584 +1,4 @@
 @media (max-width: 1440px){
-    .product-1 {
-        padding: 70px;        
-    }
-    .product-1 img {
-        width: 100%;
-        z-index: 1;
-        margin-top: 120px;
-    }
-    .bungkus-text-1 {
-        margin-left: auto;
-        margin-right: 80px;
-        width: 423px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        padding-top: 15px;
-    }
-    .product-1 h1 {
-        background-color: #00A4DF;
-        color: white;
-        text-align: center;
-        font-size: 16px;
-        width: 423px;
-        height: 28px;
-        border-radius: 5px;
-        padding-top: 5px;
-        padding-bottom: 3px;
-        margin-top: -420px;
-        z-index: 5;
-        position: relative;
-        font-family: "GitLab Sans", sans-serif;
-        font-weight: 600;
-    }
-    .product-1 h2 {
-        width: 423px;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-    .product-1 .atas {
-        font-size: 96px;
-        font-weight: 400;
-        font-family: 'Baloo 2', sans-serif;
-        color: white;
-        text-align: center;
-        margin-top: 15px;
-    }
-    .product-1 .bungkus-text-1 p {
-        font-weight: 700;
-        margin-top: -20px;
-        font-family: 'Baloo 2', sans-serif;
-        font-size: 96px;
-        color: white;
-        justify-content: center;
-        text-align: center;
-        width: 423px;
-        align-items: center;
-    }
-    .animated-text {
-      animation: scaleText 1s infinite alternate;
-    }
-    
-    @keyframes scaleText {
-      from {
-        transform: scale(1);
-      }
-      to {
-        transform: scale(1.1);
-      }
-    }
-    .product-1 h3 {
-        font-size: 16px;
-        text-align: center;
-        width: 423px;
-        color: white;
-        margin-top: -20px;
-        font-family: "GitLab Sans", sans-serif;
-        font-weight: 600;
-    }
-    .bungkus-text-1 button {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 10px;
-        width: 172px;
-        height: 40px;
-        font-size: 14px;
-        background-color: #00A4DF;
-        color: #004A65;
-        font-weight: 600;
-        border: none;
-        border-radius: 8px;
-        font-family: "GitLab Sans", sans-serif;
-        transition: background-color 0.3s; 
-      }
-      
-      .bungkus-text-1 button:hover {
-        background-color: white; /* Warna yang berbeda saat tombol dihover */
-      }
-
-
-
-      /* SECTION 2 */
-      .product-2 {
-        padding: 70px;
-      }      
-      .product-2 h1 {
-        font-family: "GitLab Sans", sans-serif;
-        font-weight: 600;
-        font-size: 32px;
-        color: #434040;
-        margin-top: -90px;
-      }      
-      .dropdown {
-        /* display: flex; */
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 50px;
-      }     
-      .product-2 .dropdown1{
-        border: 2px solid #00A4DF;
-        text-align: center;
-        justify-content: center;
-        border-radius: 8px;
-        width: 220px;
-        color: #00688D;
-      }
-      .product-2 .dropdown2{
-        border: 2px solid #00A4DF;
-        text-align: center;
-        justify-content: center;
-        border-radius: 8px;
-        width: 220px;
-        color: #00688D;
-        margin-top: 20px;
-      }
-      .product-2 .button {
-        justify-content: space-between;
-        max-width: 220px;
-        margin-right: auto; 
-      }
-      .product-2 .buttons {
-        border-radius: 8px;
-        border: 2px solid #ACB5BA;
-        color: #808080;
-        padding: 3px;
-        width: 100px;
-        background: none;
-        font-size: 14px;
-      }
-      .line {
-        border-bottom: 1px solid #000; /* Ubah warna dan properti sesuai kebutuhan Anda */
-        margin-top: 20px; /* Sesuaikan margin sesuai kebutuhan */
-      }
-      .product-2 .buttons.active {
-        border-color: #00A4DF;
-        color: #00A4DF;
-        background: none;
-      }
-      .product-2 .button-show{
-        background: #00A4DF;
-        color: #F9FCFE;
-        width: 255px;
-        height: 40px;
-        border-radius: 8px;
-        border: none;
-        margin-top: 20px;
-        font-size: 14px;
-        font-weight: 600;
-      }
-      .product-2 .button-show:hover{
-        background: white;
-        color: #FFB800;
-        border: 2px solid #FFB800;
-      }
-      .product-2 .button-clear{
-        color: #FFB800;
-        width: 255px;
-        height: 40px;
-        border-radius: 10px;
-        border: 2px solid #FFB800;
-        margin-top: 20px;
-        font-size: 14px;
-        font-weight: 600;
-        background: none;
-      }
-      .cover-product{
-        display:flex;
-        justify-content: space-between;
-      }
-      .menu h1 {
-        color: #856000;
-        font-size: 16px;
-        font-weight: 600;
-        margin-top: auto;
-        border-bottom: 2px solid #FFB800;
-        text-align: center;
-        width: 150px;
-        padding-bottom: 10px; /* Atur jarak yang diinginkan, misalnya 5px */
-      }
-      
-      .menu {
-        display: flex;
-        justify-content: space-between;
-        gap: 145px;
-        margin-top: 60px;
-      }      
-      .menu h2 {
-        font-size: 16px;
-        color: #00688D;
-      }
-      .card-container {
-        display: flex;
-        flex-wrap: wrap; /* Menggunakan wrap agar jika tidak muat ke samping, akan ke baris berikutnya */
-        justify-content: space-between;
-        margin-top: 20px; /* Sesuaikan dengan margin yang diinginkan */
-        width: 800px;
-        
-      }
-    .card{
-        width: 250px;
-        margin-bottom: 20px;
-        position: relative;
-        justify-content: space-between;
-        transition: transform 0.2s ease-in-out;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card .black{
-        width: 270px;
-    }
-    .card .like{
-        position: absolute;
-        top: 20px;
-        z-index: 1;
-        padding: 2px;
-        margin-left: 200px;
-    }
-    .card .cover{
-        margin-top: -175px;
-        position: absolute;
-        padding: 3px;
-        width: auto;
-    }
-    .card h1{
-        font-size: 14px;
-        font-weight: 600;
-        color: #434040;
-        font-family: "GitLab Sans", sans-serif;
-        width: auto;
-        text-align: start;
-        margin-top: 60px;
-        margin-left: 19px;
-    }
-    .hero3 .star1{
-        width: 12px;
-    }
-    .bungkus-card{
-        display: flex;
-        justify-content: space-between;  
-        margin-top: 10px;
-        margin-left: 2px;      
-    }
-    .bungkus-card img{
-        height: 16px;
-    }
-    .card h2{
-        padding: 15px;
-        margin-top: -30px;
-        display:flex;
-    }
-    .card h2 p{
-        font-size: 12px;
-        color: #434040;
-        font-weight: 400;
-        margin-left: auto;
-        margin-top: 10px;
-    }
-    .card h3{
-        padding: 15px;
-        margin-top: -30px;
-        display:flex;
-    }
-    .bungkus-price{
-        display: flex;
-        margin-top: -10px;
-        margin-left: 2px;
-    }
-    .price1{
-        font-size: 15.07px;
-        color: #00A4DF;
-    }
-    .price2{
-        color: #BDBDBD;
-        font-size: 15.07px;
-        margin-left: 10px;
-    }
-    .strikethrough {
-      text-decoration: line-through;
-    }
-    .card button{
-        font-family: "GitLab Sans", sans-serif;
-        font-weight: 600;
-        font-size: 10px;
-        width: 46.24px;
-        height: 25.62px;
-        color: #F9FCFE;
-        background-color: #FFB800;
-        border-radius: 5px;
-        border: none;
-        margin-left: 75px;
-        margin-top: -10px;
-    }
-    .card button:hover {
-        background-color: white; /* Warna yang berbeda saat tombol dihover */
-        color: black;
-      }
-    
-
-      /* SECTION 3 */
-      .product-3{
-        padding: 70px;
-        margin-top: -90px;
-      }
-      .bungkus-judul{
-        display: flex;
-        justify-content: space-between;
-        
-      }
-      .kanan{
-        display: flex;
-      }
-      .product-3 h1{
-        font-family: "GitLab Sans", sans-serif;
-        font-weight: 600;
-        font-size: 32px;
-        color: #434040;
-      }
-      .product-3 button{
-        background: #00A4DF;
-        border: none;
-        color: white;
-        width: 160px;
-        height: 40px;
-        border-radius: 8px;
-        font-family: "GitLab Sans", sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        margin-left: 20px;
-      }
-      .product-3 .see{
-        color: red;
-        background: none;
-        border: 2px solid #00A4DF;
-        color: #00688D;
-        margin-left: auto;
-      }
-      .product-3 .see:hover{
-        background: #00A4DF;
-        color: white;
-      }
-
-
-      /* DROPDOWN BENER */
-      .wrapper{
-        display: flex;
-        padding-top: 50px;
-        justify-content: center;
-      }
-      .collabsible{
-        overflow: hidden;
-        font-weight: 600;
-      }
-      .collabsible input{
-        /* display: none; */
-      }
-      .hidden-checkbox {
-        display: none;
-      }
-      .collabsible label{
-        position: relative;
-        font-weight: 600;
-        background: #ffffff;
-        color: #00688D;
-        display: block;
-        margin-bottom: 10px;
-        cursor: pointer;
-        padding: 10px;
-        border-radius: 4px;
-        border: 2px solid #00A4DF;
-        z-index: 1;
-        font-size: 16px;
-      }
-      .collapsible label:after {
-        content: "";
-        position: absolute;
-        right: 15px;
-        top: 20px;
-        width: 18px;
-        height: 18px;     
-        transition: all 0.3s ease;   
-      }
-      .collabsible input:checked + label:after{
-        transform: rotate(90deg);
-      }
-      .collabsible-text{
-        max-height: 1px;
-        overflow: hidden;
-        border-radius: 4px;
-        line-height: 1.4;
-        position: relative;
-        top: -100%;
-        opacity: 0.5;
-        transition: all 0.3s ease;
-      }
-      .checkbox label{
-        margin: 0;
-        border: none;
-        top: -10px;
-      }      
-      .collabsible input:checked ~ .collabsible-text{
-        max-height: 300px;
-        padding-bottom: 25px;
-        background: #ffff;
-        opacity: 1;
-        top: 0;
-      }
-      .collabsible-text h2{
-        margin-bottom: 10px;
-        padding: 15px 15px 0;
-        color: #1c1c6b;
-      }
-      .collabsible-text p{
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-      .dropdownHeader {
-        cursor: pointer;
-        padding: 10px;
-        border: 2px solid #00A4DF;
-        background-color: #f9f9f9;
-        display: flex;
-        justify-content: space-between;
-        border-radius: 5px;
-        font-size: 16px;
-        fonr-weight: 600;
-        color: #00688D;
-        margin-top: 10px;
-      }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 320px){
   .product-1 {
       padding: 70px;        
   }
@@ -683,7 +103,7 @@
 
     /* SECTION 2 */
     .product-2 {
-      padding: 30px;
+      padding: 70px;
     }      
     .product-2 h1 {
       font-family: "GitLab Sans", sans-serif;
@@ -692,9 +112,6 @@
       color: #434040;
       margin-top: -90px;
     }      
-    .cover-product{
-      display: block;
-    }
     .dropdown {
       /* display: flex; */
       align-items: center;
@@ -720,7 +137,7 @@
     }
     .product-2 .button {
       justify-content: space-between;
-      max-width: 220px;
+      max-width: 255px;
       margin-right: auto; 
     }
     .product-2 .buttons {
@@ -728,7 +145,7 @@
       border: 2px solid #ACB5BA;
       color: #808080;
       padding: 3px;
-      width: 100px;
+      width: 117px;
       background: none;
       font-size: 14px;
     }
@@ -744,7 +161,7 @@
     .product-2 .button-show{
       background: #00A4DF;
       color: #F9FCFE;
-      width: 257px;
+      width: 255px;
       height: 40px;
       border-radius: 8px;
       border: none;
@@ -759,7 +176,7 @@
     }
     .product-2 .button-clear{
       color: #FFB800;
-      width: 257px;
+      width: 255px;
       height: 40px;
       border-radius: 10px;
       border: 2px solid #FFB800;
@@ -769,36 +186,37 @@
       background: none;
     }
     .cover-product{
-      display:block;
+      display:flex;
       justify-content: space-between;
+      margin-top: -30px;
     }
     .menu h1 {
       color: #856000;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 600;
       margin-top: auto;
       border-bottom: 2px solid #FFB800;
       text-align: center;
-      width: auto;
+      width: 150px;
       padding-bottom: 10px; /* Atur jarak yang diinginkan, misalnya 5px */
     }
     
     .menu {
-      display: block;
-      margin-top: 60px; 
-      width: 30%;    
+      display: flex;
+      justify-content: space-between;
+      gap: 145px;
+      margin-top: 60px;
     }      
     .menu h2 {
-      font-size: 14px;
+      font-size: 16px;
       color: #00688D;
-      width: 0;
     }
     .card-container {
-      display: block;
+      display: flex;
       flex-wrap: wrap; /* Menggunakan wrap agar jika tidak muat ke samping, akan ke baris berikutnya */
       justify-content: space-between;
       margin-top: 20px; /* Sesuaikan dengan margin yang diinginkan */
-      width: auto;
+      width: 800px;
       
     }
   .card{
@@ -812,41 +230,39 @@
     transform: scale(1.05);
   }
   .card .black{
-      width: 285px;
-      margin-left: -5px;
+      width: 270px;
   }
   .card .like{
       position: absolute;
       top: 20px;
       z-index: 1;
       padding: 2px;
-      margin-left: 212px;
+      margin-left: 200px;
   }
   .card .cover{
       margin-top: -175px;
       position: absolute;
       padding: 3px;
       width: auto;
-      margin-left: 5px;
   }
   .card h1{
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
       color: #434040;
       font-family: "GitLab Sans", sans-serif;
       width: auto;
       text-align: start;
-      margin-top: 55px;
-      margin-left: 10px;
+      margin-top: 60px;
+      margin-left: 19px;
   }
   .hero3 .star1{
       width: 12px;
   }
   .bungkus-card{
       display: flex;
-      justify-content: space-between; 
-      margin-left: -5px;
-      margin-top: 10px;       
+      justify-content: space-between;  
+      margin-top: 10px;
+      margin-left: 2px;      
   }
   .bungkus-card img{
       height: 16px;
@@ -871,6 +287,7 @@
   .bungkus-price{
       display: flex;
       margin-top: -10px;
+      margin-left: 2px;
   }
   .price1{
       font-size: 15.07px;
@@ -894,11 +311,11 @@
       background-color: #FFB800;
       border-radius: 5px;
       border: none;
-      margin-left: auto;
+      margin-left: 75px;
       margin-top: -10px;
   }
   .card button:hover {
-      background-color: white; /* Warna yang berbeda saat tombol dihover */
+      background-color: white;
       color: black;
     }
   
@@ -956,7 +373,6 @@
     .collabsible{
       overflow: hidden;
       font-weight: 600;
-      width: 260px;
     }
     .collabsible input{
       /* display: none; */
@@ -1084,70 +500,582 @@
 
 
 
-
-
-
-
-
-
-
+/* TABLET */
 @media (max-width: 768px){
-  .product-1 {
-    padding: 70px;        
+
+/* SECTION 1 */
+.product-1 {
+  padding: 30px;        
 }
 .product-1 img {
-    width: 100%;
+  width: 100%;
+  z-index: 1;
+  margin-top: 120px;
+}
+.bungkus-text-1 {
+  width: 423px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+.product-1 h1 {
+  background-color: #00A4DF;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  width: 70%;
+  height: auto;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  margin-top: -290px;
+  z-index: 5;
+  position: relative;
+  font-family: "GitLab Sans", sans-serif;
+  font-weight: 600;
+  margin-left: 160px;
+}
+.product-1 h2 {
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 190px;
+}
+.product-1 .atas {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Baloo 2', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+.product-1 .bungkus-text-1 p {
+  font-weight: 700;
+  margin-top: -20px;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 50px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  align-items: center;
+}
+.animated-text {
+animation: scaleText 1s infinite alternate;
+}
+
+@keyframes scaleText {
+from {
+  transform: scale(1);
+}
+to {
+  transform: scale(1.1);
+}
+}
+.product-1 h3 {
+  font-size: 12px;
+  text-align: center;
+  width: 423px;
+  color: white;
+  margin-top: -20px;
+  font-family: "GitLab Sans", sans-serif;
+  font-weight: 600;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.bungkus-text-1 button {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  width: 30%;
+  height: 30px;
+  font-size: 10px;
+  background-color: #00A4DF;
+  color: #004A65;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  font-family: "GitLab Sans", sans-serif;
+  transition: background-color 0.3s; 
+  margin-left: 200px;
+}
+
+.bungkus-text-1 button:hover {
+  background-color: white; /* Warna yang berbeda saat tombol dihover */
+}
+
+
+
+/* SECTION 2 */
+.product-2 {
+  padding: 30px;
+  margin-top: -10px;
+}      
+.product-2 h1 {
+  font-family: "GitLab Sans", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #434040;
+  margin-top: -10px;
+} 
+
+.dropdown {
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}     
+.product-2 .dropdown1{
+  border: 2px solid #00A4DF;
+  text-align: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 220px;
+  color: #00688D;
+}
+.product-2 .dropdown2{
+  border: 2px solid #00A4DF;
+  text-align: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 220px;
+  color: #00688D;
+  margin-top: 20px;
+}
+.product-2 .button {
+  justify-content: space-between;
+  max-width: 252px;
+  margin-right: auto; 
+}
+.product-2 .buttons {
+  border-radius: 8px;
+  border: 2px solid #ACB5BA;
+  color: #808080;
+  padding: 3px;
+  width: 100px;
+  background: none;
+  font-size: 14px;
+}
+.line {
+  border-bottom: 1px solid #000; /* Ubah warna dan properti sesuai kebutuhan Anda */
+  margin-top: 20px; /* Sesuaikan margin sesuai kebutuhan */
+}
+.product-2 .buttons.active {
+  border-color: #00A4DF;
+  color: #00A4DF;
+  background: none;
+}
+.product-2 .button-show{
+  background: #00A4DF;
+  color: #F9FCFE;
+  width: 255px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.product-2 .button-show:hover{
+  background: white;
+  color: #FFB800;
+  border: 2px solid #FFB800;
+}
+.product-2 .button-clear{
+  color: #FFB800;
+  width: 255px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #FFB800;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  background: none;
+}
+.cover-product{
+  display:flex;
+  /* flex-wrap: wrap; */
+  margin-top: -30px;
+}
+.bungkus-menu{
+  margin-left: 30px;
+  width: 420px;
+}
+.menu h1 {
+  color: #856000;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: auto;
+  border-bottom: 2px solid #FFB800;
+  text-align: center;
+  width: 100px;
+  padding-bottom: 10px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+  margin-top: 60px;
+}      
+.menu h2 {
+  font-size: 14px;
+  color: #00688D;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px; 
+  max-width: 100%;
+}
+.card {
+  margin-bottom: 20px;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+  /* border: 5px solid red; */
+  width: 200px;
+}
+
+.card:hover {
+transform: scale(1.05);
+}
+.card .black{
+  width: 110%;
+}
+.card .like{
+  position: absolute;
+  top: 12px;
+  z-index: 1;
+  padding: 2px;
+  margin-left: 155px;
+  margin-top: 10px;
+}
+.card .cover{
+  margin-top: -140px;
+  position: absolute;
+  margin-left: -6px;
+  width: auto;
+  padding: 0;
+}
+.card h1{
+  font-size: 12px;
+  font-weight: 600;
+  color: #434040;
+  font-family: "GitLab Sans", sans-serif;
+  text-align: start;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.hero3 .star1{
+  height: 5px;
+}
+.bungkus-card{
+  display: flex;
+  justify-content: space-between;  
+  margin-top: 25px;
+  margin-left: 17px; 
+  width: auto;     
+}
+.bungkus-card img{
+  height: 16px;
+}
+.card h2{
+  padding: 0;
+  margin-top: -30px;
+  display:flex;
+}
+.card h2 p{
+  font-size: 10px;
+  color: #434040;
+  font-weight: 400;
+  margin-left: 42px;
+  margin-top: 27px;
+}
+.card h3{
+  
+  margin-top: -30px;
+  display:flex;
+}
+.bungkus-price{
+  display: flex;
+  margin-top: -2px;
+  margin-left: 5px;
+}
+.price1{
+  font-size: 13.07px;
+  color: #00A4DF;
+}
+.price2{
+  color: #BDBDBD;
+  font-size: 13.07px;
+  margin-left: 10px;
+}
+.strikethrough {
+text-decoration: line-through;
+}
+.card button{
+  font-family: "GitLab Sans", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  width: 44.24px;
+  height: 23.62px;
+  color: #F9FCFE;
+  background-color: #FFB800;
+  border-radius: 5px;
+  border: none;
+  margin-left: 48px;
+  margin-top: -2px;
+}
+.card button:hover {
+  background-color: white; /* Warna yang berbeda saat tombol dihover */
+  color: black;
+}
+
+
+/* SECTION 3 */
+.product-3{
+  padding: 30px;
+  margin-top: -30px;
+}
+.bungkus-judul{
+  display: flex;
+  justify-content: space-between;        
+}
+.kanan{
+  display: flex;
+}
+.product-3 h1{
+  font-family: "GitLab Sans", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #434040;
+}
+.product-3 button{
+  background: #00A4DF;
+  border: none;
+  color: white;
+  width: 150px;
+  height: 36px;
+  border-radius: 8px;
+  font-family: "GitLab Sans", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  margin-left: 20px;
+  padding-top: 3px;
+}
+.product-3 .see{
+  color: red;
+  background: none;
+  border: 2px solid #00A4DF;
+  color: #00688D;
+  margin-left: auto;
+  font-size: 10px;
+  padding: 0;
+  width: 150px;
+  height: 36px;
+  margin-top: 0;
+}
+.product-3 .see:hover{
+  background: #00A4DF;
+  color: white;
+}
+
+
+/* DROPDOWN BENER */
+.wrapper{
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+}
+.collabsible{
+  overflow: hidden;
+  font-weight: 600;
+}
+.collabsible input{
+  /* display: none; */
+}
+.hidden-checkbox {
+  display: none;
+}
+.collabsible label{
+  position: relative;
+  font-weight: 600;
+  background: #ffffff;
+  color: #00688D;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #00A4DF;
+  z-index: 1;
+  font-size: 16px;
+}
+.collapsible label:after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 18px;
+  height: 18px;     
+  transition: all 0.3s ease;   
+}
+.collabsible input:checked + label:after{
+  transform: rotate(90deg);
+}
+.collabsible-text{
+  max-height: 1px;
+  overflow: hidden;
+  border-radius: 4px;
+  line-height: 1.4;
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.checkbox label{
+  margin: 0;
+  border: none;
+  top: -10px;
+}      
+.collabsible input:checked ~ .collabsible-text{
+  max-height: 300px;
+  padding-bottom: 25px;
+  background: #ffff;
+  opacity: 1;
+  top: 0;
+}
+.collabsible-text h2{
+  margin-bottom: 10px;
+  padding: 15px 15px 0;
+  color: #1c1c6b;
+}
+.collabsible-text p{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.dropdownHeader {
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid #00A4DF;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  font-size: 16px;
+  fonr-weight: 600;
+  color: #00688D;
+  margin-top: 10px
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 320px){
+.product-1 {
+    padding: 30px;        
+}
+.product-1 img {
+    width: auto%;
     z-index: 1;
-    margin-top: 120px;
+    margin-top: 110px;
 }
 .bungkus-text-1 {
     margin-left: auto;
     margin-right: 80px;
-    width: 423px;
+    width: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
+    margin-right: auto;
+    margin-top: 170px;
 }
 .product-1 h1 {
     background-color: #00A4DF;
     color: white;
     text-align: center;
-    font-size: 16px;
-    width: 423px;
-    height: 28px;
+    font-size: 7px;
+    width: 50%;
+    height: auto;
     border-radius: 5px;
     padding-top: 5px;
+    margin-top: -288px;
     padding-bottom: 3px;
-    margin-top: -420px;
     z-index: 5;
     position: relative;
     font-family: "GitLab Sans", sans-serif;
     font-weight: 600;
+    margin-left: 120px;
 }
 .product-1 h2 {
-    width: 423px;
+    width: auto;
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-left: 110px;
+    margin-top: -5px;
 }
 .product-1 .atas {
-    font-size: 96px;
+    font-size: 18px;
     font-weight: 400;
     font-family: 'Baloo 2', sans-serif;
     color: white;
     text-align: center;
     margin-top: 15px;
+    width: auto;
+    margin-left: 2px;
 }
 .product-1 .bungkus-text-1 p {
     font-weight: 700;
-    margin-top: -20px;
+    margin-top: -5px;
     font-family: 'Baloo 2', sans-serif;
-    font-size: 96px;
+    font-size: 18px;
     color: white;
     justify-content: center;
     text-align: center;
-    width: 423px;
+    width: auto;
     align-items: center;
 }
 .animated-text {
@@ -1163,29 +1091,31 @@
   }
 }
 .product-1 h3 {
-    font-size: 16px;
+    font-size: 7px;
     text-align: center;
-    width: 423px;
+    width: auto;
     color: white;
-    margin-top: -20px;
+    margin-top: -10px;
     font-family: "GitLab Sans", sans-serif;
     font-weight: 600;
+    margin-bottom: -9px;
 }
 .bungkus-text-1 button {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10px;
-    width: 172px;
-    height: 40px;
-    font-size: 14px;
+    margin-top: -10px;
+    width: auto;
+    height: auto;
+    font-size: 5px;
     background-color: #00A4DF;
     color: #004A65;
     font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: 2px;
     font-family: "GitLab Sans", sans-serif;
     transition: background-color 0.3s; 
+    margin-left: 120px;
   }
   
   .bungkus-text-1 button:hover {
@@ -1196,21 +1126,27 @@
 
   /* SECTION 2 */
   .product-2 {
-    padding: 70px;
+    margin-left: 40px;
+    margin-top: -200px;
   }      
   .product-2 h1 {
     font-family: "GitLab Sans", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 20px;
     color: #434040;
-    margin-top: -90px;
+    margin-top: -10px;
+    width: auto;
+    margin-left: -40px;
   }      
+  .cover-product{
+    display: block;
+  }
   .dropdown {
     /* display: flex; */
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
-
+    margin-top: -30px;
+    margin-left: -40px;
   }     
   .product-2 .dropdown1{
     border: 2px solid #00A4DF;
@@ -1231,21 +1167,22 @@
   }
   .product-2 .button {
     justify-content: space-between;
-    max-width: 220px;
-    margin-right: auto; 
+    width: 310px;
   }
   .product-2 .buttons {
     border-radius: 8px;
     border: 2px solid #ACB5BA;
     color: #808080;
     padding: 3px;
-    width: 100px;
     background: none;
     font-size: 14px;
+    margin-top: 10px;
+    margin-right: -1px;
   }
   .line {
     border-bottom: 1px solid #000; /* Ubah warna dan properti sesuai kebutuhan Anda */
     margin-top: 20px; /* Sesuaikan margin sesuai kebutuhan */
+    width: auto;
   }
   .product-2 .buttons.active {
     border-color: #00A4DF;
@@ -1255,7 +1192,7 @@
   .product-2 .button-show{
     background: #00A4DF;
     color: #F9FCFE;
-    width: 255px;
+    width: 257px;
     height: 40px;
     border-radius: 8px;
     border: none;
@@ -1270,7 +1207,7 @@
   }
   .product-2 .button-clear{
     color: #FFB800;
-    width: 255px;
+    width: 257px;
     height: 40px;
     border-radius: 10px;
     border: 2px solid #FFB800;
@@ -1280,107 +1217,116 @@
     background: none;
   }
   .cover-product{
-    display:flex;
+    display:block;
     justify-content: space-between;
+  }
+  .bungkus-menu{
+    margin-left: -1px;
+    margin-top: -20px;
+    width: auto;
   }
   .menu h1 {
     color: #856000;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     margin-top: auto;
     border-bottom: 2px solid #FFB800;
     text-align: center;
-    width: 150px;
-    padding-bottom: 10px; /* Atur jarak yang diinginkan, misalnya 5px */
+    width: auto%;
+    padding-bottom: 10px;
   }
   
   .menu {
-    display: flex;
-    justify-content: space-between;
-    gap: 145px;
-    margin-top: 60px;
+    display: block;
+    margin-top: 60px; 
+    width: 30%;    
   }      
   .menu h2 {
-    font-size: 16px;
+    font-size: 14px;
     color: #00688D;
+    width: auto;
+    margin-left: -40px;
   }
   .card-container {
-    display: flex;
+    display: block;
     flex-wrap: wrap; /* Menggunakan wrap agar jika tidak muat ke samping, akan ke baris berikutnya */
     justify-content: space-between;
-    margin-top: 20px; /* Sesuaikan dengan margin yang diinginkan */
-    width: 800px;
-    
+    margin-top: 20px; /* Sesuaikan dengan margin yang diinginkan */ 
   }
-.card{
+  .card{
     width: 250px;
     margin-bottom: 20px;
     position: relative;
     justify-content: space-between;
     transition: transform 0.2s ease-in-out;
+    margin-left: -45px;
 }
 .card:hover {
   transform: scale(1.05);
 }
 .card .black{
-    width: 270px;
+    width: 285px;
+    
 }
 .card .like{
     position: absolute;
     top: 20px;
     z-index: 1;
     padding: 2px;
-    margin-left: 200px;
+    margin-left: 212px;
 }
 .card .cover{
     margin-top: -175px;
     position: absolute;
     padding: 3px;
     width: auto;
+    margin-left: 5px;
 }
 .card h1{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: #434040;
     font-family: "GitLab Sans", sans-serif;
     width: auto;
     text-align: start;
-    margin-top: 60px;
-    margin-left: 19px;
+    margin-top: 55px;
+    margin-left: 13px;
 }
 .hero3 .star1{
     width: 12px;
 }
 .bungkus-card{
     display: flex;
-    justify-content: space-between;  
-    margin-top: 10px;
-    margin-left: 2px;      
+    justify-content: space-between; 
+    margin-left: -2px;
+    margin-top: 10px;       
 }
 .bungkus-card img{
     height: 16px;
 }
 .card h2{
-    padding: 15px;
-    margin-top: -30px;
+    /* padding: 15px; */
+    margin-top: -10px;
+    margin-left: 13px;
     display:flex;
+
 }
 .card h2 p{
     font-size: 12px;
     color: #434040;
     font-weight: 400;
-    margin-left: auto;
-    margin-top: 10px;
+    margin-left: 75px;
+    margin-top: 10px;;
 }
 .card h3{
     padding: 15px;
-    margin-top: -30px;
+    margin-top: -15px;
     display:flex;
+    margin-left: -7px;
 }
 .bungkus-price{
     display: flex;
     margin-top: -10px;
-    margin-left: 2px;
 }
 .price1{
     font-size: 15.07px;
@@ -1404,7 +1350,7 @@
     background-color: #FFB800;
     border-radius: 5px;
     border: none;
-    margin-left: 75px;
+    margin-left: 80px;
     margin-top: -10px;
 }
 .card button:hover {
@@ -1416,40 +1362,44 @@
   /* SECTION 3 */
   .product-3{
     padding: 30px;
-    margin-top: -90px;
   }
   .bungkus-judul{
-    display: flex;
-    justify-content: space-between;
-    
+    display: block;
+    justify-content: space-between;        
   }
   .kanan{
-    display: flex;
+    display: block;
   }
   .product-3 h1{
     font-family: "GitLab Sans", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 23px;
     color: #434040;
   }
   .product-3 button{
     background: #00A4DF;
     border: none;
     color: white;
-    width: 160px;
-    height: 40px;
+    width: 110px;
+    height: 36px;
     border-radius: 8px;
     font-family: "GitLab Sans", sans-serif;
     font-weight: 600;
-    font-size: 14px;
-    margin-left: 20px;
+    font-size: 8px;
+    margin-left: 0;
+    padding-top: 3px;
+    margin-top: 10px;
   }
   .product-3 .see{
-    color: red;
     background: none;
     border: 2px solid #00A4DF;
     color: #00688D;
     margin-left: auto;
+    font-size: 11px;
+    padding: 0;
+    width: 110px;
+    height: 36px;
+    margin-top: 15px;
   }
   .product-3 .see:hover{
     background: #00A4DF;
@@ -1466,6 +1416,7 @@
   .collabsible{
     overflow: hidden;
     font-weight: 600;
+    width: 260px;
   }
   .collabsible input{
     /* display: none; */
@@ -1541,6 +1492,6 @@
     font-size: 16px;
     fonr-weight: 600;
     color: #00688D;
-    margin-top: 10px
-}
+    margin-top: 10px;
+  }
 }

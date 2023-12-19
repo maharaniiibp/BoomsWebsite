@@ -6,6 +6,8 @@ import styles from '../styles/overview.module.css';
 
 export default function Overview() {
   const [index, setIndex] = useState(0);
+  const [visibleCards, setVisibleCards] = useState(3);
+
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
@@ -17,7 +19,6 @@ export default function Overview() {
     setJsonProduct(dataProduct);
   }, []);
 
-  // Fungsi untuk mengelompokkan item produk ke dalam array dengan 3 item per grup
   const chunkArray = (arr, chunkSize) => {
     const result = [];
     for (let i = 0; i < arr.length; i += chunkSize) {
@@ -26,11 +27,36 @@ export default function Overview() {
     return result;
   };
 
-  // Mengelompokkan item produk menjadi array dengan 3 item per grup
-  const groupedProducts = chunkArray(jsonProduct, 3);
+  const groupedProducts = chunkArray(jsonProduct, visibleCards);
+
+  useEffect(() => {
+    function updateVisibleCards() {
+      if (window.innerWidth < 768) {
+        setVisibleCards(1); // Menampilkan 1 card saat lebar layar kurang dari 768 pixel
+      } else if (window.innerWidth === 768) {
+        setVisibleCards(2); // Menampilkan 2 card saat lebar layar sama dengan 768 pixel
+      } else {
+        setVisibleCards(3); // Menampilkan 3 card untuk lebar layar lebih dari 768 pixel
+      }
+    }
+    
+    updateVisibleCards();
+
+    function handleResize() {
+      updateVisibleCards();
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   return (
-    <div className={styles['bungkus-overview']}>
+    <section className={styles['product-3']}>
+      <div className={styles['bungkus-overview']}>
       <img src='../../asset/home/product.png' alt="Product overview" />
       <div>
         <button className={styles['button-new']}>NEW STYLE JUST LAUNCHED</button>
@@ -38,7 +64,7 @@ export default function Overview() {
         <h2 className={styles['shocks']}>SHOCKS</h2>
         <h3 className={styles['bring']}>Bring Your Feet & Legs Back to Life</h3>
       </div>
-      <Carousel activeIndex={index} onSelect={handleSelect} interval={2000 /* dalam milidetik, contohnya 3000 untuk 3 detik */}>
+      <Carousel activeIndex={index} onSelect={handleSelect} interval={2500}>
         {groupedProducts.map((group, groupIdx) => (
           <Carousel.Item key={groupIdx}>
             <div className="d-flex justify-content-around">
@@ -53,11 +79,11 @@ export default function Overview() {
                       </h1>
                       <h2>
                         <div className={styles['bungkus-card']}>
-                          <img className={styles['star1']} src='../../asset/star1.png' style={{ height: '12px' }} alt={`Star 1 ${groupIdx}-${idx}`} />
-                          <img className={styles['star1']} src='../../asset/star1.png' style={{ marginLeft: '5px', height: '12px' }} alt={`Star 2 ${groupIdx}-${idx}`} />
-                          <img className={styles['star1']} src='../../asset/star1.png' style={{ marginLeft: '5px', height: '12px' }} alt={`Star 3 ${groupIdx}-${idx}`} />
-                          <img className={styles['star1']} src='../../asset/star1.png' style={{ marginLeft: '5px', height: '12px' }} alt={`Star 4 ${groupIdx}-${idx}`} />
-                          <img className={styles['star1']} src='../../asset/star2.png' style={{ marginLeft: '5px', height: '12px' }} alt={`Star 5 ${groupIdx}-${idx}`} />
+                          <img className={styles['star1']} src='../../asset/star1.png' style={{ height: '12px', width: 'auto' }} alt={`Star 1 ${groupIdx}-${idx}`} />
+                          <img className={styles['star1']} src='../../asset/star1.png' style={{ marginLeft: '5px', height: '12px', width: 'auto' }} alt={`Star 2 ${groupIdx}-${idx}`} />
+                          <img className={styles['star1']} src='../../asset/star1.png' style={{ marginLeft: '5px', height: '12px', width: 'auto' }} alt={`Star 3 ${groupIdx}-${idx}`} />
+                          <img className={styles['star1']} src='../../asset/star1.png' style={{ marginLeft: '5px', height: '12px', width: 'auto' }} alt={`Star 4 ${groupIdx}-${idx}`} />
+                          <img className={styles['star1']} src='../../asset/star2.png' style={{ marginLeft: '5px', height: '12px', width: 'auto' }} alt={`Star 5 ${groupIdx}-${idx}`} />
                         </div>
                         <p>1,2k sold out</p>
                       </h2>
@@ -79,5 +105,8 @@ export default function Overview() {
         ))}
       </Carousel>
     </div>
+    </section>
+    
   );
 }
+

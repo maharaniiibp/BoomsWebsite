@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       <SaleBanner/>
       <Navbar/>
       <Component {...pageProps} />
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

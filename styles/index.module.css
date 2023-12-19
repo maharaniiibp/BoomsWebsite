@@ -48,7 +48,7 @@
         margin-top: 15px;
     }
     .hero1 .bungkus-text-1 p {
-        font-weight: 700;
+        font-weight: 600;
         margin-top: -20px;
         font-family: 'Baloo 2', sans-serif;
         font-size: 96px;
@@ -121,7 +121,6 @@
         text-align: center;
         font-size: 32px;
         font-family: "GitLab Sans", sans-serif;
-        margin-top: 15px;
     }
     .hero2 h2{
         margin-top: 40px;
@@ -131,13 +130,15 @@
     .hero2 .img1{
         width: 268px;
         height: 452px;
+        margin-left: 5px;
     }
     .hero2 .img2{
-        width: 212px;
+        width: 240px;
         height: 452px;
     }
     .hero2 h2 .bungkus{
-        display: flex;        
+        display: flex;     
+        padding-left: 70px;   
     }
     .hero2 .icon{
         width: 46.47px;
@@ -147,7 +148,7 @@
     }
     .text{
         margin-left: 20px;
-        width: 590px;
+        width: 500px;
     }
     .text p{
         font-size: 24px;
@@ -222,10 +223,6 @@
         text-align: start;
         padding: 20px;
     }
-    .hero3 .star1{
-        /* padding: 15px; */
-        /* margin-top: -25px; */
-    }
     .bungkus-card{
         display: flex;
         justify-content: space-between;    
@@ -260,11 +257,13 @@
     .price1{
         font-size: 18px;
         color: #00A4DF;
+        font-weight: 600;
     }
     .price2{
         color: #BDBDBD;
         font-size: 18px;
         margin-left: 10px;
+        font-weight:600;
     }
     .card button{
         font-family: "GitLab Sans", sans-serif;
@@ -274,7 +273,7 @@
         height: 36px;
         color: #F9FCFE;
         background-color: #FFB800;
-        border-radius: 10px;
+        border-radius: 8px;
         border: none;
         margin-left: auto;
         margin-top: -10px;
@@ -283,6 +282,49 @@
         background-color: white; /* Warna yang berbeda saat tombol dihover */
         color: black;
       } 
+
+      /* OVERVIEW */
+      .product-3{
+        padding: 70px;
+        margin-top: -90px;
+      }
+      .bungkus-judul{
+        display: flex;
+        justify-content: space-between;
+        
+      }
+      .kanan{
+        display: flex;
+      }
+      .product-3 h1{
+        font-family: "GitLab Sans", sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        color: #434040;
+      }
+      .product-3 button{
+        background: #00A4DF;
+        border: none;
+        color: white;
+        width: 160px;
+        height: 40px;
+        border-radius: 8px;
+        font-family: "GitLab Sans", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        margin-left: 20px;
+      }
+      .product-3 .see{
+        color: red;
+        background: none;
+        border: 2px solid #00A4DF;
+        color: #00688D;
+        margin-left: auto;
+      }
+      .product-3 .see:hover{
+        background: #00A4DF;
+        color: white;
+      }
 }
 
 
@@ -414,7 +456,7 @@
     .hero2 {
         background-color: #FFC52E;
         width: 100%;
-        height: 650px;
+        height: 600px;
         padding: 30px;
         display: flex;
         flex-direction: column;
@@ -422,30 +464,32 @@
         margin-top: -150px;
     }    
     .hero2 h1 {
-        width: auto;
+        width: 470px;
         height: 112px;
         color: #434040;
         font-weight: 600;
         text-align: center;
         font-size: 28px;
         font-family: "GitLab Sans", sans-serif;
-        margin-top: 60px;
+        margin-top: 30px;
     }
     .hero2 h2{
-        margin-top: -30px;
+        margin-top: -10px;
         width: auto;
         display: flex;
     }
     .hero2 .img1{
         width: 210px;
         height: 350px;
+        margin-left: -5px;
     }
     .hero2 .img2{
         width: 180px;
         height: 350px;
     }
     .hero2 h2 .bungkus{
-        display: flex;        
+        display: flex; 
+        margin-left: -80px;       
     }
     .hero2 .icon{
         width: 40px;
@@ -456,10 +500,10 @@
     }
     .text{
         margin-left: 20px;
-        width: auto;
+        width: 260px;
     }
     .text p{
-        font-size: 16px;
+        font-size: 20px;
         color: #434040;
         font-weight: 700;
         font-family: "GitLab Sans", sans-serif;
@@ -489,7 +533,7 @@
         color: #434040;
         font-weight: 600;
         font-size: 28px;
-        width: auto;
+        width: 470px;
         text-align: center;
         margin-top: 30px;
     }
@@ -498,7 +542,7 @@
         display: flex;
         flex-wrap: wrap;
         /* justify-content: space-between; */
-        margin-top: 20px;
+        margin-top: -20px;
         flex-direction: row;
     }
     
@@ -544,6 +588,7 @@
         margin-left: 5px;
         margin-right: 0;
         padding: 0;
+        width: auto;
     }
     
     .hero3 .star1 {
@@ -616,6 +661,55 @@
         background-color: white;
         color: black;
     }
+
+    /* OVERVIEW */
+    .product-3{
+        padding: 30px;
+        margin-top: -30px;
+      }
+      .bungkus-judul{
+        display: flex;
+        justify-content: space-between;        
+      }
+      .kanan{
+        display: flex;
+      }
+      .product-3 h1{
+        font-family: "GitLab Sans", sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        color: #434040;
+      }
+      .product-3 button{
+        background: #00A4DF;
+        border: none;
+        color: white;
+        width: 150px;
+        height: 36px;
+        border-radius: 8px;
+        font-family: "GitLab Sans", sans-serif;
+        font-weight: 600;
+        font-size: 10px;
+        margin-left: 20px;
+        padding-top: 3px;
+      }
+      .product-3 .see{
+        color: red;
+        background: none;
+        border: 2px solid #00A4DF;
+        color: #00688D;
+        margin-left: auto;
+        font-size: 10px;
+        padding: 0;
+        width: 150px;
+        height: 36px;
+        margin-top: 0;
+      }
+      .product-3 .see:hover{
+        background: #00A4DF;
+        color: white;
+      }
+      
 }
 
 
@@ -728,13 +822,13 @@
     width: auto;
     height: auto; 
     padding-top: 3px;
-    font-size: 5px;
+    font-size: 6px;
     background-color: #FFC52E;
     color: #004A65;
     font-weight: 700;
     border: none;
-    border-radius: 4px;
-    margin-left: -200px;
+    border-radius: 2px;
+    margin-left: -190px;
     font-family: "GitLab Sans", sans-serif;
     transition: background-color 0.3s; /* Efek transisi untuk perubahan warna latar belakang */    
     justify-content: center;
@@ -833,6 +927,7 @@
     font-weight: 600;
     font-size: 20px;
     text-align: center;
+    width: auto;
 }
 
 .card-container {
@@ -954,6 +1049,53 @@
     background-color: white;
     color: black;
 }
+
+/* overview */
+.product-3{
+    padding: 30px;
+    margin-top: 50px;
+  }
+  .bungkus-judul{
+    display: block;
+    justify-content: space-between;        
+  }
+  .kanan{
+    display: block;
+  }
+  .product-3 h1{
+    font-family: "GitLab Sans", sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    color: #434040;
+  }
+  .product-3 button{
+    background: #00A4DF;
+    border: none;
+    color: white;
+    width: 110px;
+    height: 36px;
+    border-radius: 8px;
+    font-family: "GitLab Sans", sans-serif;
+    font-weight: 600;
+    font-size: 8px;
+    margin-left: 0;
+    padding-top: 3px;
+  }
+  .product-3 .see{
+    background: none;
+    border: 2px solid #00A4DF;
+    color: #00688D;
+    margin-left: auto;
+    font-size: 11px;
+    padding: 0;
+    width: 110px;
+    height: 36px;
+    margin-top: 10px;
+  }
+  .product-3 .see:hover{
+    background: #00A4DF;
+    color: white;
+  }
 }
 
 

@@ -136,7 +136,7 @@ const Product = () => {
 
   return (
     <>
-      {/* <section className={styles['product-1']}>
+      <section className={styles['product-1']}>
         <img src='../../asset/banner-product.png' alt='Product Banner'></img>
         <div className={styles['bungkus-text-1']}>
           <h1>NEW STYLE JUST LAUNCHED</h1>
@@ -147,7 +147,7 @@ const Product = () => {
           <h3>Brings Your Feet & Legs Back to Life</h3>
           <button>SHOP NOW</button>
         </div>
-      </section> */}
+      </section>
 
       <section className={styles['product-2']}>
         <h1>Our selling products show here</h1>
@@ -284,7 +284,7 @@ const Product = () => {
                         <Form.Control
                           type="email"
                           placeholder="Label"
-                          style={{ width: '220px', paddingLeft: '30px', fontSize: '14px' }}
+                          style={{ width: '255px', paddingLeft: '30px', fontSize: '14px' }}
                           value={maxPriceInput}
                           onChange={(e) => setMaxPriceInput(e.target.value)}
                         />
@@ -304,7 +304,7 @@ const Product = () => {
                         <Form.Control
                           type="email"
                           placeholder="Label"
-                          style={{ width: '220px', paddingLeft: '30px', fontSize: '14px' }}
+                          style={{ width: '255px', paddingLeft: '30px', fontSize: '14px' }}
                           value={minPriceInput}
                           onChange={(e) => setMinPriceInput(e.target.value)}
                         />
@@ -315,13 +315,14 @@ const Product = () => {
                   <div className={styles['button']}>
                     <button
                       className={`${styles['buttons']} ${activeButton === 1 ? styles['active'] : ''}`}
-                      onClick={() => handleButtonClick(1)}
+                      onClick={() => handleButtonClick(1)}   
+                      style={{width: '116px'}}                  
                     >
                       $5 - $10
                     </button>
                     <button
                       className={`${styles['buttons']} ${activeButton === 2 ? styles['active'] : ''}`}
-                      style={{ marginLeft: '20px' }}
+                      style={{ marginLeft: '20px', width: '116px'  }}
                       onClick={() => handleButtonClick(2)}
                     >
                       $10 - $25
@@ -329,12 +330,13 @@ const Product = () => {
                     <button
                       className={`${styles['buttons']} ${activeButton === 3 ? styles['active'] : ''}`}
                       onClick={() => handleButtonClick(3)}
+                      style={{width: '116px'}}
                     >
                       $25 - $50
                     </button>
                     <button
                       className={`${styles['buttons']} ${activeButton === 4 ? styles['active'] : ''}`}
-                      style={{ marginLeft: '20px', marginTop: '20px' }}
+                      style={{ marginLeft: '20px', marginTop: '20px', width: '116px' }}
                       onClick={() => handleButtonClick(4)}
                     >
                       $50 ++
@@ -355,7 +357,7 @@ const Product = () => {
             </div>
           </div>
 
-          <div>
+          <div className={styles['bungkus-menu']}>
             <div className={styles['menu']}>
               <h1>All Product</h1>
               <h2>Popular</h2>
@@ -364,7 +366,7 @@ const Product = () => {
             </div>
             <div className={styles['card-container']}>
               {filteredProducts.map((item, index) => (
-                <a key={index} className="group">
+                <a key={index} className="group-card">
                   <div className={styles['card']}>
                     <img className={styles['black']} src={item.img} />
                     <img className={styles['like']} style={{ height: '32px' }} src='../../asset/icon.png' alt="like icon" />
@@ -402,7 +404,7 @@ const Product = () => {
 
       </section>
 
-      {/* <section className={styles['product-3']}>
+      <section className={styles['product-3']}>
         <div className={styles['bungkus-judul']}>
           <div className={styles['kanan']}>
             <h1>Overview Our Product</h1>
@@ -417,9 +419,9 @@ const Product = () => {
         </div>
       </section>
 
-      <section style={{ marginBottom: '100px' }}>
+      <section>
         <Overview />
-      </section> */}
+      </section>
 
 
     </>

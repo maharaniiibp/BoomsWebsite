@@ -40,7 +40,7 @@ export default function Index() {
         <h2>
           <div className="d-flex">
              <img className={styles["img1"]} src="../../asset/hero2-1.png"></img>
-          <img className={styles["img2"]} src="../../asset/hero2-2.png"></img>
+             <img className={styles["img2"]} src="../../asset/hero2-2.png"></img>
           </div>
          
           <div>
@@ -112,10 +112,24 @@ export default function Index() {
       <div style={{ paddingBottom: "100px" }}></div> */}
 
       {/* section 5 */}
-      {/* <Overview /> */}
+      <section className={styles['product-3']}>
+        <div className={styles['bungkus-judul']}>
+          <div className={styles['kanan']}>
+            <h1>Overview Our Product</h1>
+            <button>SHOP WOMEN
+              <img src="../../asset/home/arrow-down.png" style={{ marginLeft: '10px' }}></img>
+            </button>
+          </div>
+          <button className={styles['see']}>See all</button>
+          <div>
+
+          </div>
+        </div>
+      </section>
+      <Overview />
 
       {/* section 6 */}
-      <div className="bg-cover h-auto bg-center" style={{marginTop: '100px'}}>
+      {/* <div className="bg-cover h-auto bg-center" style={{marginTop: '100px'}}>
         <Image
           src="/asset/testimoni.png"
           alt="bg"
@@ -200,10 +214,10 @@ export default function Index() {
         </div>
 
       </div>
-      <div style={{ paddingBottom: "150px" }}></div> 
+      <div style={{ paddingBottom: "150px" }}></div>  */}
 
       {/* section 7 */}
-      <div className="d-flex" style={{marginTop: '-90px'}}>
+      {/* <div className="d-flex" style={{marginTop: '-90px'}}>
         <div>
           <h3 className={styles["shop"]}>SHOP ALL DESIGN</h3>
           <h2 className={styles["guarante"]}>Satisfaction Guarantee</h2>
@@ -229,7 +243,7 @@ export default function Index() {
           }}
         />
       </div>
-      <div style={{ paddingBottom: "70px" }}></div> 
+      <div style={{ paddingBottom: "70px" }}></div>  */}
     </>
   );
 }
