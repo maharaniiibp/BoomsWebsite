@@ -129,7 +129,8 @@ export default function Index() {
       <Overview />
 
       {/* section 6 */}
-      {/* <div className="bg-cover h-auto bg-center" style={{marginTop: '100px'}}>
+
+      <div className=  {styles['testimoni']}>
         <Image
           src="/asset/testimoni.png"
           alt="bg"
@@ -138,14 +139,8 @@ export default function Index() {
           height={1080}
         />
         <div
-          className="bg-white mb-3 p-3"
-          style={{
-            position: "absolute",
-            top: "678%",
-            transform: "translate(62%, -153%)",
-            width: "568px",
-            borderRadius: "8px",
-          }}
+          className=  {styles['fathu']}
+         
         >
           <Row className="">
             <Col className="col-3">
@@ -210,14 +205,27 @@ export default function Index() {
               Lorem ipsum dolor sit amet consectetur. In velit sed nullam quis.
               Augue tristique feugiat ultricies sit molestie volutpat pretium.
             </div>
+            <div
+  className="p-2 d-flex justify-content-center align-items-center"
+  style={{
+    gap: '2px',
+  }}
+>
+  <img
+    className="w-20" // Adjust the width percentage as needed
+    src="/asset/home/bundaran.svg"
+    alt=""
+  />
+</div>
+
           </Row>
         </div>
 
       </div>
-      <div style={{ paddingBottom: "150px" }}></div>  */}
+      <div style={{ paddingBottom: "150px" }}></div> 
 
       {/* section 7 */}
-      {/* <div className="d-flex" style={{marginTop: '-90px'}}>
+      <div className={styles["d-flex"]} >
         <div>
           <h3 className={styles["shop"]}>SHOP ALL DESIGN</h3>
           <h2 className={styles["guarante"]}>Satisfaction Guarantee</h2>
@@ -233,17 +241,11 @@ export default function Index() {
         <img
           src="asset/home/firut.png"
           alt=""
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "684px",
-            height: "460px",
-            marginLeft: "80px",
-          }}
+          className={styles["firut"]}
+         
         />
       </div>
-      <div style={{ paddingBottom: "70px" }}></div>  */}
+      <div style={{ paddingBottom: "70px" }}></div> 
     </>
   );
 }

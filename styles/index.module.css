@@ -736,7 +736,8 @@
     padding: 30px;        
 }
 .hero1 img {
-    width: auto%;
+    width: auto;
+    width: 100%;
     z-index: 1;
     margin-top: 110px;
 }
@@ -752,7 +753,8 @@
     color: #FFFFFF;
     text-align: center;
     font-size: 7px;
-    width: auto%;
+    width: auto;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     padding-top: 5px;
@@ -1130,76 +1132,95 @@
 /* PUNYA RANI */
 /* section 4 */
 /* CSS for tablet */
-@media (max-width: 768px) {
-  .responsive-image {
-    width: 150px; /* Adjust the width for tablet */
-    height: 36px; /* Adjust the height for tablet */
-  }
-}
-
-/* CSS for mobile */
-@media (max-width: 480px) {
-  .responsive-image {
-    width: 100px; /* Adjust the width for mobile */
-    height: 24px; /* Adjust the height for mobile */
-  }
-}
-
-.shop {
-    align-self: stretch;
-    color: var(--neutral-100, #434040);
-font-family:  "GitLab Sans", sans-serif;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 56px; /* 175% */
-letter-spacing: 0.64px;
-margin-left: 80px;
-}
-.guarante{
-    align-self: stretch;
-    color: var(--neutral-100, #434040);
-margin-left: 80px;
-font-family: "GitLab Sans", sans-serif;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: 48px; 
-letter-spacing: 0.48px;
-}
-.we {
-    align-self: stretch;
-    color: var(--neutral-90, #575454);
-margin-left: 80px;
-font-family: "GitLab Sans", sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px; 
-letter-spacing: 0.32px;
+.d-flex {
+    display: flex;
+    margin-left: 80px;
+    margin-top: 80px;
 }
 .see {
-    padding: 10px 16px;
-    align-items: center;
-    font-style: normal;
-    letter-spacing: 0.28px;
-    justify-content: center;
-    text-align: center;
-    margin-top: 10px;
-    width: 213px;
-    height: 40px;
-    font-size: 12px;
-    background-color: #FFC52E;
-    color: #004A65;
-    font-weight: 600;
+    margin-bottom: 40px; /* Increase space below the button */
     border-radius: 8px;
-    margin-left: 80px;
-    font-family: "GitLab Sans", sans-serif;
-   border: none;
+background: var(--Secondary-50, #FFC52E);
+border: none;
+align-items: center;
+color: var(--Primary-100, #004A65);
+
+/* Label/L14/Semibold */
+font-family: GitLab Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.28px;;
+  }
+/* For mobile devices */
+@media (max-width: 768px) {
+    .d-flex {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 2px;
+      margin-top: 10px;
+    }
+  
+    /* Adjustments for the image */
+    .firut {
+      width: 100%; /* Adjust as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin-left: 0; /* Remove the left margin */
+      margin-top: 20px; /* Add space between the image and text */
+    }
+  
+    /* Center-align text */
+    .shop,
+    .guarante,
+    .we {
+      text-align: center;
+      margin-bottom: 20px; /* Add space between text elements */
+    }
+  
+    /* Button adjustments */
+    .see {
+      margin-bottom: 40px; /* Increase space below the button */
+      border-radius: 8px;
+background: var(--Secondary-50, #FFC52E);
+    }
+  }
+
+  .testimoni {
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    margin-top: 200px;
+  }
+  .fathu {
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    position: absolute;
+    top: 600%;
+    transform: translate(62%, -153%);
+    width: 568px;
+    border-radius: 8px;
+  
+  }
+  @media (max-width: 768px) {
+    .testimoni {
+      margin-top: 50px; /* Atur margin top untuk tampilan mobile */
+      /* Tambahkan properti lain yang diperlukan untuk tampilan mobile */
+    }
+  
+    .fathu {
+        position: relative; /* Set posisi kembali ke relative */
+        top: 0; /* Reset posisi jika diperlukan */
+        transform: none; /* Reset transform jika diperlukan */
+        width: 100%; /* Atur lebar menjadi 100% pada layar yang lebih kecil */
+        border-radius: 0; /* Atur border radius kembali ke nilai default */
+        margin-bottom: 15px; /* Sesuaikan margin bottom untuk tampilan mobile */
+        /* Tambahkan properti lain yang diperlukan untuk tampilan mobile */
+      }
   }
   
-  .see:hover {
-    background-color:  #FDBA4D ; /* Warna yang berbeda saat tombol dihover */
+  
     
-  }
+  
 
