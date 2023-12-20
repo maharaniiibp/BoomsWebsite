@@ -108,8 +108,8 @@ export default function Index() {
       </section>
 
       {/* section 4 */}
-      {/* <Bundaran />
-      <div style={{ paddingBottom: "100px" }}></div> */}
+      <Bundaran />
+      <div style={{ paddingBottom: "100px" }}></div>
 
       {/* section 5 */}
       <section className={styles['product-3']}>
@@ -126,7 +126,10 @@ export default function Index() {
           </div>
         </div>
       </section>
-      <Overview />
+      <div style={{marginTop: '-60px'}}>
+       <Overview /> 
+      </div>
+      
 
       {/* section 6 */}
 
@@ -140,7 +143,7 @@ export default function Index() {
         />
         <div
           className=  {styles['fathu']}
-         
+          
         >
           <Row className="">
             <Col className="col-3">
@@ -149,7 +152,7 @@ export default function Index() {
                 src="/asset/home/fathu.png"
                 alt=""
                 style={{
-                  borderRadius: "100%",
+                  borderRadius: "100%",                  
                 }}
               />
             </Col>
