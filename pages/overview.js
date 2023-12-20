@@ -80,7 +80,7 @@ export default function Overview() {
                     <img
                       className={styles["like"]}
                       style={{ height: "32px" }}
-                      src="../../asset/icon.png"
+                      src="../../asset/Icon.png"
                       alt={`Like icon ${groupIdx}-${idx}`}
                     />
                     <Carousel.Caption>
