@@ -101,7 +101,7 @@ export default function Index() {
                 <h2 className="pack">3-pack midnight-confetti</h2>
                 <h4 className="blacks">Jetsetter Blacks : 16 - 20 mmHg</h4>
                 <div className="cover">
-                  <div class="d-flex">
+                  <div class="d-flex justify-content-between">
                     <div className="bungkus-card">
                       <img
                         className="star1"
@@ -138,9 +138,9 @@ export default function Index() {
                     <p className="p">1,2k sold out</p>
                   </div>
 
-                  <div className="bungkus-price">
-                    <p className="price1">$25.99</p>
-                    <p className="price2">$25.99</p>
+                  <div className=" d-flex">
+                    <p className={styles["price1"]}>$25.99</p>
+                    <p className={styles["price2"]}>$25.99</p>
                   </div>
                   <div className="line"></div>
                 </div>

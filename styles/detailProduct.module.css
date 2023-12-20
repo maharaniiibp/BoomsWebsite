@@ -97,9 +97,7 @@
   height: 16px;
 }
 
-.bungkus-price {
-  display: flex;
-}
+
 .price1 {
   color: var(--Primary-70, #00a4df);
   font-family: "GitLab Sans", sans-serif;
