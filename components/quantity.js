@@ -66,11 +66,13 @@ const decreaseQuantity = () => {
   };
 
   return (
+    <>
     <div className={styles["kotak"]}>
+      
       <span className={styles["set"]}>Set Quantity</span>
       <div className={`d-flex ${styles["button"]}`}>
         <button className={styles["click"]} onClick={decreaseQuantity}>
-          -
+          - 
         </button>
         <span>{quantity}</span>
         <button className={styles["click"]} onClick={increaseQuantity}>
@@ -111,7 +113,7 @@ const decreaseQuantity = () => {
           className="p-2"
           style={{
             display: "flex",
-            width: "220px",
+            width: "100%",
             justifyContent: "left",
             alignItems: "center",
             background: "white",
@@ -122,7 +124,7 @@ const decreaseQuantity = () => {
             fontSize: "14px",
             letterSpacing: "0.28px",
             fontWeight: "700",
-            marginLeft: "8px",
+            marginLeft: "0px",
             marginTop: "12px",
           }}
         >
@@ -142,9 +144,7 @@ const decreaseQuantity = () => {
           className="p-2"
           style={{
             display: "flex",
-            width: "220px",
-            justifyContent: "left",
-            alignItems: "center",
+            width: "100%",
             background: "white",
             borderRadius: "8px",
             border: "1px solid var(--Neutral-40, #BDBDBD)",
@@ -152,7 +152,7 @@ const decreaseQuantity = () => {
             fontSize: "14px",
             letterSpacing: "0.28px",
             fontWeight: "700",
-            marginLeft: "8px",
+            marginLeft: "0px",
             marginTop: "12px",
           }}
         >
@@ -186,6 +186,7 @@ const decreaseQuantity = () => {
         <img src="/asset/detail/send.svg" className="img-fluid" alt="send" />
       </div>
     </div>
+    </>
   );
 };
 

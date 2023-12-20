@@ -31,7 +31,7 @@ const Cart = () => {
         className="p-2"
         style={{
           display: "flex",
-          width: "220px",
+          width: "100%",
           padding: "10px 16px",
           justifyContent: "center",
           alignItems: "center",
@@ -41,7 +41,7 @@ const Cart = () => {
           // Added background color for the button
           color: "var(--Primary-90, #00688D)",
           background: "white",
-          marginLeft: "8px",
+          marginLeft: "0px",
           fontFamily: "GitLab Sans, sans-serif",
           fontSize: "14px",
           fontWeight: 600,

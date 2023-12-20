@@ -9,24 +9,23 @@ const ProductDescription = () => {
     setShowDescription(!showDescription);
     setShowBorder(!showBorder);
   };
-
+ 
   return (
     <div>
-      <button
-        className={`${styles["deskripsi"]} `}
-        style={{
-          borderBottom: "2px solid #004a65",
-        }}
-        onClick={toggleDescription}
-      >
-        Description
-        <img
-          style={{ width: "18px", height: "18px", marginLeft: "314px" }}
-          src="/asset/detail/arrow-down.svg"
-          className="img-fluid"
-          alt="Product Image"
-        />
-      </button>
+     <div className={styles["hai"]} style={{ marginTop: "-10px", display: "flex", justifyContent: "space-between" }}>
+  <button className={styles["fabric"]} onClick={toggleDescription}>
+    
+   Description
+    
+  </button>
+  <img
+      src="/asset/detail/arrow-down.svg"
+      className={`${styles["arrow"]} img-fluid`}
+      alt="Product Image"
+      onClick={toggleDescription}
+    />
+</div>
+
 
       {showDescription && (
         <p className={styles["fancy"]}>

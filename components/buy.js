@@ -31,7 +31,7 @@ const Buy = () => {
       <button
         className="p-2"
         style={{
-          width: "220px",
+          width: "100%",
           padding: "10px 16px",
           justifyContent: "center",
           alignItems: "center",
@@ -40,7 +40,7 @@ const Buy = () => {
           background: "var(--Primary-70, #00A4DF)",
           border: "none",
           color: "white",
-          marginLeft: "8px",
+          marginLeft: "0px",
           fontFamily: "GitLab Sans, sans-serif",
           fontSize: "14px",
           fontWeight: 600,

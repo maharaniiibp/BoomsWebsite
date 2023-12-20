@@ -1,21 +1,20 @@
 /* Style tetap untuk konten */
 .container {
-    margin-top: 10px;
+    margin-top: 200px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
   }
 
 .kakibiru {
-  margin-left: 5px;
-  margin-top: 75px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 331px;
   height: 384px;
 }
-
+/* 
 .det1dan2 {
   margin-top: 40px;
   justify-content: space-between;
@@ -23,21 +22,16 @@
   justify-content: center;
   width: 148px;
     height: 148px;
-}
-/* Tambahkan aturan media query di sini */
+} */
+
 @media (max-width: 768px) {
   .kakibiru {
     display: flex;
-    width: 320px;
-    height: 375px;
-    margin-left: 20%;
+    width:150px;
+    height: 180px;
+    /* margin-left: 200px; */
   }
-  .det1dan2 {
-    width: 80px;
-    height: 80px;
-    
-    
-  }
+  
 }
 @media (max-width: 425px) {
   .det1dan2 {
@@ -53,8 +47,13 @@
 }
 
 .section1 {
-  margin-left: 80px;
-  order: 2; 
+  /* margin-left: 50px; */
+  
+}
+@media (max-width: 425px) {
+  .section1 {
+    margin-left: 10px;
+  }
 }
 .pack {
   margin-top: 70px;
@@ -220,17 +219,28 @@
   background-color: white;
   margin-right: 12px;
 }
-.deskripsi {
-  margin-top: 50px;
-  padding-bottom: 8px;
-  border: none;
-  background: white;
-  text-align: left;
-  color: var(--Secondary-90, #856000);
-  flex: 1 0 0;
-  font-family: "GitLab Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
+@media (max-width: 767px) {
+  .s,
+  .m {
+    /* Properti tertentu untuk mode mobile */
+    padding: 8px 12px;
+    font-size: 12px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .s, .m {
+    /* Ubah properti-properti ini untuk layar 'sm' */
+    padding: 8px 12px;
+    font-size: 12px;
+    margin-right: 8px;
+  }
+}
+.arrow {
+  /* margin-left: 150px; */
+  /* width: 18px;
+  height: 18px; */
 }
 .fancy {
   color: var(--Neutral-100, #434040);
@@ -245,32 +255,78 @@
   height: 352px;
   width: 383px;
 }
+@media (max-width: 767px) {
+ 
+
+  .fancy {
+    font-size: 12px; 
+    margin-left: 4px; 
+    margin-top: 15px; /* Sesuaikan margin-top */
+    line-height: 28px; /* Sesuaikan line-height */
+    height: auto; /* Atur ulang tinggi elemen sesuai kebutuhan */
+    width:200px; /* Gunakan lebar penuh pada layar kecil */
+    /* Atur properti lain yang diperlukan untuk responsif di layar kecil */
+  }
+}
 .fabric {
+  /* width: 100%; */
   padding-bottom: 5px;
   border: none;
   background: white;
-  text-align: left;
+  text-align: start;
   color: var(--Secondary-90, #856000);
   flex: 1 0 0;
   font-family: "GitLab Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
+  /* border-bottom: 2px solid #004a65;  */
+}
+.hai {
+  width: 100%;
   border-bottom: 2px solid #004a65; /* Misalnya, membuat garis bawah hitam sebesar 2px */
 }
+
+/* Media query untuk layar kecil (misalnya, perangkat mobile) */
+@media (max-width: 767px) {
+  .fabric {
+    font-size: 12px; /* Ubah ukuran font untuk layar kecil */
+    padding-bottom: 3px; /* Sesuaikan padding-bottom */
+    /* Atur properti lain yang diperlukan untuk responsif di layar kecil */
+  }
+}
+
 .kotak {
   border-radius: 8px;
   border: 1px solid var(--Neutral-40, #bdbdbd);
   background: var(--Neutral-10, #fafafa);
-  width: 236px;
+  /* width: 236px; */
   height: 748px;
-  margin-left: 68px;
-  margin-top: 10px;
+  margin: 0px;
+  /* margin-top: 10px; */
+
+}
+@media (max-width: 576px) {
+  .kotak {
+    /* Atur properti untuk layar kecil (sm) di sini */
+    height: auto; /* Misalnya, mengubah tinggi agar bisa menyesuaikan konten */
+    margin-top: 10px; /* Menggunakan margin atas */
+  }
+}
+
+/* Media query untuk layar sedang (md) */
+@media (min-width: 768px) {
+  .kotak {
+    /* Atur properti untuk layar sedang (md) di sini */
+    width: 236px; /* Contoh: mengatur lebar kembali */
+    height: 748px; /* Atur ulang tinggi jika diperlukan */
+    margin-top: 0px; /* Atur kembali margin atas jika diperlukan */
+  }
 }
 .set {
-  width: 220px;
+  /* width: 220px; */
   color: var(--Neutral-100, #434040);
   margin-top: 8px;
-  margin-left: 8px;
+  /* margin-left: 8px; */
   font-family: "GitLab Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -280,45 +336,48 @@
 }
 .button {
   display: flex;
-  width: 220px;
+  width: 100%;
   padding: 10px 16px;
   justify-content: center;
   align-items: center;
   gap: 8px;
   border-radius: 8px;
   border: 1px solid var(--Primary-70, #00a4df);
-  margin-left: 8px;
+  margin-left: 0px;
   margin-top: 8px;
 }
 .click {
-  margin-right: 70px;
-  margin-left: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   border-radius: 8px;
   background-color: #00a4df;
-  width: 20px;
+  /* width: 20px; */
   height: 20px;
-  justify-content: center;
-  align-items: center;
   color: #fff;
+  margin: 0 10px; /* Atur jarak kanan-kiri sesuai kebutuhan */
 }
+
+/* Kode CSS tambahan untuk menambahkan jarak di antara konten */
+.button span {
+  margin: 0 20px; /* Atur jarak kanan-kiri sesuai kebutuhan */
+}
+
 .lineq {
-  border: 1px solid var(--Neutral-40, #bdbdbd); /* Garis horizontal dengan ketebalan 1px */
+  border: 1px solid var(--Neutral-40, #bdbdbd); 
   margin-top: 16px;
-  width: 210px;
-  margin-left: 12px;
+width: 100%;
+  margin-left: 0px;
   margin-bottom: 16px;
 }
 .typ {
-  width: 220px;
+  /* width: 220px; */
   height: 130px;
   padding: 8px 9px 8px 8px;
   border-radius: 8px;
   border: 1px solid var(--Neutral-30, #d2d2d2);
-  margin-left: 8px;
+  /* margin-left: 8px; */
   color: #bdbdbd;
   font-family: "GitLab Sans", sans-serif;
   font-size: 12px;
@@ -332,11 +391,11 @@
   font-weight: 600;
   letter-spacing: 0.36px;
   margin-top: 10px;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 .buttonq {
   display: flex;
-  width: 220px;
+  /* width: 220px; */
   justify-content: left;
   align-items: center;
   background: white;
@@ -347,7 +406,7 @@
   font-size: 14px;
   letter-spacing: 0.28px;
   font-weight: 700;
-  margin-left: 8px;
+  /* margin-left: 8px; */
   margin-top: 12px;
   transition: background-color 0.3s ease;
 }
@@ -356,6 +415,13 @@
   background-color: var(--Primary-20, #e6f4f1);
   cursor: pointer;
 }
+.imgfluid {
+  display: flex;
+  width: 1040px;
+  height: 544px;
+  justify-content: center;
+  align-items: center;
+}      
 @media (max-width: 425px) {
   .d-flex {
     flex-direction: column;
@@ -363,16 +429,19 @@
     text-align: center;
   }
   .imgfluid {
+    display: flex;
     width: 100%; /* Gambar akan mengisi lebar parent */
     height: auto; /* Ketinggian gambar menyesuaikan proporsi */
     max-width: 300px; /* Maksimum lebar gambar */
     margin-top: 20px; /* Atur jarak atas gambar */
+    justify-content: center;
   }
   .playicon {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    transform: none;
-    margin-top: 10px; /* Atur jarak atas ikon play */
+    bottom: 80px; /* Adjust the bottom position for smaller screens */
+    left: 50%; /* Center horizontally on smaller screens */
+    transform: translateX(-50%);
+    top: 80px;
   }
+  
 }
+

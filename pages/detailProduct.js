@@ -4,118 +4,100 @@ import QuantitySelector from "@/components/quantity";
 // import Product from "../components/productcard";
 import Overview from "./overview";
 import ProductDescription from "@/components/description";
+import { Container } from "react-bootstrap";
 
 export default function Index() {
   const stars = [1, 2, 3, 4, 5]; // Misalnya, array dengan nilai dari 1 sampai 5
 
   useEffect(() => {}, []);
   return (
-    <div className="container">
-      <div
-        style={{
-          marginTop: "150px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <div className="d-flex justify-content-start">
-          {/* section gambar */}
-          <div
-            className="kakibiru"
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <img
-              // style={{ width: "331px", height: "384px" }}
-              src="/asset/detail/kakibiru.png"
-              className="img-fluid"
-              alt="Product Image"
-            />
-            <div>
-              <div
-                className="det1dan2"
-                style={{ display: "flex", justifyContent: "center" }}
-              >
-                <img
-                  style={{ marginRight: "38px" }}
-                  src="/asset/detail/1.png"
-                  className="img-fluid"
-                  alt="Product Image"
-                />
-                <img
-                  // style={{ width: "148px", height: "148px" }}
-                  src="/asset/detail/2.png"
-                  className="img-fluid"
-                  alt="Product Image"
-                />
-              </div>
+    <>
+      <Container>
+        <div className={styles["container"]}>
+          <div className="row">
+            <div className="col-12 col-md-3 col-lg-4 mb-3 mb-md-0 ">
+              <img
+                // style={{ width: "331px", height: "384px" }}
+                src="/asset/detail/kakibiru.png"
+                className={`${styles["kakibiru"]} img-fluid`}
+                alt="Product Image"
+              />
+              <div>
+                <div
+                  className="det1dan2 d-lg-flex justify-content-center"
+                  style={{ marginTop: "20px" }}
+                >
+                  <img
+                    style={{ marginRight: "10px" }}
+                    src="/asset/detail/1.png"
+                    className="img-fluid"
+                    alt="Product Image"
+                  />
+                  <img
+                    // style={{ width: "148px", height: "148px" }}
+                    src="/asset/detail/2.png"
+                    className="img-fluid"
+                    alt="Product Image"
+                  />
+                </div>
+                {/* gambar ke bawah */}
+                <div
+                  className="det1dan2 d-lg-flex justify-content-center"
+                  style={{ marginTop: "20px" }}
+                >
+                  <img
+                    style={{ marginRight: "10px" }}
+                    src="/asset/detail/3.png"
+                    className="img-fluid"
+                    alt="Product Image"
+                  />
+                  <img
+                    // style={{ width: "148px", height: "148px" }}
+                    src="/asset/detail/gambar23.png"
+                    className="img-fluid"
+                    alt="Product Image"
+                  />
+                </div>
 
-              {/* gambar ke bawah */}
-              <div
-                className="det1dan2"
-                style={{ display: "flex", justifyContent: "center" }}
-              >
-                <img
-                  style={{ marginRight: "38px" }}
-                  src="/asset/detail/3.png"
-                  className="img-fluid"
-                  alt="Product Image"
-                />
-                <img
-                  // style={{ width: "148px", height: "148px" }}
-                  src="/asset/detail/gambar23.png"
-                  className="img-fluid"
-                  alt="Product Image"
-                />
-              </div>
+                <div
+                  className="det1dan2 d-lg-flex justify-content-center"
+                  style={{ marginTop: "20px" }}
+                >
+                  <img
+                    style={{ marginRight: "10px" }}
+                    src="/asset/detail/2.png"
+                    className="img-fluid"
+                    alt="Product Image"
+                  />
+                  <img
+                    // style={{ width: "148px", height: "148px" }}
+                    src="/asset/detail/3.png"
+                    className="img-fluid"
+                    alt="Product Image"
+                  />
+                </div>
 
-              <div
-                className="det1dan2"
-                style={{ display: "flex", justifyContent: "center" }}
-              >
-                <img
-                  style={{ marginRight: "38px" }}
-                  src="/asset/detail/2.png"
-                  className="img-fluid"
-                  alt="Product Image"
-                />
-                <img
-                  // style={{ width: "148px", height: "148px" }}
-                  src="/asset/detail/3.png"
-                  className="img-fluid"
-                  alt="Product Image"
-                />
-              </div>
-
-              <div
-                className="det1dan2"
-                style={{ display: "flex", justifyContent: "center" }}
-              >
-                <img
-                  style={{ marginRight: "38px" }}
-                  src="/asset/detail/3.png"
-                  className="img-fluid"
-                  alt="Product Image"
-                />
-                <img
-                  // style={{ width: "148px", height: "148px" }}
-                  src="/asset/detail/gambar23.png"
-                  className="img-fluid"
-                  alt="Product Image"
-                />
+                <div
+                  className="det1dan2 d-lg-flex justify-content-center"
+                  style={{ marginTop: "20px" }}
+                >
+                  <img
+                    style={{ marginRight: "10px" }}
+                    src="/asset/detail/3.png"
+                    className="img-fluid"
+                    alt="Product Image"
+                  />
+                  <img
+                    // style={{ width: "148px", height: "148px" }}
+                    src="/asset/detail/gambar23.png"
+                    className="img-fluid"
+                    alt="Product Image"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div style={{ paddingBottom: "50px" }}></div>
-
-          {/* section 1 */}
-          <div className="d-lg-flex">
-            <div className="d-flex justify-content-start">
-              <div className="section1">
+            <div className="col-12 col-md-5 mb-3 mb-md-0 ">
+              <div className={styles["section1"]}>
                 <h2 className="pack">3-pack midnight-confetti</h2>
                 <h4 className="blacks">Jetsetter Blacks : 16 - 20 mmHg</h4>
                 <div className="cover">
@@ -173,7 +155,7 @@ export default function Index() {
                 <div style={{ paddingBottom: "16px" }}></div>
                 <span className="color">Size</span>
                 <div
-                  className="d-flex"
+                  className="d-flex "
                   style={{ fontFamily: "GitLab Sans, sans-serif" }}
                 >
                   <button className={styles["s"]}>S</button>
@@ -192,86 +174,78 @@ export default function Index() {
                   className="img-fluid"
                   alt="Product Image"
                 />
-
+                <div style={{ marginBottom: "50px" }}></div>
                 {/* artikel */}
-                <div className="artikel">
+                <div className="artikel ">
                   <div style={{ marginBottom: "50px" }}>
                     <ProductDescription />
                   </div>
-
-                  <div style={{ marginTop: "-10px" }}>
-                    <button className={styles["fabric"]}>
-                      Fabric & Care
-                      <img
-                        style={{
-                          width: "18px",
-                          height: "18px",
-                          marginLeft: "300px",
-                        }}
-                        src="/asset/detail/arrow-down.svg"
-                        className="img-fluid"
-                        alt="Product Image"
-                      />
-                    </button>
-                  </div>
-                  <div style={{ paddingBottom: "50px" }}></div>
-                  <button className={styles["fabric"]}>
-                    Our Guarantee
+                  <div
+                    className={styles["hai"]}
+                    style={{
+                      marginTop: "-10px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <button className={styles["fabric"]}>Fabric & Care</button>
                     <img
-                      style={{
-                        width: "18px",
-                        height: "18px",
-                        marginLeft: "300px",
-                      }}
                       src="/asset/detail/arrow-down.svg"
-                      className="img-fluid"
+                      className={`${styles["arrow"]} img-fluid`}
                       alt="Product Image"
                     />
-                  </button>
+                  </div>
+
+                  <div style={{ paddingBottom: "50px" }}></div>
+                  <div
+                    className={styles["hai"]}
+                    style={{
+                      marginTop: "-10px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <button className={styles["fabric"]}>Our Guarantee</button>
+                    <img
+                      src="/asset/detail/arrow-down.svg"
+                      className={`${styles["arrow"]} img-fluid`}
+                      alt="Product Image"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-
-            {/* section 3*/}
-            <div className="d-flex justify-content-start ">
+            <div className="col-12 col-md-4 col-lg-3 ">
               <QuantitySelector />
             </div>
           </div>
         </div>
-        {/* section 4*/}
-        <div
-          className="dflex"
+        <div style={{ paddingBottom: "100px" }}></div>
+        <h3
           style={{
-            position: "relative",
-            alignItems: "center",
-            marginTop: "300px",
+            textAlign: "center",
+            color: "#434040",
+            fontFamily: "GitLab Sans, sans-serif",
+            fontSize: "32px",
+            fontWeight: 600,
+            letterSpacing: "0.64px",
           }}
         >
-          <h3
-            style={{
-              textAlign: "center",
-              color: "#434040",
-              fontFamily: "GitLab Sans, sans-serif",
-              fontSize: "32px",
-              fontWeight: 600,
-              letterSpacing: "0.64px",
-            }}
-          >
-            Easy To Stretch
-          </h3>
-
+          Easy To Stretch
+        </h3>
+        <div
+          className="d-flex"
+          style={{
+            position: "relative",
+            justifyContent: "center",
+            marginTop: "100px",
+          }}
+        >
           <img
-            style={{
-              width: "100%",
-              maxWidth: "1040px",
-              height: "auto",
-              marginTop: "40px",
-            }}
             src="/asset/detail/playkaki.svg"
-            className={styles["imgfluid"]}
+            className={`img-fluid ${styles["imgfluid"]}`}
             alt="gambar"
           />
-
           <a
             href="https://www.youtube.com/watch?v=4DhRokM7b3M&pp=ygUSa2FvcyBrYWtpIG11c2xpbWFo"
             target="_blank"
@@ -287,16 +261,15 @@ export default function Index() {
                 transform: "translateX(-50%)",
               }}
               src="/asset/detail/play.svg"
-              className="playicon"
+              className={styles["playicon"]}
               alt="play"
             />
           </a>
         </div>
         <div style={{ paddingBottom: "50px" }}></div>
-
         <Overview />
-      </div>
-         
-    </div>
+        <div style={{ paddingBottom: "70px" }}></div>
+      </Container>
+    </>
   );
 }
