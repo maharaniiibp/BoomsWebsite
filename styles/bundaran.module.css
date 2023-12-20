@@ -1,0 +1,274 @@
+@media (max-width: 1440px){
+    .cover-bunder{
+        padding: 70px;
+        margin-top: -100px;
+        font-family: "GitLab Sans", sans-serif;
+    }
+    .cover-bunder img{
+        width: 100%;
+    }
+    .cover-bunder h1{
+        margin-left: 182px;
+    }
+    .pertama{
+        font-weight: 600;
+        font-size: 18px;
+        width: 217px;
+        margin-top: -395px;
+        color: white;
+    }
+    .kedua{
+        font-weight: 400;
+        font-size: 16px;
+        width: 217px;
+        color: white;
+        margin-top: 35px;
+    }
+    .cover-bunder h2{
+        margin-top: 100px;
+        margin-left: 228px;
+    }
+    .ketiga{
+        font-weight: 600;
+        font-size: 18px;
+        width: 98px;
+        color: white;
+        
+    }
+    .keempat{
+        font-weight: 400;
+        font-size: 16px;
+        width: 217px;
+        color: white;
+        margin-top: 35px;
+    }
+    .kanan h1{
+        margin-left: 640px;
+        margin-top: 20px;
+    }
+    .kanan .pertama{
+        font-weight: 600;
+        font-size: 18px;
+        width: 156px;
+        color: white;
+    }
+    .kanan .kedua{
+        font-weight: 400;
+        font-size: 16px;
+        width: 217px;
+        color: white;
+    }
+    .kanan h2{
+        margin-left: 775px;
+        margin-top: 175px;
+    }
+    .kanan .ketiga{
+        font-weight: 600;
+        font-size: 18px;
+        width: 98px;
+        color: white;
+    }
+    .kanan .keempat{
+        font-weight: 400;
+        font-size: 16px;
+        width: 200px;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .cover-bunder{
+        padding: 30px;
+        margin-top: -20px;
+        font-family: "GitLab Sans", sans-serif;
+        margin-bottom: -30px;
+    }
+    .cover-bunder img{
+        
+    }
+    .cover-bunder h1{
+        margin-left: 115px;
+        margin-top: 7px;
+    }
+    .pertama{
+        font-weight: 600;
+        font-size: 14px;
+        width: 210px;
+        margin-top: -260px;
+        color: white;
+    }
+    .kedua{
+        font-weight: 400;
+        font-size: 13px;
+        width: 200px;
+        color: white;
+        margin-top: 25px;
+    }
+    .cover-bunder h2{
+        margin-top: 50px;
+        margin-left: 145px;
+    }
+    .ketiga{
+        font-weight: 600;
+        font-size: 14px;
+        width: 95px;
+        color: white;        
+    }
+    .keempat{
+        font-weight: 400;
+        font-size: 13px;
+        width: 190px;
+        color: white;
+        margin-top: 20px;
+    }
+    .kanan h1{
+        margin-left: 405px;
+    }
+    .kanan .pertama{
+        font-weight: 600;
+        font-size: 14px;
+        width: 153px;
+        color: white;
+        margin-top: -262px;
+    }
+    .kanan .kedua{
+        font-weight: 400;
+        font-size: 13px;
+        width: 150px;
+        color: white;
+        margin-top: 10px;
+    }
+    .kanan h2{
+        margin-left: 490px;
+        margin-top: 110px;
+    }
+    .kanan .ketiga{
+        font-weight: 600;
+        font-size: 14px;
+        width: 95px;
+        color: white;
+    }
+    .kanan .keempat{
+        font-weight: 400;
+        font-size: 13px;
+        width: 150px;
+        color: white;
+        margin-top: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 320px){
+    .cover-bunder{
+        padding: 30px;
+        margin-top: 40px;
+        font-family: "GitLab Sans", sans-serif;
+        margin-bottom: -165px;
+    }
+    .cover-bunder img{
+        
+    }
+    .cover-bunder h1{
+        margin-left: 30px;
+        margin-top: 157px;
+    }
+    .pertama{
+        font-weight: 600;
+        font-size: 7px;
+        width: 70px;
+        margin-top: -260px;
+        color: white;
+    }
+    .kedua{
+        font-weight: 400;
+        font-size: 6px;
+        width: 70px;
+        color: white;
+        margin-top: -8px;
+    }
+    .cover-bunder h2{
+        margin-top: -3px;
+        margin-left: 53px;
+    }
+    .ketiga{
+        font-weight: 600;
+        font-size: 7px;
+        width: 70px;
+        color: white;       
+    }
+    .keempat{
+        font-weight: 400;
+        font-size: 6px;;
+        width: 70px;
+        color: white;
+        margin-top: -10px;
+    }
+    .kanan h1{
+        margin-left:150px;
+        margin-top: 182px;
+    }
+    .kanan .pertama{
+        font-weight: 600;
+        font-size: 7px;
+        width: 70px;
+        color: white;
+        margin-top: -276px;
+    }
+    .kanan .kedua{
+        font-weight: 400;
+        font-size: 6px;;
+        width: 70px;
+        color: white;
+        margin-top: -10px;
+    }
+    .kanan h2{
+        margin-top: 34px;
+        margin-left: 180px;
+    }
+    .kanan .ketiga{
+        font-weight: 600;
+        font-size: 7px;
+        width: 70px;
+        color: white;
+    }
+    .kanan .keempat{
+        font-weight: 400;
+        font-size: 6px;;
+        width: 70px;
+        color: white;
+        margin-top: -10px;
+    }
+}
