@@ -419,7 +419,7 @@ const Product = () => {
         </div>
       </section>
 
-      <section>
+      <section style={{marginBottom: '80px'}}>
         <Overview />
       </section>
 

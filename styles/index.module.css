@@ -1140,49 +1140,50 @@
 .see {
     margin-bottom: 40px; /* Increase space below the button */
     border-radius: 8px;
-background: var(--Secondary-50, #FFC52E);
-border: none;
-align-items: center;
-color: var(--Primary-100, #004A65);
+    background: var(--Secondary-50, #FFC52E);
+    border: none;
+    align-items: center;
+    color: var(--Primary-100, #004A65);
 
 /* Label/L14/Semibold */
-font-family: GitLab Sans;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 20px; /* 142.857% */
-letter-spacing: 0.28px;;
+    font-family: GitLab Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.28px;;
   }
 /* For mobile devices */
-@media (max-width: 768px) {
-    .d-flex {
+    @media (max-width: 768px) {
+      .d-flex {
       flex-direction: column;
       align-items: center;
-      margin-left: 2px;
+      margin-left: 20px;
       margin-top: 10px;
     }
   
     /* Adjustments for the image */
     .firut {
-      width: 100%; /* Adjust as needed */
-      height: auto; /* Maintain aspect ratio */
-      margin-left: 0; /* Remove the left margin */
-      margin-top: 20px; /* Add space between the image and text */
+      width: 100%;
+      height: auto;
+      margin-left: 0px;
+      margin-top: 20px;
     }
   
     /* Center-align text */
     .shop,
     .guarante,
     .we {
-      text-align: center;
-      margin-bottom: 20px; /* Add space between text elements */
+    text-align: center;
+    margin-bottom: 20px;
     }
   
     /* Button adjustments */
     .see {
-      margin-bottom: 40px; /* Increase space below the button */
+      margin-bottom: 40px;
       border-radius: 8px;
-background: var(--Secondary-50, #FFC52E);
+      background: var(--Secondary-50, #FFC52E);
+      margin-left: 40px;
     }
   }
 
@@ -1192,35 +1193,115 @@ background: var(--Secondary-50, #FFC52E);
     background-position: center;
     margin-top: 200px;
   }
-  .fathu {
-    background-color: white;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    position: absolute;
-    top: 600%;
-    transform: translate(62%, -153%);
-    width: 568px;
-    border-radius: 8px;
-  
+
+ /* Styles for max-width: 768px */
+@media (max-width: 768px) {
+  .testimoni {
+    top: 10%;
+    
   }
-  @media (max-width: 768px) {
+
+  .fathu {
+    position: absolute;
+    transform: none;
+    width: 10%;
+    border-radius: 0;
+    margin-bottom: 15px;
+    background: white;
+    padding: 10px;
+    margin-left: 70px;
+    height: 60%;
+  }
+
+  .d-flex {
+    margin-top: -70px;
+  }
+}
+
+/* Styles for max-width: 1440px */
+@media (max-width: 1440px) {
+  .testimoni {
+    margin-top: 90px;
+    
+  }
+
+  .fathu {
+    position: absolute;
+    top: 585%;
+    transform: none;
+    width: 50%;
+    border-radius: 0;
+    margin-bottom: 15px;
+    background: white;
+    padding: 40px;
+    margin-left: 320px;
+    height: 60%;
+  }
+
+  .d-flex {
+    margin-top: -70px;
+    justify-content: space-between;
+  }
+
+  .col-3 {
+    margin-left: 1000px;
+  }
+
+}
+
+
+  
+
+
+
+
+  @media (max-width: 320px) {
     .testimoni {
-      margin-top: 50px; /* Atur margin top untuk tampilan mobile */
-      /* Tambahkan properti lain yang diperlukan untuk tampilan mobile */
+      margin-top: 50px; 
     }
   
     .fathu {
-        position: relative; /* Set posisi kembali ke relative */
-        top: 0; /* Reset posisi jika diperlukan */
-        transform: none; /* Reset transform jika diperlukan */
-        width: 100%; /* Atur lebar menjadi 100% pada layar yang lebih kecil */
-        border-radius: 0; /* Atur border radius kembali ke nilai default */
-        margin-bottom: 15px; /* Sesuaikan margin bottom untuk tampilan mobile */
-        /* Tambahkan properti lain yang diperlukan untuk tampilan mobile */
+        position: absolute;
+        top: 777%;
+        transform: none;
+        width: 81%;
+        border-radius: 0;
+        margin-bottom: 15px;
+        background: white;
+        padding: 10px;
+        margin-left: 30px;
+        height: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .d-flex{
+        margin-top: 430px;
+        width: auto;
+        margin-left: 7px;
+      }
+      .shop{
+        width: auto;
+        margin-left: -15px;
+        font-size: 20px;
+      }
+      .guarante{
+        width: auto;
+        font-size: 15px;
+        margin-left: -15px;
+      }
+      .we{
+        width: auto%;
+        font-size: 12px;
+        margin-left: -17px;
+        margin-top: -10px;
+      }
+      .see{
+        font-size: 8px;
+        font-family: "GitLab Sans", sans-serif;
+        border-radius: 5px;
+        margin-left: 30px;
       }
   }
-  
-  
+
     
   
 
