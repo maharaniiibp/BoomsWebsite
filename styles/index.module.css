@@ -112,6 +112,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
     }    
     .hero2 h1 {
         width: 596px;
@@ -175,6 +176,7 @@
         width: 100%;
         align-items: center;
         padding: 60px;
+        overflow: hidden;
     }
     .hero3 h1{
         color: #434040;
@@ -325,6 +327,16 @@
         background: #00A4DF;
         color: white;
       }
+
+
+      /* section 6 */
+      .bundaran{
+        width: 20%;
+        height: auto;
+      }
+      .testimoni{
+        margin-top: -90px;
+      }
 }
 
 
@@ -351,7 +363,8 @@
 @media (max-width: 768px){
      /* SECTION 1 */
      .hero1 {
-        padding: 30px;        
+        padding: 30px;
+        overflow: hidden;        
     }
     .hero1 img {
         width: 100%;
@@ -462,6 +475,7 @@
         flex-direction: column;
         align-items: center;
         margin-top: -150px;
+        overflow: hidden;
     }    
     .hero2 h1 {
         width: 470px;
@@ -527,6 +541,7 @@
         width: 100%;
         align-items: center;
         padding: 30px;
+        overflow: hidden;
     }
     
     .hero3 h1 {
@@ -666,6 +681,7 @@
     .product-3{
         padding: 30px;
         margin-top: -30px;
+        margin-bottom: 20px;
       }
       .bungkus-judul{
         display: flex;
@@ -733,7 +749,8 @@
 @media (max-width: 320px){
  /* SECTION 1 */
  .hero1 {
-    padding: 30px;        
+    padding: 30px;  
+    overflow: hidden;      
 }
 .hero1 img {
     width: auto;
@@ -854,6 +871,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: -180px;
+    overflow: hidden;
 }    
 .hero2 h1 {
     width: auto;
@@ -922,6 +940,7 @@
     align-items: center;
     padding: 60px;
     margin-top: -30px;
+    overflow: hidden;
 }
 
 .hero3 h1 {
@@ -938,14 +957,14 @@
     justify-content: space-between;
     margin-top: -30px;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 
 .card {
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: -100px;
     position: relative;
     transition: transform 0.2s ease-in-out;
-    margin-bottom: -100px;
 }
 
 .card:hover {
@@ -1102,7 +1121,175 @@
 
 
 
+/* SECTION 6 */
+@media (max-width: 1440px){
+  /* CSS untuk class "text-start" */
+.text-start {
+    text-align: start;
+  }
+  
+  /* CSS untuk class "bungkus" */
+  .bungkus-luar {
+    color: black;
+    background-color: red;
+    padding: 2rem;
+    width: 200%;
+    max-width: 30rem; /* Maksimum lebar konten */
+    margin-top: -25rem;
+  }
 
+  /* CSS untuk class "testimoni" */
+  
+  
+  /* CSS untuk mengatur tata letak dan styling elemen-elemen dalam Row dan Col */
+  .text-center {
+    text-align: center;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem; /* Ganti sesuai kebutuhan */
+  }
+  
+  .mb-3 {
+    margin-bottom: 0.75rem; /* Ganti sesuai kebutuhan */
+  }
+  
+  .mb-md-0 {
+    margin-bottom: 0; /* Ganti sesuai kebutuhan */
+  }
+  
+  .ms-4 {
+    margin-left: 1rem; /* Ganti sesuai kebutuhan */
+  }
+  
+  /* CSS untuk gambar bundaran */
+  .bundaran img {
+    width: 60px;
+    height: 10px;
+    /* Tambahkan gaya tambahan jika diperlukan */
+  }
+  
+}
+
+
+/* CSS untuk class "bungkus" pada layar dengan lebar md (768px atau lebih besar) */
+@media (min-width: 768px) {
+  .bungkus-luar{
+    width: auto;     
+    padding: 0;
+    margin-left: 200px;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    margin-top: -320px;
+}
+.luar{
+    width: auto;
+    display: block;
+    margin-top: 350px;
+    padding: 10;
+}
+.putih{
+    width: auto; 
+    display: flex;
+}
+.bungkus .fathu{
+    width: auto;
+}
+.gambar-fathu
+.customer{
+    margin-left: 80px;
+    width: 1000px;
+}
+.testimoni{
+    /* margin-left: -50px; */
+    width: 100%;
+    height: 100%;  
+    position: relative;
+    z-index: 1;
+    margin-top: -300px;
+    overflow: hidden;
+}
+      
+  }
+
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+
+    .bungkus-luar{
+      width: auto;     
+      padding: 0;
+      margin-left: 400px;
+      background-color: white;
+      position: relative;
+      z-index: 2;
+      margin-top: -410px;
+  }
+  .luar{
+      width: auto;
+      display: block;
+      margin-top: 350px;
+      padding: 10;
+  }
+  .putih{
+      width: auto; 
+      display: flex;
+  }
+  .bungkus .fathu{
+      width: auto;
+  }
+  .gambar-fathu
+  .customer{
+      margin-left: 80px;
+      width: 1000px;
+  }
+  .testimoni{
+      /* margin-left: -50px; */
+      width: 100%;
+      height: 100%;  
+      position: relative;
+      z-index: 1;
+      margin-top: -300px;
+      overflow: hidden;
+  }
+
+        
+    }
+  
+
+  @media (max-width: 320px){
+    .bungkus-luar{
+        width: 320px;     
+        padding: 0;
+    }
+    .luar{
+        width: auto;
+        display: block;
+        margin-top: 400px;
+        padding: 10;
+    }
+    .putih{
+        width: auto; 
+        margin-top: -200px;
+    }
+    .bungkus .fathu{
+        width: auto;
+    }
+    .customer{
+        margin-left: -20px;
+        width: 1000px;
+    }
+    .testimoni{
+        /* margin-left: -50px; */
+        width: 100%;
+        height: 100%;
+        margin-top: 100px;
+    }
+  }
 
 
 
@@ -1163,12 +1350,12 @@
     }
   
     /* Adjustments for the image */
-    .firut {
+    /* .firut {
       width: 100%;
       height: auto;
       margin-left: 0px;
       margin-top: 20px;
-    }
+    } */
   
     /* Center-align text */
     .shop,
@@ -1187,15 +1374,45 @@
     }
   }
 
-  .testimoni {
-    background-size: cover;
-    height: auto;
-    background-position: center;
-    margin-top: 200px;
+  @media (max-width: 1440px){
+    .firut{
+      margin-left: 90px;
+    }
   }
 
+  @media (max-width: 768px){
+    .firut{
+      margin-left: -10px;
+    }
+    .shop{
+      margin-top: -120px;
+    }
+  }
+
+
+  @media (max-width: 320px){
+    .firut{
+      margin-left: 10px;
+      width: 250px;
+    }
+    .we{
+      width: 90%;
+    }
+    .d-flex {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 200px;
+      margin-left: 0;
+    }
+    .shop{
+      margin-top: -5px
+    }
+  }
+
+
+
  /* Styles for max-width: 768px */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .testimoni {
     top: 10%;
     
@@ -1216,10 +1433,10 @@
   .d-flex {
     margin-top: -70px;
   }
-}
+} */
 
 /* Styles for max-width: 1440px */
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .testimoni {
     margin-top: 90px;
     
@@ -1247,7 +1464,7 @@
     margin-left: 1000px;
   }
 
-}
+} */
 
 
   
@@ -1255,7 +1472,7 @@
 
 
 
-  @media (max-width: 320px) {
+  /* @media (max-width: 320px) {
     .testimoni {
       margin-top: 50px; 
     }
@@ -1300,7 +1517,7 @@
         border-radius: 5px;
         margin-left: 30px;
       }
-  }
+  } */
 
     
   

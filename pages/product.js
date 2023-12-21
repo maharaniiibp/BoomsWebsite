@@ -136,7 +136,7 @@ const Product = () => {
 
   return (
     <>
-      <section className={styles['product-1']}>
+      <section className={styles['product-1']} data-aos="zoom-in" data-aos-duration="1000">
         <img src='../../asset/banner-product.png' alt='Product Banner'></img>
         <div className={styles['bungkus-text-1']}>
           <h1>NEW STYLE JUST LAUNCHED</h1>
@@ -150,9 +150,12 @@ const Product = () => {
       </section>
 
       <section className={styles['product-2']}>
-        <h1>Our selling products show here</h1>
+        <h1 data-aos="fade-up"
+          data-aos-duration="1500">Our selling products show here</h1>
         <div className={styles['cover-product']}>
-          <div className={styles['dropdown']}>
+          <div className={styles['dropdown']}
+          data-aos="fade-left"
+          data-aos-duration="1500">
 
             {/* GENDER */}
             <div className={styles['wrapper']}>
@@ -358,18 +361,20 @@ const Product = () => {
           </div>
 
           <div className={styles['bungkus-menu']}>
-            <div className={styles['menu']}>
+            <div className={styles['menu']} data-aos="fade-down"
+          data-aos-duration="1500">
               <h1>All Product</h1>
               <h2>Popular</h2>
               <h2>Best Seller</h2>
               <h2>Discount</h2>
             </div>
-            <div className={styles['card-container']}>
+            <div className={styles['card-container']} data-aos="fade-right"
+          data-aos-duration="1500">
               {filteredProducts.map((item, index) => (
                 <a key={index} className="group-card">
                   <div className={styles['card']}>
                     <img className={styles['black']} src={item.img} />
-                    <img className={styles['like']} style={{ height: '32px' }} src='../../asset/icon.png' alt="like icon" />
+                    <img className={styles['like']} style={{ height: '32px' }} src='../../asset/Icon.png' alt="like icon" />
                     <div className={styles['cover']}>
                       <h1 className=''>
                         Jetsetter Blacks : 16 - 20 mmHg
@@ -404,8 +409,9 @@ const Product = () => {
 
       </section>
 
-      <section className={styles['product-3']}>
-        <div className={styles['bungkus-judul']}>
+      <section className={styles['product-3']}                data-aos="fade-down"
+      data-aos-duration="1500">
+        <div className={styles['bungkus-judul']} >
           <div className={styles['kanan']}>
             <h1>Overview Our Product</h1>
             <button>SHOP WOMEN
@@ -413,9 +419,6 @@ const Product = () => {
             </button>
           </div>
           <button className={styles['see']}>See all</button>
-          <div>
-
-          </div>
         </div>
       </section>
 

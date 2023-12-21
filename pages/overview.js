@@ -3,6 +3,8 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import dataProduct from "../data/product.json";
 import styles from "../styles/overview.module.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Overview() {
   const [index, setIndex] = useState(0);
@@ -16,6 +18,7 @@ export default function Overview() {
 
   useEffect(() => {
     setJsonProduct(dataProduct);
+    AOS.init();
   }, []);
 
   const chunkArray = (arr, chunkSize) => {
@@ -54,7 +57,10 @@ export default function Overview() {
 
   return (
     <section className={styles["product-3"]}>
-      <div className={styles["bungkus-overview"]}>
+      <div className={styles["bungkus-overview"]} 
+      // data-aos="zoom-in-up"
+      // data-aos-duration="2000"
+      >
         <img src="../../asset/home/product.png" alt="Product overview" />
         <div>
           <button className={styles["button-new"]}>
