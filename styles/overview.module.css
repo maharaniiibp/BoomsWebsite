@@ -367,6 +367,7 @@
   .bungkus-overview{
     display: block;
     position: relative;
+    
 }
 .bungkus-overview img{
   width: 100%;
@@ -427,6 +428,7 @@
   padding-left: -5px;
   padding-top: 50px;
   width: 290px;
+
 }
 .card .like {
   position: absolute;

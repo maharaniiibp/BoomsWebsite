@@ -9,6 +9,8 @@ import Bundaran from "@/components/bundaran";
 import Image from "next/image";
 import { Row, Col } from "react-bootstrap";
 import Overview from "./overview";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 export default function Index() {
   const [jsonIcon, setJsonIcon] = useState([]);
@@ -17,14 +19,16 @@ export default function Index() {
   useEffect(() => {
     setJsonIcon(dataIcon);
     setJsonHero(dataHero);
+    // AOS.init();
   }, []);
+
   return (
     <>
       {/* section 1 */}
-      <section className={styles['hero1']}>
-        <img src='../../asset/hero-banner.png'></img>
+      <section className={styles['hero1']} data-aos="zoom-in" data-aos-duration="1000">
+        <img src='../../asset/hero-banner.png' alt="Hero Banner" />
         <div className={styles['bungkus-text-1']}>
-          <h1>NEW STYLE JUST A LAUNCHED</h1>
+          <h1>NEW STYLE JUST LAUNCHED</h1>
           <h2 className={styles['animated-text']}>
             <div className={styles['atas']}>BOOMS</div>
             <p>SHOCKS</p>
@@ -34,16 +38,19 @@ export default function Index() {
         </div>
       </section>
 
+
       {/* section 2 */}
       <section className={styles["hero2"]}>
-        <h1>Party like a sockstar with all of our Unisex Styles</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="1500">Party like a sockstar with all of our Unisex Styles</h1>
         <h2>
-          <div className="d-flex">
-             <img className={styles["img1"]} src="../../asset/hero2-1.png"></img>
-             <img className={styles["img2"]} src="../../asset/hero2-2.png"></img>
+          <div className="d-flex" data-aos="fade-right" data-aos-duration="1500">
+            <img className={styles["img1"]} src="../../asset/hero2-1.png"></img>
+            <img className={styles["img2"]} src="../../asset/hero2-2.png"></img>
           </div>
-         
-          <div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500">
             {jsonIcon.map((item, index) => (
               <a
                 key={index}
@@ -69,13 +76,16 @@ export default function Index() {
 
       {/* section 3 */}
       <section className={styles['hero3']}>
-        <h1 className="mx-auto">Party like a sockstar with all of our Unisex Styles</h1>
+        <h1 className="mx-auto" data-aos="fade-up" data-aos-duration="1500">Party like a sockstar with all of our Unisex Styles</h1>
         <div className={styles['card-container']}>
           {jsonHero.map((item, index) => (
-            <a key={index} className="group">
+            <a key={index} className="group"
+              data-aos="flip-right"
+              data-aos-duration="1500"
+            >
               <div className={styles['card']}>
                 <img className={styles['black']} src={item.img} alt={`Image ${index}`} />
-                <img className={styles['like']} src='../../asset/icon.png' ></img>
+                <img className={styles['like']} src='../../asset/Icon.png' ></img>
                 <div className={styles['cover']}>
                   <h1 className=''>
                     Jetsetter Blacks : 16 - 20 mmHg
@@ -113,7 +123,8 @@ export default function Index() {
 
       {/* section 5 */}
       <section className={styles['product-3']}>
-        <div className={styles['bungkus-judul']}>
+        <div className={styles['bungkus-judul']} 
+        >
           <div className={styles['kanan']}>
             <h1>Overview Our Product</h1>
             <button>SHOP WOMEN
@@ -126,109 +137,87 @@ export default function Index() {
           </div>
         </div>
       </section>
-      <div style={{marginTop: '-60px'}}>
-       <Overview /> 
+      <div style={{ marginTop: '-60px' }}>
+        <Overview />
       </div>
-      
+
 
       {/* section 6 */}
-
-      <div className=  {styles['testimoni']}>
+      <div
+      className={styles['luar']}
+        // style={{
+        //   display: "flex",
+        //   flexDirection: "column",
+        //   alignItems: "center",
+        //   justifyContent: "center",
+        //   marginTop: "10rem",
+        //   marginBottom: "4rem",
+        //   width: "auto"
+        // }}
+      >
         <Image
           src="/asset/testimoni.png"
           alt="bg"
-          layout="responsive"
-          width={1920}
-          height={1080}
+          
+          width={500}
+          height={10}
+          className={styles['testimoni']}
         />
         <div
-          className=  {styles['fathu']}
-          
+        className={styles['bungkus-luar']}
+          style={{
+            color: "black",
+            // marginTop: "-25rem",
+            backgroundColor: "white",
+            padding: "2rem",
+            textAlign: 'start'
+          }}
         >
-          <Row className="">
-            <Col className="col-3">
-              <img
-                className="p-2 w-100"
+          <Row
+          className={styles['putih']}
+           style={{alignItems: 'center', marginBottom: '30px'}}
+          >
+            <Col xs={12} md={2} className={styles['gambar-fathu']}>
+              <Image
                 src="/asset/home/fathu.png"
-                alt=""
-                style={{
-                  borderRadius: "100%",                  
-                }}
+                alt="bg"
+                
+                width="70"
+                height="70"
+                className={styles['fathu']}
               />
             </Col>
-            <Col className="mt-3">
-              <h3
-                className="text-start"
-                style={{
-                  color: "#383746",
-                  fontFamily: "GitLab Sans, sans-serif",
-                  fontSize: "16px",
-                  fontStyle: "normal",
-                  fontWeight: 600,
-                  lineHeight: "24px",
-                  letterSpacing: "0.32px",
-                  // marginBottom: "70px",
-                }}
-              >
-                Fathu Bagus Septihan
-              </h3>
-              <h4
-                className="text-start"
-                style={{
-                  color: "#999",
-                  fontFamily: "GitLab Sans, sans-serif",
-                  fontSize: "14px",
-                  fontStyle: "normal",
-                  fontWeight: 400,
-                  lineHeight: "20px",
-                  letterSpacing: "0.28px",
-                }}
-              >
-                Customer <br />
-                Depok, Sleman, Yogyakarta
-              </h4>
+            <Col xs={12} md={10} className={styles['customer']}>
+              <div className="ms-4">Fathu Bagus Septihan</div>
+              <div className="ms-4">Customer</div>
+              <div className="ms-4">Depok, Sleman, Yogyakarta</div>
             </Col>
           </Row>
-          <Row className="mt-2">
-            <div
-              className="text-start"
-              style={{
-                alignSelf: "stretch",
-                color: "var(--primary-100, #004A65)",
-                fontFamily: "GitLab Sans, sans-serif",
-                fontSize: "14px",
-                fontStyle: "normal",
-                fontWeight: 400,
-                lineHeight: "32px",
-                letterSpacing: "0.28px",
-              }}
-            >
-              Lorem ipsum dolor sit amet consectetur. In velit sed nullam quis.
-              Augue tristique feugiat ultricies sit molestie volutpat pretium.
-              Lorem ipsum dolor sit amet consectetur. In velit sed nullam quis.
-              Augue tristique feugiat ultricies sit molestie volutpat pretium.
-            </div>
-            <div
-  className="p-2 d-flex justify-content-center align-items-center"
-  style={{
-    gap: '2px',
-  }}
->
-  <img
-    className="w-20" // Adjust the width percentage as needed
-    src="/asset/home/bundaran.svg"
-    alt=""
-  />
-</div>
 
-          </Row>
+          <p
+            className={styles['text-des']}
+            style={{  maxWidth: "30rem", textAlign: 'start' }}
+          >
+            Lorem ipsum dolor sit amet consectetur. In velit sed nullam quis.
+            Augue tristique feugiat ultricies sit molestie volutpat pretium.
+            Lorem ipsum dolor sit amet consectetur. In velit sed nullam quis.
+            Augue tristique feugiat ultricies sit molestie volutpat pretium.
+          </p>
+
+          <div className="text-center">
+            <Image
+              src="/asset/home/bundaran.svg"
+              alt="bg"
+              width={60}
+              height={10}
+            />
+          </div>
         </div>
-
       </div>
-      <div style={{ paddingBottom: "150px" }}></div> 
+      <div style={{ paddingBottom: "150px" }}></div>
 
       {/* section 7 */}
-      <div className={styles["d-flex"]} >
+      <div className={styles["d-flex"]} style={{marginTop: '50px'}} >
         <div>
           <h3 className={styles["shop"]}>SHOP ALL DESIGN</h3>
           <h2 className={styles["guarante"]}>Satisfaction Guarantee</h2>
@@ -245,10 +234,12 @@ export default function Index() {
           src="asset/home/firut.png"
           alt=""
           className={styles["firut"]}
-         
+            // data-aos="zoom-in"
+            // data-aos-duration="1500"
+            // style={{overflow: 'hidden'}}
         />
       </div>
-      <div style={{ paddingBottom: "70px" }}></div> 
+      <div style={{ paddingBottom: "70px" }}></div>
     </>
   );
 }
