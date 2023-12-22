@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import styles from "../styles/detailProduct.module.css";
-import Buy from "./buy";
-import Cart from "./cart";
+// import Buy from "./buy";
+// import Cart from "./cart";
+import Buycart from "./buycart";
+import Bank from "./bank";
 
 const QuantitySelector = () => {
   const [quantity, setQuantity] = useState(1);
@@ -99,75 +101,7 @@ const decreaseQuantity = () => {
 
       <div className={styles["lineq"]}></div>
       <span className={styles["set"]}>Payment method</span>
-      <div class="d-flex flex-column mb-3">
-        <button className={styles["buttonq"]}>
-          <img
-            src="/asset/detail/bca.svg"
-            alt="Bank BCA"
-            style={{ width: "32px", height: "32px", marginRight: "8px" }}
-          />
-          Bank BCA
-        </button>
-
-        <button
-          className="p-2"
-          style={{
-            display: "flex",
-            width: "100%",
-            justifyContent: "left",
-            alignItems: "center",
-            background: "white",
-            borderRadius: "8px",
-            border: "1px solid var(--Neutral-40, #BDBDBD)",
-            color: "var(--Primary-90, #00688D)",
-            fontFamily: "GitLab Sans, sans-serif",
-            fontSize: "14px",
-            letterSpacing: "0.28px",
-            fontWeight: "700",
-            marginLeft: "0px",
-            marginTop: "12px",
-          }}
-        >
-          <img
-            src="/asset/detail/ovo.svg"
-            alt="Bank ovo"
-            style={{
-              width: "20px",
-              height: "20px",
-              marginRight: "8px",
-            }}
-          />
-          OVO
-        </button>
-
-        <button
-          className="p-2"
-          style={{
-            display: "flex",
-            width: "100%",
-            background: "white",
-            borderRadius: "8px",
-            border: "1px solid var(--Neutral-40, #BDBDBD)",
-            fontFamily: "GitLab Sans, sans-serif",
-            fontSize: "14px",
-            letterSpacing: "0.28px",
-            fontWeight: "700",
-            marginLeft: "0px",
-            marginTop: "12px",
-          }}
-        >
-          <img
-            src="/asset/detail/gopay.svg"
-            alt="Bank gopay"
-            style={{
-              width: "20px",
-              height: "20px",
-              marginRight: "10px",
-            }}
-          />
-          Gopay
-        </button>
-      </div>
+        <Bank/>
       <div className={styles["lineq"]}></div>
 
      <div className="d-flex justify-content-around">
@@ -176,8 +110,8 @@ const decreaseQuantity = () => {
 </div>
 
       <div class="d-flex flex-column mb-3">
-        <Buy />
-        <Cart />
+        <Buycart />
+        
       </div>
 
       <div class="d-flex justify-content-around">
