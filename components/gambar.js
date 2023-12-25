@@ -15,6 +15,7 @@ const Gambar = () => {
 
   return (
     <div>
+      <div data-aos="fade-right" data-aos-duration="1500">
       <div
         className="det1dan2 d-lg-flex justify-content-center"
         style={{ marginTop: "20px" }}
@@ -34,7 +35,9 @@ const Gambar = () => {
           onClick={() => handleImageClick(2)}
         />
       </div>
+      </div>
 
+      <div data-aos="fade-left" data-aos-duration="1500">
       <div
         className="det1dan2 d-lg-flex justify-content-center"
         style={{ marginTop: "20px" }}
@@ -54,7 +57,9 @@ const Gambar = () => {
           onClick={() => handleImageClick(4)}
         />
       </div>
+      </div>
 
+      <div data-aos="fade-right" data-aos-duration="1500">
       <div
         className="det1dan2 d-lg-flex justify-content-center"
         style={{ marginTop: "20px" }}
@@ -74,7 +79,9 @@ const Gambar = () => {
           onClick={() => handleImageClick(6)}
         />
       </div>
+      </div>
 
+      <div data-aos="fade-left" data-aos-duration="1500">
       <div
         className="det1dan2 d-lg-flex justify-content-center"
         style={{ marginTop: "20px" }}
@@ -93,6 +100,7 @@ const Gambar = () => {
           alt="Product Image"
           onClick={() => handleImageClick(8)}
         />
+      </div>
       </div>
      
     </div>

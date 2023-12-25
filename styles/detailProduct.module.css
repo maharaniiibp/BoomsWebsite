@@ -265,6 +265,7 @@
   /* width: 236px; */
   height: 748px;
   margin: 0px;
+  
   /* margin-top: 10px; */
 
 }
@@ -335,12 +336,11 @@ width: 100%;
   margin-bottom: 16px;
 }
 .typ {
-  /* width: 220px; */
-  height: 130px;
-  padding: 8px 9px 8px 8px;
-  border-radius: 8px;
+  width: 220px;
+  height: 130px; 
+padding-left: 8px;
+ border-radius: 8px;
   border: 1px solid var(--Neutral-30, #d2d2d2);
-  /* margin-left: 8px; */
   color: #bdbdbd;
   font-family: "GitLab Sans", sans-serif;
   font-size: 12px;
