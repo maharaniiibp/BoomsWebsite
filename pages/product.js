@@ -10,6 +10,7 @@ const Product = () => {
   // GENDER
   const [menChecked, setMenChecked] = useState(false);
   const [womanChecked, setWomanChecked] = useState(false);
+  const [selectedGender, setSelectedGender] = useState(null);
 
   // SIZE
   const [sChecked, setSChecked] = useState(false);
@@ -17,6 +18,7 @@ const Product = () => {
   const [lChecked, setLChecked] = useState(false);
   const [xlChecked, setXLChecked] = useState(false);
   const [xxlChecked, setXXLChecked] = useState(false);
+  const [selectedSize, setSelectedSize] = useState(null);
 
   // PRICE
   const [activeButton, setActiveButton] = useState(null);
@@ -34,6 +36,54 @@ const Product = () => {
     setJsonProduct(dataProduct);
   }, []);
 
+  const handleCheckboxChange = (checkboxType) => {
+    switch (checkboxType) {
+      case 'S':
+        setSChecked(true);
+        setMChecked(false);
+        setLChecked(false);
+        setXLChecked(false);
+        setXXLChecked(false);
+        break;
+      case 'M':
+        setSChecked(false);
+        setMChecked(true);
+        setLChecked(false);
+        setXLChecked(false);
+        setXXLChecked(false);
+        break;
+      case 'L':
+        setSChecked(false);
+        setMChecked(false);
+        setLChecked(true);
+        setXLChecked(false);
+        setXXLChecked(false);
+        break;
+      case 'XL':
+        setSChecked(false);
+        setMChecked(false);
+        setLChecked(false);
+        setXLChecked(true);
+        setXXLChecked(false);
+        break;
+      case 'XXL':
+        setSChecked(false);
+        setMChecked(false);
+        setLChecked(false);
+        setXLChecked(false);
+        setXXLChecked(true);
+        break;
+      default:
+        // Jika tidak ada yang dipilih, atur semua menjadi false
+        setSChecked(false);
+        setMChecked(false);
+        setLChecked(false);
+        setXLChecked(false);
+        setXXLChecked(false);
+    }
+  };
+
+
   const filteredProducts = jsonProduct.filter((item) => {
     const sizeFilter =
       (sChecked && item.size === "S") ||
@@ -43,10 +93,12 @@ const Product = () => {
       (xxlChecked && item.size === "XXL") ||
       (!sChecked && !mChecked && !lChecked && !xlChecked && !xxlChecked);
 
+
     const genderFilter =
-      (menChecked && item.gender === "Men") ||
-      (womanChecked && item.gender === "Woman") ||
-      (!menChecked && !womanChecked);
+      (!selectedGender && true) ||
+      (selectedGender === 'Men' && item.gender === 'Men') ||
+      (selectedGender === 'Woman' && item.gender === 'Woman');
+
 
     const priceFilter = !priceRange || (item.price >= priceRange.min && item.price <= priceRange.max);
 
@@ -112,6 +164,7 @@ const Product = () => {
     setLChecked(false);
     setXLChecked(false);
     setXXLChecked(false);
+    setSelectedGender(null);
     setActiveButton(null);
     setPriceRange(null);
     setMaxPriceInput('');
@@ -154,8 +207,8 @@ const Product = () => {
           data-aos-duration="1500">Our selling products show here</h1>
         <div className={styles['cover-product']}>
           <div className={styles['dropdown']}
-          data-aos="fade-left"
-          data-aos-duration="1500">
+            data-aos="fade-left"
+            data-aos-duration="1500">
 
             {/* GENDER */}
             <div className={styles['wrapper']}>
@@ -177,8 +230,8 @@ const Product = () => {
                     id="men-checkbox"
                     className={styles['checkbox']}
                     style={{ marginLeft: '5px', marginTop: '20px' }}
-                    checked={menChecked}
-                    onChange={() => setMenChecked(!menChecked)}
+                    checked={selectedGender === 'Men'}
+                    onChange={() => setSelectedGender('Men')}
                   />
                   <Form.Check
                     type="checkbox"
@@ -186,8 +239,8 @@ const Product = () => {
                     id="woman-checkbox"
                     className={styles['checkbox']}
                     style={{ marginLeft: '5px' }}
-                    checked={womanChecked}
-                    onChange={() => setWomanChecked(!womanChecked)}
+                    checked={selectedGender === 'Woman'}
+                    onChange={() => setSelectedGender('Woman')}
                   />
                   <div className={styles['line']}></div>
                 </div>
@@ -214,7 +267,7 @@ const Product = () => {
                     className={styles['checkbox']}
                     style={{ marginLeft: '5px', marginTop: '20px' }}
                     checked={sChecked}
-                    onChange={handleSCheckboxChange}
+                    onChange={() => handleCheckboxChange('S')}
                   />
                   <Form.Check
                     type="checkbox"
@@ -223,7 +276,7 @@ const Product = () => {
                     className={styles['checkbox']}
                     style={{ marginLeft: '5px' }}
                     checked={mChecked}
-                    onChange={handleMCheckboxChange}
+                    onChange={() => handleCheckboxChange('M')}
                   />
                   <Form.Check
                     type="checkbox"
@@ -232,7 +285,7 @@ const Product = () => {
                     className={styles['checkbox']}
                     style={{ marginLeft: '5px' }}
                     checked={lChecked}
-                    onChange={handleLCheckboxChange}
+                    onChange={() => handleCheckboxChange('L')}
                   />
                   <Form.Check
                     type="checkbox"
@@ -241,7 +294,7 @@ const Product = () => {
                     className={styles['checkbox']}
                     style={{ marginLeft: '5px' }}
                     checked={xlChecked}
-                    onChange={handleXLCheckboxChange}
+                    onChange={() => handleCheckboxChange('XL')}
                   />
                   <Form.Check
                     type="checkbox"
@@ -250,7 +303,7 @@ const Product = () => {
                     className={styles['checkbox']}
                     style={{ marginLeft: '5px' }}
                     checked={xxlChecked}
-                    onChange={handleXXLCheckboxChange}
+                    onChange={() => handleCheckboxChange('XXL')}
                   />
                   <div className={styles['line']}></div>
                 </div>
@@ -318,14 +371,14 @@ const Product = () => {
                   <div className={styles['button']}>
                     <button
                       className={`${styles['buttons']} ${activeButton === 1 ? styles['active'] : ''}`}
-                      onClick={() => handleButtonClick(1)}   
-                      style={{width: '116px'}}                  
+                      onClick={() => handleButtonClick(1)}
+                      style={{ width: '116px' }}
                     >
                       $5 - $10
                     </button>
                     <button
                       className={`${styles['buttons']} ${activeButton === 2 ? styles['active'] : ''}`}
-                      style={{ marginLeft: '20px', width: '116px'  }}
+                      style={{ marginLeft: '20px', width: '116px' }}
                       onClick={() => handleButtonClick(2)}
                     >
                       $10 - $25
@@ -333,7 +386,7 @@ const Product = () => {
                     <button
                       className={`${styles['buttons']} ${activeButton === 3 ? styles['active'] : ''}`}
                       onClick={() => handleButtonClick(3)}
-                      style={{width: '116px'}}
+                      style={{ width: '116px' }}
                     >
                       $25 - $50
                     </button>
@@ -362,14 +415,14 @@ const Product = () => {
 
           <div className={styles['bungkus-menu']}>
             <div className={styles['menu']} data-aos="fade-down"
-          data-aos-duration="1500">
+              data-aos-duration="1500">
               <h1>All Product</h1>
               <h2>Popular</h2>
               <h2>Best Seller</h2>
               <h2>Discount</h2>
             </div>
             <div className={styles['card-container']} data-aos="fade-right"
-          data-aos-duration="1500">
+              data-aos-duration="1500">
               {filteredProducts.map((item, index) => (
                 <a key={index} className="group-card">
                   <div className={styles['card']}>
@@ -409,8 +462,8 @@ const Product = () => {
 
       </section>
 
-      <section className={styles['product-3']}                data-aos="fade-down"
-      data-aos-duration="1500">
+      <section className={styles['product-3']} data-aos="fade-down"
+        data-aos-duration="1500">
         <div className={styles['bungkus-judul']} >
           <div className={styles['kanan']}>
             <h1>Overview Our Product</h1>
@@ -422,7 +475,7 @@ const Product = () => {
         </div>
       </section>
 
-      <section style={{marginBottom: '80px'}}>
+      <section style={{ marginBottom: '80px' }}>
         <Overview />
       </section>
 
